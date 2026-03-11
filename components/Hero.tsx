@@ -28,11 +28,11 @@ export function Hero({ content }: { content: HeroContent }) {
           <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--text-secondary)]">
             {content.eyebrow}
           </p>
-          <h1 className="mt-6 font-[family-name:var(--font-display)] text-[clamp(3.7rem,9vw,8.5rem)] leading-[0.92] text-balance">
+          <h1 className="mt-6 max-w-[11ch] font-[family-name:var(--font-display)] text-[clamp(3.15rem,7.2vw,6.9rem)] leading-[0.94] text-balance">
             {content.headline}
           </h1>
-          <div className="mt-7 text-[1.6rem] leading-tight text-[color:var(--text-secondary)] sm:text-[2rem]">
-            <span className="mr-3">I work across</span>
+          <div className="mt-7 flex items-baseline gap-3 whitespace-nowrap text-[clamp(1.15rem,2.7vw,2rem)] leading-tight text-[color:var(--text-secondary)]">
+            <span>I work across</span>
             <AnimatedTitle titles={content.titles} />
           </div>
         </motion.div>

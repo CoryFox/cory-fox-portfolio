@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export function AnimatedTitle({ titles }: { titles: string[] }) {
   const [index, setIndex] = useState(0);
   const prefersReducedMotion = useReducedMotion();
+  const longestTitleLength = titles.reduce((max, title) => Math.max(max, title.length), 0);
 
   useEffect(() => {
     if (prefersReducedMotion || titles.length < 2) {
@@ -20,11 +21,14 @@ export function AnimatedTitle({ titles }: { titles: string[] }) {
   }, [prefersReducedMotion, titles]);
 
   if (prefersReducedMotion) {
-    return <span>{titles[0]}</span>;
+    return <span className="whitespace-nowrap text-[color:var(--accent)]">{titles[0]}</span>;
   }
 
   return (
-    <span className="relative inline-flex h-[1.1em] min-w-[10ch] overflow-hidden align-bottom">
+    <span
+      className="relative inline-flex h-[1.1em] overflow-hidden align-bottom"
+      style={{ width: `${Math.max(longestTitleLength + 1, 12)}ch` }}
+    >
       <AnimatePresence mode="wait">
         <motion.span
           key={titles[index]}
@@ -32,7 +36,7 @@ export function AnimatedTitle({ titles }: { titles: string[] }) {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           exit={{ opacity: 0, y: -24, filter: "blur(8px)" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute inset-0 text-[color:var(--accent)]"
+          className="absolute inset-0 whitespace-nowrap text-[color:var(--accent)]"
         >
           {titles[index]}
         </motion.span>
