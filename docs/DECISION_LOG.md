@@ -106,7 +106,7 @@ Decision:
 
 - treat the root repository as the active working app
 - move project documentation to the root repo
-- explicitly exclude the nested legacy duplicate from local tooling
+- remove the nested legacy duplicate after the root repo is aligned with GitHub history
 
 Reason:
 

@@ -114,7 +114,7 @@ Work in this repository:
 
 - `/Users/coryfox/Desktop/Cory Fox Portfolio`
 
-The nested `cory-fox-portfolio/` folder is a legacy duplicate and should be ignored unless explicitly cleaning up old files.
+This root repo is the active app and git source of truth.
 
 ## Documentation Expectation
 

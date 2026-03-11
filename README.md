@@ -111,8 +111,6 @@ Still needs refinement:
 
 ## Repo Layout Note
 
-Work in this root repository:
+Work in this repository:
 
 - `/Users/coryfox/Desktop/Cory Fox Portfolio`
-
-There is a nested `cory-fox-portfolio/` folder from an earlier setup. Treat it as a legacy duplicate, not the active app.
