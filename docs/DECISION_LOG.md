@@ -99,3 +99,15 @@ Reason:
 
 - GitHub Desktop and `origin` were already configured against the nested repo
 - work was copied there and pushed successfully
+
+### Documentation Protocol
+
+Decision:
+
+- keep README, handoff, decision, and context logs updated as part of the working process
+- add an explicit session protocol file to enforce this
+
+Reason:
+
+- project context was already at risk of drifting between local repos, commits, and chat history
+- the next session should not need to reconstruct intent from scratch

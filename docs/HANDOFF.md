@@ -4,6 +4,12 @@
 
 This document is the fastest way for a new Codex session or developer to understand how the project is wired and where to work next.
 
+Before making changes, also read:
+
+- `docs/DECISION_LOG.md`
+- `docs/CONTEXT_LOG.md`
+- `docs/SESSION_PROTOCOL.md`
+
 ## What This Site Is
 
 This is not a generic portfolio template. The target is a premium, editorial, founder-style personal portfolio for Cory Fox, visually close in spirit to `highfulminds.com` but fully rebranded and rewritten.
@@ -109,3 +115,7 @@ Work in this repository:
 - `/Users/coryfox/Desktop/Cory Fox Portfolio/cory-fox-portfolio`
 
 Do not continue work in the parent folder repo created during setup; that was an intermediate local repo only.
+
+## Documentation Expectation
+
+If a future session changes project direction, introduces a workaround, fixes a regression, or leaves unresolved issues, the logs must be updated before handoff.

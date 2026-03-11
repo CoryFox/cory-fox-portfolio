@@ -39,6 +39,17 @@ public/
 docs/
 ```
 
+## Documentation Discipline
+
+This repo keeps its own operating context in:
+
+- `docs/HANDOFF.md`
+- `docs/DECISION_LOG.md`
+- `docs/CONTEXT_LOG.md`
+- `docs/SESSION_PROTOCOL.md`
+
+Any future session should read those first and update them before handoff if the project state changes.
+
 ## Content Model
 
 Homepage content lives in:

@@ -4,7 +4,7 @@
 
 - repo: `https://github.com/CoryFox/cory-fox-portfolio`
 - branch: `main`
-- current known pushed commit at handoff: `45702eb`
+- current known pushed commit at handoff: `a6db1a8`
 
 ## What Was Built
 
@@ -60,6 +60,7 @@ Verified successfully:
 2. Ignore the outer parent-folder repo unless explicitly asked to clean it up
 3. Use the current content files as the editing surface for copy changes
 4. Prefer visual review in browser before making another system-level polish pass
+5. Read and follow `docs/SESSION_PROTOCOL.md`
 
 ## Suggested Next Prompt
 
