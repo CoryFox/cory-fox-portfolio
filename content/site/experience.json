@@ -1,0 +1,122 @@
+{
+  "profileSummary": "I’m a Product Designer with 6+ years in SaaS, a First Class BA in Graphic Design (User Experience), and hands-on experience leading UX, shipping frontend work, and improving adoption through research, analytics, and system thinking. More recently, teaching has sharpened the part of my practice that cares most about clarity, accessibility, and designing for a wider range of real users.",
+  "timeline": [
+    {
+      "role": "Teacher of Design and Technology",
+      "company": "Thrybergh Academy",
+      "period": "June 2025 – Present",
+      "bullets": [
+        "I apply UX thinking in live educational environments, shaping learning systems around clarity, accessibility, and structure.",
+        "I design learning experiences for a wide range of students, including SEND learners, which keeps my design thinking grounded in real variation rather than ideal users.",
+        "I reduce cognitive load through sequencing, scaffolding, and clearer information architecture.",
+        "I use performance data and behavioural feedback to refine how information is delivered and understood.",
+        "I communicate complex ideas clearly to students, parents, and senior leaders."
+      ]
+    },
+    {
+      "role": "Initial Teacher Training",
+      "company": "Winterhill School, Placement A / Ecclesfield School, Placement B",
+      "period": "September 2024 – May 2025",
+      "bullets": [
+        "I designed and delivered curriculum-aligned lessons across placement schools.",
+        "I iterated quickly based on observation, coaching, and classroom feedback.",
+        "I developed a more disciplined clarity-first approach to instructional and experience design."
+      ]
+    },
+    {
+      "role": "UX/UI Lead",
+      "company": "FourJaw Manufacturing Analytics",
+      "period": "May 2023 – May 2024",
+      "bullets": [
+        "I defined and implemented a platform-wide UX vision aligned to product strategy rather than isolated screens.",
+        "I led continuous discovery through client interviews, usability testing, and behavioural analytics.",
+        "I used Pendo, FullStory, and Google Analytics to find friction and tighten key journeys.",
+        "I reduced support tickets and bug reports through targeted redesign rather than surface-level polish.",
+        "I improved feature adoption and engagement through iterative, evidence-led changes.",
+        "I led the move from a legacy UI toward a scalable component-based design system.",
+        "I mentored two graduate developers and pushed user-centred thinking deeper into the team.",
+        "I contributed directly to roadmap conversations alongside the Head of Product."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "FourJaw Manufacturing Analytics",
+      "period": "July 2021 – May 2023",
+      "bullets": [
+        "I designed and built SaaS features across web and tablet products.",
+        "I worked closely with product and engineering in agile delivery, moving between UX decisions and implementation.",
+        "I shipped UX improvements as working product, not just Figma files."
+      ]
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Databowl",
+      "period": "January 2021 – July 2021",
+      "bullets": [
+        "I moved deeper into hands-on frontend delivery, translating interface decisions into shipped web experiences.",
+        "I strengthened the development side of my practice in HTML, CSS, JavaScript, and React.",
+        "That build experience still shapes how I design now: with technical realism, tighter collaboration, and fewer handoff gaps."
+      ]
+    },
+    {
+      "role": "UX/UI Designer & Developer",
+      "company": "SoloProtect UK",
+      "period": "November 2019 – January 2021",
+      "bullets": [
+        "I worked across UX, UI, and development, helping close the gap between concept work and implementation.",
+        "I focused on making digital experiences feel clearer, more trustworthy, and easier to navigate.",
+        "The role pushed me beyond visual design into broader product thinking and delivery."
+      ]
+    },
+    {
+      "role": "UX/UI Designer",
+      "company": "Databowl Ltd",
+      "period": "Before November 2019",
+      "bullets": [
+        "I started shaping interfaces, flows, and visual systems for digital products early in my career.",
+        "It was where my graphic design background became a more strategic UX practice.",
+        "That foundation gave me the visual discipline I still bring into product work now."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Discovery & Research",
+      "items": [
+        "User interviews",
+        "Usability testing",
+        "Journey mapping",
+        "Stakeholder workshops",
+        "Survey design",
+        "Continuous discovery"
+      ]
+    },
+    {
+      "category": "Analytics & Insights",
+      "items": [
+        "Pendo",
+        "FullStory",
+        "Google Analytics",
+        "Intercom",
+        "Adoption analysis",
+        "Support trend analysis"
+      ]
+    },
+    {
+      "category": "Design Systems & Frontend",
+      "items": [
+        "Figma",
+        "Component-based systems",
+        "HTML",
+        "CSS",
+        "JavaScript ES6 / TypeScript",
+        "React",
+        "Python"
+      ]
+    }
+  ],
+  "education": [
+    "BA Graphic Design, User Experience, First Class Honours, Sheffield Hallam University",
+    "PGCE Secondary Design and Technology"
+  ]
+}

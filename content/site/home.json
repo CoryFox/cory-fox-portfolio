@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "eyebrow": "Hello, I'm Cory",
+    "headline": "I design digital products that make complexity feel clear, confident, and worth using.",
+    "description": "I combine SaaS product experience, visual craft, and classroom insight to sharpen journeys, reduce friction, and give ambitious products more conviction.",
+    "primaryCta": {
+      "label": "View work",
+      "href": "#work"
+    },
+    "secondaryCta": {
+      "label": "Download CV",
+      "href": "/cv/cory-fox-cv.pdf"
+    },
+    "titles": ["Product Designer", "UX Designer", "Graphic Designer"]
+  },
+  "workIntro": "These projects show how I use structure, pace, and interaction detail to make products feel sharper from the first screen.",
+  "writingIntro": "I write about product design, UX, accessibility, and making digital experiences easier to understand and harder to abandon.",
+  "linkedin": {
+    "title": "For the professional version of the conversation, head to LinkedIn.",
+    "description": "I use LinkedIn for role updates, product thinking, and the overlap between design, accessibility, and teaching. If you're hiring or building, start there.",
+    "href": "https://www.linkedin.com/in/corymetcalfe1"
+  },
+  "contact": {
+    "title": "If you've got a role, product, or idea that needs sharper thinking, let's talk.",
+    "description": "I’m open to product design roles, freelance work, and thoughtful collaborations. Send a few details and I’ll come back with something useful.",
+    "email": "coryowenfox@gmail.com"
+  }
+}
