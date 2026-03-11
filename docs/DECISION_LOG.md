@@ -116,3 +116,18 @@ Reason:
 
 - the development server, dependencies, and active file edits are happening in the root folder
 - splitting runtime and source-of-truth between two repos created avoidable confusion and false-negative verification
+
+### GitHub Pages Deployment
+
+Decision:
+
+- deploy the portfolio through a GitHub Actions workflow on pushes to `main`
+- configure Next.js for static export with `output: "export"`
+- use unoptimized Next images and publish the generated `out/` directory to GitHub Pages
+- treat `https://coryfox.co.uk` as the canonical site URL and ship a `CNAME` file in the Pages artifact
+
+Reason:
+
+- GitHub Pages serves static output, not a running Next.js server
+- the repo now has a single root app and a clean `main` branch, so deployment should happen from that source of truth automatically
+- GitHub Pages custom-domain settings are more reliable when the domain is represented directly in the built artifact

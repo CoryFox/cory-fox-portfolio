@@ -89,6 +89,8 @@ Run a production build:
 npm run build
 ```
 
+For GitHub Pages deployment, `npm run build` produces a static export in `out/`.
+
 ## Current Status
 
 Implemented:
@@ -107,6 +109,17 @@ Still needs refinement:
 - stronger real project imagery and final case study content
 - replacement of inferred older-role copy with user-approved wording
 - eventual contact form backend integration
+
+## Deployment
+
+The site deploys via GitHub Actions on pushes to `main`.
+
+- workflow: `.github/workflows/deploy-pages.yml`
+- target: GitHub Pages
+- build output: `out/`
+- custom domain: `coryfox.co.uk`
+
+Set the repo Pages source to `GitHub Actions` in GitHub settings.
 
 ## Repo Layout Note
 

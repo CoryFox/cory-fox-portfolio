@@ -31,6 +31,12 @@
 - merged the GitHub history into the root repo so `main` now shares ancestry with `origin/main`
 - removed the nested `cory-fox-portfolio/` folder after the root repo was confirmed as the only active project
 
+### Deployment
+
+- configured Next.js for static export so the site can run on GitHub Pages
+- added a GitHub Actions workflow that builds on pushes to `main` and deploys the `out/` directory to Pages
+- set the canonical site URL and Pages artifact domain to `coryfox.co.uk`
+
 ## Known Weak Spots
 
 - older-role copy for Databowl/SoloProtect still needs confirmation from Cory for final accuracy
