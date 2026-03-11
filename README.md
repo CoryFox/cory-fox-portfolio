@@ -4,7 +4,6 @@ Editorial-style portfolio site for Cory Fox, built in Next.js with TypeScript, T
 
 The current build is designed to be:
 
-- visually inspired by `highfulminds.com` without copying protected assets or copy
 - maintainable without a CMS
 - easy to run locally and deploy on Vercel
 - structured around a single long-form homepage plus `/work/[slug]` case study pages
