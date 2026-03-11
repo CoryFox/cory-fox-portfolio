@@ -1,8 +1,8 @@
 {
   "hero": {
     "eyebrow": "Hello, I'm Cory",
-    "headline": "I design digital products that make complexity feel clear, confident, and worth using.",
-    "description": "I combine SaaS product experience, visual craft, and classroom insight to sharpen journeys, reduce friction, and give ambitious products more conviction.",
+    "headline": "Making complexity feel clear.",
+    "description": "I design digital products with a mix of SaaS product thinking, visual craft, and classroom-tested clarity. The focus is straightforward: sharper journeys, lower friction, and interfaces people can understand quickly and trust for longer.",
     "primaryCta": {
       "label": "View work",
       "href": "#work"

@@ -20,8 +20,9 @@
 
 ### Hero layout
 
-- tightened the hero headline width and reduced its size ceiling so the long opening statement reads as a controlled editorial block instead of an overgrown masthead
-- fixed the rotating "I work across" title so the longest role label reserves enough width and stays on one line without clipping
+- shortened the hero headline to a compact positioning line and moved the fuller explanation into the right-hand card
+- kept the established hero heading styling and limited the change to wording rather than another typographic restyle
+- aligned the static and animated parts of the "I work across" line on the same vertical axis while keeping the animated blur/shadow from clipping
 
 ### Repo structure
 

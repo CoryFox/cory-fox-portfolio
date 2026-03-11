@@ -92,13 +92,17 @@ Reason:
 
 Decision:
 
-- keep the hero display heading on a tighter max width and a slightly lower size ceiling than other large editorial headings
+- keep the hero display heading styling stable once the general scale feels right, and solve hero issues by tightening the wording instead
 - reserve explicit width for the rotating "I work across" title so every role stays visible on one line
+- keep the hero headline itself extremely short and move the supporting explanation into the right-hand card
+- center the static and animated parts of the "I work across" line on the same vertical axis
 
 Reason:
 
-- the homepage hero copy is substantially longer than the other section headings, so using the same scale made the opening composition feel ungainly
+- once the display scale is dialed in, changing the copy is a better fix than repeatedly changing the headline styling
 - the animated title slot clipped and wrapped longer role labels instead of presenting them cleanly
+- the hero works better as a sharp positioning statement than as a full value proposition paragraph
+- mismatched vertical alignment made the static and animated title parts look visually broken
 
 ### Repo Normalization
 
