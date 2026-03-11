@@ -4,7 +4,7 @@
 
 - repo path: `/Users/coryfox/Desktop/Cory Fox Portfolio`
 - branch: `main`
-- current local HEAD: `HEAD`
+- current local HEAD: `58f410c`
 
 ## What Was Built
 
@@ -28,7 +28,7 @@
 - added the missing root-level README and project docs so the active app now documents itself
 - aligned the written guidance around the root repo being the working project
 - merged the GitHub history into the root repo so `main` now shares ancestry with `origin/main`
-- prepared the nested `cory-fox-portfolio/` folder for removal as a resolved duplicate
+- removed the nested `cory-fox-portfolio/` folder after the root repo was confirmed as the only active project
 
 ## Known Weak Spots
 
