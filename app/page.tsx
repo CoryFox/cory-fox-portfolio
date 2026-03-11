@@ -4,6 +4,7 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HowIWorkSection } from "@/components/HowIWorkSection";
 import { LinkedInSection } from "@/components/LinkedInSection";
 import { WorkSection } from "@/components/WorkSection";
 import { WritingSection } from "@/components/WritingSection";
@@ -30,6 +31,7 @@ export default async function HomePage() {
       <main>
         <Hero content={home.hero} />
         <AboutSection content={about} />
+        <HowIWorkSection content={home.howIWork} whatIEnjoy={home.whatIEnjoy} />
         <WorkSection intro={home.workIntro} work={work} />
         <ExperienceSection content={experience} />
         <WritingSection intro={home.writingIntro} posts={posts} />

@@ -3,6 +3,7 @@ title: "UX Journey Improvement"
 slug: "ux-journey-improvement"
 summary: "A service and product journey concept built around friction reduction, better wayfinding, and more confident task completion."
 role: "UX Strategy, Journey Design"
+focus: "Journey redesign, wayfinding, service flow"
 year: "2025"
 status: "Placeholder"
 tags:

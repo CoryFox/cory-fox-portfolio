@@ -51,6 +51,20 @@ export function ShowcaseProject({
               {project.title}
             </h3>
             <p className="text-lg leading-8 text-[color:var(--text-secondary)]">{project.summary}</p>
+            <div className="grid gap-3 border-y border-[color:var(--border)] py-4 text-sm leading-6 text-[color:var(--text-secondary)]">
+              <p>
+                <span className="mr-2 text-xs uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Role</span>
+                {project.role}
+              </p>
+              <p>
+                <span className="mr-2 text-xs uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Focus</span>
+                {project.focus}
+              </p>
+              <p>
+                <span className="mr-2 text-xs uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Outcome</span>
+                {project.outcome}
+              </p>
+            </div>
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span
@@ -96,6 +110,9 @@ export function ShowcaseProject({
               priority={index === 0}
             />
           </motion.div>
+          <div className="mt-4 max-w-xl rounded-[24px] border border-[color:var(--border)] bg-white/72 px-5 py-4 text-sm leading-6 text-[color:var(--text-secondary)]">
+            {project.outcome}
+          </div>
           <motion.div
             style={{ y: accentY }}
             className={cn(

@@ -11,7 +11,7 @@ export function WorkSection({ intro, work }: { intro: string; work: WorkCaseStud
           <SectionHeading
             id="work-heading"
             label="Work"
-            title="A few projects that show how I shape product direction, simplify journeys, and push the visual tone further."
+            title="A few examples of how I approach product design."
             description={intro}
           />
         </Reveal>

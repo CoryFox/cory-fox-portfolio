@@ -3,6 +3,7 @@ title: "Inclusive Learning Experience"
 slug: "inclusive-learning-experience"
 summary: "A concept showing how accessible structure, scaffolded information, and inclusive thinking can shape a stronger learning experience."
 role: "UX Design, Accessibility, Learning Design"
+focus: "Accessibility, information hierarchy, learning flow"
 year: "2025"
 status: "Placeholder"
 tags:

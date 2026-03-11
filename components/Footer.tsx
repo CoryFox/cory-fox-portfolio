@@ -18,7 +18,7 @@ export function Footer() {
               Cory Fox
             </Link>
             <p className="mt-3 max-w-md text-base leading-7 text-[color:var(--text-secondary)]">
-              I design products, UX systems, and visual experiences that feel clearer, calmer, and more convincing.
+              I design digital products that make complex systems easier to understand.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">

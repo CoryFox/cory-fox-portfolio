@@ -1,8 +1,9 @@
 {
   "hero": {
     "eyebrow": "Hello, I'm Cory",
-    "headline": "Making complexity feel clear.",
-    "description": "I design digital products with a mix of SaaS product thinking, visual craft, and classroom-tested clarity. The focus is straightforward: sharper journeys, lower friction, and interfaces people can understand quickly and trust for longer.",
+    "headline": "Making complex products easier to understand.",
+    "description": "I'm a product designer with experience across SaaS, frontend development, and teaching. I focus on clearer journeys, lower friction, and interfaces people can trust quickly.",
+    "framing": "I enjoy working on products where complexity has started to get in the way of users. My role is usually to untangle the workflow and make the interface feel obvious again.",
     "primaryCta": {
       "label": "View work",
       "href": "#work"
@@ -13,16 +14,41 @@
     },
     "titles": ["Product Designer", "UX Designer", "Graphic Designer"]
   },
-  "workIntro": "These projects show how I use structure, pace, and interaction detail to make products feel sharper from the first screen.",
-  "writingIntro": "I write about product design, UX, accessibility, and making digital experiences easier to understand and harder to abandon.",
+  "howIWork": {
+    "title": "How I Work",
+    "steps": [
+      {
+        "title": "Understand the problem",
+        "description": "User interviews, analytics, and stakeholder conversations to identify where users are getting stuck."
+      },
+      {
+        "title": "Simplify the system",
+        "description": "Mapping journeys, clarifying hierarchy, and reducing unnecessary complexity."
+      },
+      {
+        "title": "Design with implementation in mind",
+        "description": "Working closely with engineers so improvements ship as real product changes, not just mockups."
+      }
+    ]
+  },
+  "whatIEnjoy": {
+    "title": "What I Enjoy Working On",
+    "items": [
+      "Products where complexity has started to get in the way of users.",
+      "Interfaces that need stronger hierarchy and clearer information flow.",
+      "Platforms where analytics and user research can guide meaningful improvements."
+    ]
+  },
+  "workIntro": "Simplifying journeys, tightening workflows, and improving how products feel to use.",
+  "writingIntro": "I occasionally write about product design, UX, accessibility, and the thinking behind clearer digital products.",
   "linkedin": {
-    "title": "For the professional version of the conversation, head to LinkedIn.",
-    "description": "I use LinkedIn for role updates, product thinking, and the overlap between design, accessibility, and teaching. If you're hiring or building, start there.",
+    "title": "For the professional side of the conversation, find me on LinkedIn.",
+    "description": "I share product thinking, writing, and the occasional reflection on design, accessibility, and teaching.",
     "href": "https://www.linkedin.com/in/corymetcalfe1"
   },
   "contact": {
-    "title": "If you've got a role, product, or idea that needs sharper thinking, let's talk.",
-    "description": "I’m open to product design roles, freelance work, and thoughtful collaborations. Send a few details and I’ll come back with something useful.",
+    "title": "If you're hiring, building something interesting, or just want to talk product design, feel free to get in touch.",
+    "description": "I'm open to product design roles, freelance work, and thoughtful collaborations. Send a few details and I'll come back to you.",
     "email": "coryowenfox@gmail.com"
   }
 }

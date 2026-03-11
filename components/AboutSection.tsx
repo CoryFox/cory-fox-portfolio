@@ -6,7 +6,6 @@ type AboutContent = {
   label: string;
   title: string;
   principles: string[];
-  quote: string;
   body: string;
 };
 
@@ -39,12 +38,6 @@ export function AboutSection({ content }: { content: AboutContent }) {
                   </div>
                 ))}
               </div>
-            </Reveal>
-            <Reveal className="rounded-[32px] border border-[color:var(--border)] bg-[color:var(--accent)] p-8 text-[color:var(--button-light-text)]">
-              <p className="text-xs uppercase tracking-[0.28em] text-white">Perspective</p>
-              <blockquote className="mt-6 max-w-xl font-[family-name:var(--font-display)] text-4xl leading-tight">
-                {content.quote}
-              </blockquote>
             </Reveal>
           </div>
         </div>

@@ -8,9 +8,21 @@ export type HomeContent = {
     eyebrow: string;
     headline: string;
     description: string;
+    framing: string;
     primaryCta: { label: string; href: string };
     secondaryCta: { label: string; href: string };
     titles: string[];
+  };
+  howIWork: {
+    title: string;
+    steps: Array<{
+      title: string;
+      description: string;
+    }>;
+  };
+  whatIEnjoy: {
+    title: string;
+    items: string[];
   };
   workIntro: string;
   writingIntro: string;
@@ -30,7 +42,6 @@ export type AboutContent = {
   label: string;
   title: string;
   principles: string[];
-  quote: string;
   body: string;
 };
 
@@ -54,6 +65,7 @@ export type WorkCaseStudy = {
   slug: string;
   summary: string;
   role: string;
+  focus: string;
   year: string;
   status: string;
   tags: string[];
@@ -82,7 +94,6 @@ export const getAboutContent = cache(async (): Promise<AboutContent> => {
     label: data.label,
     title: data.title,
     principles: data.principles,
-    quote: data.quote,
     body: content.trim()
   };
 });

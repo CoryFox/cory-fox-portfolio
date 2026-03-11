@@ -8,6 +8,7 @@ type HeroContent = {
   eyebrow: string;
   headline: string;
   description: string;
+  framing: string;
   primaryCta: { label: string; href: string };
   secondaryCta: { label: string; href: string };
   titles: string[];
@@ -44,6 +45,9 @@ export function Hero({ content }: { content: HeroContent }) {
           className="rounded-[32px] border border-[color:var(--border)] bg-[rgba(255,255,255,0.52)] p-8 shadow-[var(--shadow-soft)]"
         >
           <p className="text-lg leading-8 text-[color:var(--text-secondary)]">{content.description}</p>
+          <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--text-secondary)]">
+            {content.framing}
+          </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
               href={content.primaryCta.href}
@@ -60,16 +64,16 @@ export function Hero({ content }: { content: HeroContent }) {
           </div>
           <div className="mt-10 grid gap-4 border-t border-[color:var(--border)] pt-6 sm:grid-cols-3">
             <div>
-              <p className="font-[family-name:var(--font-display)] text-3xl">6+</p>
-              <p className="mt-1 text-sm text-[color:var(--text-secondary)]">Years shaping SaaS and digital products</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl">6+ years</p>
+              <p className="mt-1 text-sm text-[color:var(--text-secondary)]">Designing SaaS products and digital tools</p>
             </div>
             <div>
-              <p className="font-[family-name:var(--font-display)] text-3xl">Lead</p>
-              <p className="mt-1 text-sm text-[color:var(--text-secondary)]">Former UX/UI Lead with discovery and system depth</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl">Former UX/UI Lead</p>
+              <p className="mt-1 text-sm text-[color:var(--text-secondary)]">Driving product clarity and system thinking</p>
             </div>
             <div>
-              <p className="font-[family-name:var(--font-display)] text-3xl">Teach</p>
-              <p className="mt-1 text-sm text-[color:var(--text-secondary)]">Classroom insight that sharpens inclusive design</p>
+              <p className="font-[family-name:var(--font-display)] text-3xl">Teaching experience</p>
+              <p className="mt-1 text-sm text-[color:var(--text-secondary)]">A constant reminder to design for real people</p>
             </div>
           </div>
         </motion.div>

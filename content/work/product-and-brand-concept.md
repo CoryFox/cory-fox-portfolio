@@ -3,6 +3,7 @@ title: "Product and Brand Concept"
 slug: "product-and-brand-concept"
 summary: "A hybrid concept exploring the meeting point between digital product clarity and a more expressive visual identity system."
 role: "Product Design, Brand, Visual Systems"
+focus: "Visual systems, product identity, interface clarity"
 year: "2025"
 status: "Placeholder"
 tags:

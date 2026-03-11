@@ -25,7 +25,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
           <SectionHeading
             id="experience-heading"
             label="Experience"
-            title="What I’ve built, led, and sharpened across product, frontend, and teaching."
+            title="Product design, frontend development, and teaching."
             description={content.profileSummary}
           />
         </Reveal>

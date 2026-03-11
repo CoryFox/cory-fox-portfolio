@@ -12,7 +12,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
           <SectionHeading
             id="writing-heading"
             label="Writing"
-            title="I write about clarity, UX, accessibility, and the decisions behind better product work."
+            title="Writing on product design, UX, and accessibility."
             description={intro}
           />
         </Reveal>

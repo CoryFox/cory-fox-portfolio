@@ -37,10 +37,19 @@
 - added a GitHub Actions workflow that builds on pushes to `main` and deploys the `out/` directory to Pages
 - set the canonical site URL and Pages artifact domain to `coryfox.co.uk`
 
+### Portfolio framing
+
+- added a stronger product-framing line to the hero to position the work around untangling complexity
+- inserted a new "How I Work" section and a "What I Enjoy Working On" block to surface process, collaboration maturity, and design judgement
+- added role, focus, and outcome metadata to homepage work cards plus visible impact callouts under project imagery
+- restructured case study pages around a fast-scanning snapshot and a clearer Problem / Thinking / Solution / Result pattern
+- strengthened the teaching differentiator and simplified supporting homepage copy so the site reads more like a senior product portfolio and less like generic portfolio language
+
 ## Known Weak Spots
 
 - older-role copy for Databowl/SoloProtect still needs confirmation from Cory for final accuracy
-- real case study imagery and real project writing are not in place yet
+- real case study imagery and real project writing are still the next major improvement area
+- impact statements are structurally in place, but placeholder projects still limit how credible those outcomes can feel until replaced with real project evidence
 - contact form is UI-only and mailto-based for now
 
 ## Known Good Checks

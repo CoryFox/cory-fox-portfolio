@@ -1,8 +1,9 @@
 ---
 title: "SaaS Platform Redesign"
 slug: "saas-platform-redesign"
-summary: "A product design case study focused on clarity, adoption, and a more scalable interface language."
+summary: "A redesign focused on clearer workflows, better adoption, and a more scalable interface system."
 role: "Product Design, UX, Visual Design"
+focus: "Journey redesign, analytics-driven discovery, design system"
 year: "2025"
 status: "Placeholder"
 tags:

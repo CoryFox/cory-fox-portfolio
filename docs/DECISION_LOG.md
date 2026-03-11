@@ -131,3 +131,16 @@ Reason:
 - GitHub Pages serves static output, not a running Next.js server
 - the repo now has a single root app and a clean `main` branch, so deployment should happen from that source of truth automatically
 - GitHub Pages custom-domain settings are more reliable when the domain is represented directly in the built artifact
+
+### Portfolio Framing Pass
+
+Decision:
+
+- shift the homepage and case study structure toward explicit senior-product-designer signals
+- add process framing, problem-solving language, and impact metadata instead of relying on more general design-language alone
+- treat the current structure as the recruiter-scanning baseline, with real case study outcomes as the next major upgrade
+
+Reason:
+
+- the portfolio already communicated taste and perspective, but needed stronger signals around problem solving, product impact, and clear thinking process
+- hiring managers often scan quickly, so problem, scope, approach, and outcome need to be legible near the top of both the homepage and case studies
