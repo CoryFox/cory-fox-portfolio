@@ -54,8 +54,8 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/cv/cory-fox-cv.pdf"
-            className="inline-flex rounded-full border border-[color:var(--text)] bg-white/72 px-4 py-2 text-sm transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
+            href="/cv/cory-fox-product-designer-cv.pdf"
+            className="btn-light inline-flex rounded-full px-4 py-2 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
           >
             View CV
           </Link>
@@ -91,7 +91,7 @@ export function Header() {
       </div>
       <div
         className={cn(
-          "mx-auto mt-4 max-w-7xl overflow-hidden rounded-[32px] border border-[color:var(--border)] bg-[rgba(246,243,238,0.96)] backdrop-blur-xl transition-all duration-300 lg:hidden",
+          "mx-auto mt-4 max-w-7xl overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[rgba(246,243,238,0.96)] backdrop-blur-xl transition-all duration-300 lg:hidden",
           open ? "pointer-events-auto max-h-[432px] p-6 opacity-100" : "pointer-events-none max-h-0 p-0 opacity-0"
         )}
       >
@@ -101,14 +101,14 @@ export function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-[24px] px-4 py-4 text-base text-[color:var(--text-secondary)] transition hover:bg-white/60 hover:text-[color:var(--text)]"
+              className="rounded-2xl px-4 py-4 text-base text-[color:var(--text-secondary)] transition hover:bg-white/60 hover:text-[color:var(--text)]"
             >
               {link.label}
             </Link>
           ))}
           <Link
-            href="/cv/cory-fox-cv.pdf"
-            className="mt-2 inline-flex justify-center rounded-full bg-[color:var(--button-dark)] px-6 py-3 text-sm text-[color:var(--button-light-text)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--button-dark)]"
+            href="/cv/cory-fox-product-designer-cv.pdf"
+            className="btn-dark mt-2 inline-flex justify-center rounded-full px-6 py-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--button-dark)]"
           >
             View CV
           </Link>

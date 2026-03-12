@@ -22,7 +22,7 @@ export function HowIWorkSection({
   whatIEnjoy: WhatIEnjoyContent;
 }) {
   return (
-    <section className="px-6 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-24">
+    <section className="px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <SectionHeading
@@ -33,12 +33,12 @@ export function HowIWorkSection({
           />
         </Reveal>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-3 lg:gap-6">
           {content.steps.map((step, index) => (
             <Reveal
               key={step.title}
               delay={0.05 * index}
-              className="rounded-[24px] border border-[color:var(--border)] bg-white/58 p-8 shadow-[var(--shadow-soft)]"
+              className="rounded-2xl border border-[color:var(--border)] bg-white/58 p-6 shadow-[var(--shadow-soft)] sm:p-8"
             >
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
                 0{index + 1}
@@ -49,13 +49,13 @@ export function HowIWorkSection({
           ))}
         </div>
 
-        <Reveal className="mt-8 rounded-[32px] border border-[color:var(--border)] bg-[color:var(--bg-alt)] p-8">
+        <Reveal className="mt-6 rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] p-6 sm:mt-8 sm:p-8">
           <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
             {whatIEnjoy.title}
           </p>
           <div className="mt-6 grid gap-4 lg:grid-cols-3">
             {whatIEnjoy.items.map((item) => (
-              <div key={item} className="rounded-[24px] border border-[color:var(--border)] bg-white/65 p-6">
+              <div key={item} className="rounded-2xl border border-[color:var(--border)] bg-white/65 p-6">
                 <p className="text-base leading-7 text-[color:var(--text-secondary)]">{item}</p>
               </div>
             ))}

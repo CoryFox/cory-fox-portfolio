@@ -144,3 +144,56 @@ Reason:
 
 - the portfolio already communicated taste and perspective, but needed stronger signals around problem solving, product impact, and clear thinking process
 - hiring managers often scan quickly, so problem, scope, approach, and outcome need to be legible near the top of both the homepage and case studies
+
+## 2026-03-12
+
+### CV Source Of Truth
+
+Decision:
+
+- treat the newly uploaded CV PDF and the pasted CV text as the source of truth for CV links and the experience section wording
+- remove the superseded CV files from the repo
+
+Reason:
+
+- the portfolio should not present stale assets or paraphrased experience copy when the user has supplied an updated CV
+
+### Experience Copy Fidelity
+
+Decision:
+
+- align the experience section content directly to the user-provided CV wording instead of keeping the more interpretive portfolio copy
+
+Reason:
+
+- for the experience section, accuracy to the CV matters more than editorial smoothing
+
+### Button Contrast Rule
+
+Decision:
+
+- use a strict button rule: dark buttons are visibly dark with light text, and light buttons are visibly light with dark text
+
+Reason:
+
+- the previous button treatments became too visually subtle against similar backgrounds and no longer read clearly as clickable controls
+
+### Radius Regression Fix
+
+Decision:
+
+- remove the custom fallback radius helper approach and restore explicit rounded utility classes directly on UI surfaces
+
+Reason:
+
+- the helper approach did not behave reliably in the live styling path, and the direct utilities are simpler and easier to verify visually
+
+### Live Preview Workflow
+
+Decision:
+
+- use `next dev` on `http://localhost:3000` as the live preview source of truth and treat stale browser caching as a first-line debugging check when visual changes appear missing
+
+Reason:
+
+- the user needs immediate visual feedback while iterating, and stale Safari caching plus unhealthy dev-server processes caused false negatives during review

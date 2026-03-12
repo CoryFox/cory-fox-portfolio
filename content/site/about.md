@@ -1,6 +1,6 @@
 ---
 label: "About"
-title: "I'm a product designer who enjoys making complicated things easier to use."
+title: "I'm a product designer with a frontend background, focused on making complex software easier to use."
 principles:
   - "Clarity before cleverness"
   - "Design for real behaviour, not ideal users"
@@ -8,10 +8,10 @@ principles:
   - "Accessibility from the start"
 ---
 
-I'm a product designer who enjoys making complicated things easier to use.
+I'm a product designer and frontend developer with more than six years of experience across SaaS, UX, and implementation.
 
-Over the last six years I've worked across SaaS products, frontend development, and UX leadership. I like working closely with product managers and engineers to turn messy workflows and vague requirements into something users can actually understand.
+Most recently I was UX/UI Lead at FourJaw, a manufacturing analytics startup, where I worked across discovery, interface design, design systems, and frontend modernisation. That mix matters to me. I like being close enough to research to understand the problem properly, and close enough to implementation to help the solution ship well.
 
-Before returning to product design, I spent time teaching in the classroom. Teaching reinforced something product design often forgets: people don't all read instructions the same way, process information the same way, or navigate systems at the same pace.
+Earlier in my career I worked across SoloProtect and Databowl in roles that blended UX, UI, and frontend delivery. Those roles taught me how to design for real product constraints, not idealised case-study conditions.
 
-That perspective still shapes how I design today. I focus on making products clearer, calmer, and easier for real users to trust.
+I now also teach Design and Technology, which has sharpened my thinking around clarity, sequencing, accessibility, and cognitive load. That perspective carries straight back into product work. I focus on making software clearer, calmer, and easier for real users to trust.

@@ -1,122 +1,102 @@
 {
-  "profileSummary": "Where I've worked and what I've focused on across product design, frontend development, and teaching.",
+  "profileSummary": "Product designer and frontend developer with 6+ years' experience designing and shipping SaaS platforms. Former UX/UI Lead at manufacturing analytics startup FourJaw, where I led design system development, frontend modernisation and analytics-driven UX improvements across a global customer base. Experienced working across product discovery, interface design and implementation in fast-moving startup environments.",
   "timeline": [
-    {
-      "role": "Teacher of Design and Technology",
-      "company": "Thrybergh Academy",
-      "period": "June 2025 – Present",
-      "bullets": [
-        "Apply UX thinking in live educational environments shaped by clarity, accessibility, and structure.",
-        "Design learning experiences for a wide range of students, including SEND learners.",
-        "Reduce cognitive load through sequencing, scaffolding, and clearer information architecture.",
-        "Use performance data and behavioural feedback to refine how information is understood.",
-        "Communicate complex ideas clearly to students, parents, and senior leaders."
-      ]
-    },
-    {
-      "role": "Initial Teacher Training",
-      "company": "Winterhill School, Placement A / Ecclesfield School, Placement B",
-      "period": "September 2024 – May 2025",
-      "bullets": [
-        "Designed and delivered curriculum-aligned lessons across placement schools.",
-        "Iterated quickly based on observation, coaching, and classroom feedback.",
-        "Developed a more disciplined clarity-first approach to instructional and experience design."
-      ]
-    },
     {
       "role": "UX/UI Lead",
       "company": "FourJaw Manufacturing Analytics",
-      "period": "May 2023 – May 2024",
+      "period": "May 2023 - May 2024",
       "bullets": [
-        "Defined and implemented a platform-wide UX vision aligned to product strategy.",
-        "Led continuous discovery through client interviews, usability testing, and behavioural analytics.",
-        "Used Pendo, FullStory, and Google Analytics to find friction and tighten key journeys.",
-        "Reduced support tickets and bug reports through targeted UX improvements.",
-        "Improved feature adoption and engagement through iterative, evidence-led changes.",
-        "Led the move from a legacy UI toward a scalable component-based design system.",
-        "Mentored two graduate developers and pushed user-centred thinking deeper into the team.",
-        "Contributed directly to roadmap conversations alongside the Head of Product."
+        "Led UX and frontend evolution of a global manufacturing analytics SaaS platform used across the UK, Europe, the US and New Zealand.",
+        "Defined UX strategy and led continuous discovery through user interviews, usability testing and behavioural analytics.",
+        "Used Pendo, FullStory and Google Analytics to identify friction in workflows and improve feature adoption.",
+        "Led migration from legacy frontend architecture to a modern React, TypeScript and Sass stack.",
+        "Designed and implemented a scalable component-based design system using Material 3 and Figma.",
+        "Oversaw development of a tablet-first React Native operator interface used on factory floors.",
+        "Mentored two graduate developers and collaborated with product leadership on roadmap priorities."
       ]
     },
     {
       "role": "Software Developer",
       "company": "FourJaw Manufacturing Analytics",
-      "period": "July 2021 – May 2023",
+      "period": "July 2021 - May 2023",
       "bullets": [
-        "Designed and built SaaS features across web and tablet products.",
-        "Worked closely with product and engineering in agile delivery, moving between UX decisions and implementation.",
-        "Shipped UX improvements as working product, not just Figma files."
+        "Developed SaaS platform features across web and tablet applications.",
+        "Worked across the stack using Flask and MongoDB with HTMX and Nunjucks frontend.",
+        "Contributed to transition towards a modern React-based frontend architecture.",
+        "Delivered UX improvements alongside technical implementation."
       ]
     },
     {
       "role": "Frontend Developer",
       "company": "Databowl",
-      "period": "January 2021 – July 2021",
+      "period": "",
       "bullets": [
-        "Moved deeper into hands-on frontend delivery, translating interface decisions into shipped web experiences.",
-        "Strengthened the development side of my practice in HTML, CSS, JavaScript, and React.",
-        "Built technical realism, tighter collaboration, and fewer handoff gaps into my design approach."
+        "Developed Angular interfaces for a lead management SaaS platform handling complex workflows.",
+        "Built dashboards and analytics tools for campaign monitoring.",
+        "Contributed to development of a WYSIWYG landing page builder using GrapesJS.",
+        "Collaborated with backend engineers working with Laravel APIs."
       ]
     },
     {
       "role": "UX/UI Designer & Developer",
       "company": "SoloProtect UK",
-      "period": "November 2019 – January 2021",
+      "period": "",
       "bullets": [
-        "Worked across UX, UI, and development, helping close the gap between concept work and implementation.",
-        "Focused on making digital experiences clearer, more trustworthy, and easier to navigate.",
-        "Moved beyond visual design into broader product thinking and delivery."
+        "Designed the SoloProtect mobile application enabling lone workers to raise alerts and share live location.",
+        "Led UX development of the Insights platform for monitoring worker alerts and safety status.",
+        "Designed real-time geolocation monitoring tools using Google Maps and geofencing.",
+        "Technologies: Google Maps API, Geolocation, Mobile UX, Alert Systems"
       ]
     },
     {
-      "role": "UX/UI Designer",
-      "company": "Databowl Ltd",
-      "period": "Before November 2019",
+      "role": "Teacher of Design & Technology",
+      "company": "Thrybergh Academy",
+      "period": "June 2025 - Present",
       "bullets": [
-        "Started shaping interfaces, flows, and visual systems for digital products early in my career.",
-        "Turned a graphic design background into a more strategic UX practice.",
-        "Built the visual discipline I still bring into product work."
+        "Deliver engineering and design education to secondary students.",
+        "Develop structured learning experiences for students including SEND learners.",
+        "Apply clear information design to reduce cognitive overload in complex topics."
       ]
     }
   ],
   "skills": [
     {
-      "category": "Discovery & Research",
+      "category": "Product Design",
       "items": [
-        "User interviews",
-        "Usability testing",
-        "Journey mapping",
-        "Stakeholder workshops",
-        "Survey design",
-        "Continuous discovery"
+        "User research",
+        "UX strategy",
+        "Design systems"
       ]
     },
     {
-      "category": "Analytics & Insights",
+      "category": "Analytics",
       "items": [
         "Pendo",
         "FullStory",
-        "Google Analytics",
-        "Intercom",
-        "Adoption analysis",
-        "Support trend analysis"
+        "Google Analytics"
       ]
     },
     {
-      "category": "Design Systems & Frontend",
+      "category": "Frontend",
       "items": [
-        "Figma",
-        "Component-based systems",
-        "HTML",
-        "CSS",
-        "JavaScript ES6 / TypeScript",
         "React",
-        "Python"
+        "TypeScript",
+        "HTML",
+        "CSS/Sass"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        "Flask",
+        "MongoDB",
+        "REST APIs",
+        "Webpack"
       ]
     }
   ],
   "education": [
-    "BA Graphic Design, User Experience, First Class Honours, Sheffield Hallam University",
-    "PGCE Secondary Design and Technology"
+    "BA Graphic Design (User Experience), First Class Honours - Sheffield Hallam University",
+    "PGCE Secondary Design & Technology"
   ]
 }

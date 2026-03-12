@@ -6,7 +6,7 @@ import { WorkCaseStudy } from "@/lib/content";
 export function WorkCard({ project, priority = false }: { project: WorkCaseStudy; priority?: boolean }) {
   return (
     <Reveal className="group">
-      <article className="overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-white/62 shadow-[var(--shadow-soft)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(17,17,17,0.12)]">
+      <article className="overflow-hidden rounded-3xl border border-[color:var(--border)] bg-white/62 shadow-[var(--shadow-soft)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(17,17,17,0.12)]">
         <div className="overflow-hidden border-b border-[color:var(--border)] bg-[color:var(--bg-alt)]">
           <Image
             src={project.cardImage}

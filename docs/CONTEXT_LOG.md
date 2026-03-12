@@ -18,6 +18,23 @@
 
 ## What Changed During This Session
 
+### CV refresh
+
+- replaced the old CV asset with the new `public/cv/cory-fox-product-designer-cv.pdf` file
+- updated all site CV links to the new path and removed the retired root-level and `public/cv/` CV files
+
+### Copy alignment
+
+- tightened homepage copy using the updated CV as source material so the site positions Cory more clearly around SaaS product design, frontend delivery, and FourJaw leadership experience
+- updated the hero lead-in from "I work across" to "I'm a" so the animated role line reads naturally
+- rewrote the experience content to match the provided CV wording much more directly, including role bullets, skills, and education
+
+### UI polish and mobile pass
+
+- corrected CTA contrast so dark buttons use light text and light buttons use dark text with clearer button affordance
+- tightened section spacing and typography for mobile layouts, especially across the homepage case study flow
+- restored explicit rounded corners across cards, panels, nav, and CTA pills after prior radius regressions
+
 ### Hero layout
 
 - shortened the hero headline to a compact positioning line and moved the fuller explanation into the right-hand card
@@ -47,10 +64,10 @@
 
 ## Known Weak Spots
 
-- older-role copy for Databowl/SoloProtect still needs confirmation from Cory for final accuracy
 - real case study imagery and real project writing are still the next major improvement area
 - impact statements are structurally in place, but placeholder projects still limit how credible those outcomes can feel until replaced with real project evidence
 - contact form is UI-only and mailto-based for now
+- Safari/browser caching can obscure live CSS changes, so verify against the active `next dev` server on `http://localhost:3000` with a hard refresh when styles appear stale
 
 ## Known Good Checks
 

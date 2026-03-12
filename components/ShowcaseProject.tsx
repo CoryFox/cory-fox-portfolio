@@ -35,22 +35,23 @@ export function ShowcaseProject({
     >
       <div
         className={cn(
-          "grid items-center gap-8 lg:grid-cols-12 lg:gap-12",
-          isReverse ? "lg:[&>*:first-child]:order-2" : ""
+          "grid gap-5 sm:gap-6 lg:grid-cols-12 lg:items-center lg:gap-12",
+          isReverse ? "lg:[&>*:first-child]:order-2" : "",
+          "lg:[&>*:first-child]:order-1 lg:[&>*:last-child]:order-2"
         )}
       >
-        <div className="relative lg:col-span-5">
-          <div className="absolute -top-4 left-0 text-[5rem] leading-none text-black/[0.08] sm:text-[7rem] lg:-left-4 lg:text-[9rem]">
+        <div className="order-2 relative lg:col-span-5 lg:order-none">
+          <div className="absolute -top-3 left-0 text-[3.75rem] leading-none text-black/[0.08] sm:text-[7rem] lg:-left-4 lg:-top-4 lg:text-[9rem]">
             {(index + 1).toString().padStart(2, "0")}
           </div>
-          <div className="relative z-10 max-w-xl space-y-6 rounded-[32px] border border-[color:var(--border)] bg-[rgba(255,255,255,0.62)] p-8 shadow-[var(--shadow-soft)] backdrop-blur-sm">
+          <div className="relative z-10 max-w-xl space-y-5 rounded-3xl border border-[color:var(--border)] bg-[rgba(255,255,255,0.7)] p-6 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:space-y-6 sm:p-8">
             <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
               {project.role}
             </p>
-            <h3 className="font-[family-name:var(--font-display)] text-5xl leading-[0.92] text-balance sm:text-6xl">
+            <h3 className="font-[family-name:var(--font-display)] text-4xl leading-[0.94] text-balance sm:text-5xl lg:text-6xl">
               {project.title}
             </h3>
-            <p className="text-lg leading-8 text-[color:var(--text-secondary)]">{project.summary}</p>
+            <p className="text-base leading-7 text-[color:var(--text-secondary)] sm:text-lg sm:leading-8">{project.summary}</p>
             <div className="grid gap-3 border-y border-[color:var(--border)] py-4 text-sm leading-6 text-[color:var(--text-secondary)]">
               <p>
                 <span className="mr-2 text-xs uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Role</span>
@@ -81,7 +82,7 @@ export function ShowcaseProject({
               </p>
               <Link
                 href={`/work/${project.slug}`}
-                className="inline-flex items-center justify-center rounded-full bg-[color:var(--accent)] px-6 py-3 text-sm text-white transition hover:bg-[color:var(--accent-hover)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
+                className="btn-dark inline-flex items-center justify-center rounded-full px-6 py-3 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
               >
                 View case study
               </Link>
@@ -89,7 +90,7 @@ export function ShowcaseProject({
           </div>
         </div>
 
-        <div className="relative lg:col-span-7">
+        <div className="order-1 relative lg:col-span-7 lg:order-none">
           <motion.div
             style={{ y: accentY }}
             className={cn(
@@ -99,7 +100,7 @@ export function ShowcaseProject({
           />
           <motion.div
             style={{ y: imageY }}
-            className="relative overflow-hidden rounded-[40px] border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[0_32px_80px_rgba(17,17,17,0.12)]"
+            className="relative overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[0_24px_60px_rgba(17,17,17,0.12)] sm:shadow-[0_32px_80px_rgba(17,17,17,0.12)]"
           >
             <Image
               src={project.heroImage}
@@ -110,7 +111,7 @@ export function ShowcaseProject({
               priority={index === 0}
             />
           </motion.div>
-          <div className="mt-4 max-w-xl rounded-[24px] border border-[color:var(--border)] bg-white/72 px-5 py-4 text-sm leading-6 text-[color:var(--text-secondary)]">
+          <div className="mt-3 rounded-2xl border border-[color:var(--border)] bg-white/80 px-4 py-3 text-sm leading-6 text-[color:var(--text-secondary)] sm:mt-4 sm:max-w-xl sm:px-5 sm:py-4">
             {project.outcome}
           </div>
           <motion.div

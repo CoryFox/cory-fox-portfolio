@@ -18,8 +18,8 @@ export function Hero({ content }: { content: HeroContent }) {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <section className="px-6 pb-20 pt-32 sm:px-8 sm:pb-24 sm:pt-40 lg:px-10 lg:pb-24 lg:pt-40">
-      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+    <section className="px-6 pb-16 pt-28 sm:px-8 sm:pb-24 sm:pt-40 lg:px-10 lg:pb-24 lg:pt-40">
+      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-10">
         <motion.div
           initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
           animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
@@ -32,8 +32,8 @@ export function Hero({ content }: { content: HeroContent }) {
           <h1 className="mt-6 max-w-[11ch] font-[family-name:var(--font-display)] text-[clamp(3.15rem,7.2vw,6.9rem)] leading-[0.94] text-balance">
             {content.headline}
           </h1>
-          <div className="mt-7 flex items-center gap-3 whitespace-nowrap text-[clamp(1.15rem,2.7vw,2rem)] leading-tight text-[color:var(--text-secondary)]">
-            <span>I work across</span>
+          <div className="mt-6 flex flex-wrap items-center gap-2 text-[clamp(1.05rem,2.7vw,2rem)] leading-tight text-[color:var(--text-secondary)] sm:gap-3 sm:whitespace-nowrap">
+            <span>I&apos;m a</span>
             <AnimatedTitle titles={content.titles} />
           </div>
         </motion.div>
@@ -42,7 +42,7 @@ export function Hero({ content }: { content: HeroContent }) {
           initial={prefersReducedMotion ? false : { opacity: 0, y: 32, filter: "blur(6px)" }}
           animate={prefersReducedMotion ? {} : { opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.85, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-          className="rounded-[32px] border border-[color:var(--border)] bg-[rgba(255,255,255,0.52)] p-8 shadow-[var(--shadow-soft)]"
+          className="rounded-3xl border border-[color:var(--border)] bg-[rgba(255,255,255,0.52)] p-6 shadow-[var(--shadow-soft)] sm:p-8"
         >
           <p className="text-lg leading-8 text-[color:var(--text-secondary)]">{content.description}</p>
           <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--text-secondary)]">
@@ -51,18 +51,18 @@ export function Hero({ content }: { content: HeroContent }) {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
               href={content.primaryCta.href}
-              className="inline-flex items-center justify-center rounded-full bg-[color:var(--button-dark)] px-6 py-3 text-sm text-[color:var(--button-light-text)] transition hover:bg-[color:var(--accent)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--button-dark)]"
+              className="btn-dark inline-flex items-center justify-center rounded-full px-6 py-3 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--button-dark)]"
             >
               {content.primaryCta.label}
             </Link>
             <Link
               href={content.secondaryCta.href}
-              className="inline-flex items-center justify-center rounded-full border border-[color:var(--text)] bg-white/72 px-6 py-3 text-sm text-[color:var(--text)] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
+              className="btn-light inline-flex items-center justify-center rounded-full px-6 py-3 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
             >
               {content.secondaryCta.label}
             </Link>
           </div>
-          <div className="mt-10 grid gap-4 border-t border-[color:var(--border)] pt-6 sm:grid-cols-3">
+          <div className="mt-8 grid gap-4 border-t border-[color:var(--border)] pt-6 sm:grid-cols-3">
             <div>
               <p className="font-[family-name:var(--font-display)] text-3xl">6+ years</p>
               <p className="mt-1 text-sm text-[color:var(--text-secondary)]">Designing SaaS products and digital tools</p>

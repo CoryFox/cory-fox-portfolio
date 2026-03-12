@@ -19,7 +19,7 @@ type ExperienceContent = {
 
 export function ExperienceSection({ content }: { content: ExperienceContent }) {
   return (
-    <section className="section-anchor px-6 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="experience">
+    <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="experience">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <SectionHeading
@@ -30,20 +30,22 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
           />
         </Reveal>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mt-8 grid gap-6 lg:mt-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
           <div className="space-y-5">
             {content.timeline.map((entry, index) => (
               <Reveal
                 key={`${entry.role}-${entry.company}`}
                 delay={0.04 * index}
-                className="rounded-[24px] border border-[color:var(--border)] bg-white/58 p-8 shadow-[var(--shadow-soft)]"
+                className="rounded-2xl border border-[color:var(--border)] bg-white/58 p-6 shadow-[var(--shadow-soft)] sm:p-8"
               >
                 <div className="flex flex-col gap-4 border-b border-[color:var(--border)] pb-4 sm:flex-row sm:items-end sm:justify-between">
                   <div>
                     <h3 className="font-[family-name:var(--font-display)] text-3xl">{entry.role}</h3>
                     <p className="text-base text-[color:var(--text-secondary)]">{entry.company}</p>
                   </div>
-                  <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">{entry.period}</p>
+                  {entry.period ? (
+                    <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">{entry.period}</p>
+                  ) : null}
                 </div>
                 <ul className="mt-6 space-y-4 text-[color:var(--text-secondary)]">
                   {entry.bullets.map((bullet) => (
@@ -62,7 +64,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
               <Reveal
                 key={group.category}
                 delay={0.08 * index}
-                className="rounded-[24px] border border-[color:var(--border)] bg-[color:var(--bg-alt)] p-8"
+                className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] p-6 sm:p-8"
               >
                 <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
                   {group.category}
@@ -77,7 +79,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
               </Reveal>
             ))}
 
-            <Reveal className="rounded-[24px] border border-[color:var(--border)] bg-white/58 p-8">
+            <Reveal className="rounded-2xl border border-[color:var(--border)] bg-white/58 p-6 sm:p-8">
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
                 Education
               </p>
@@ -90,14 +92,14 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
               </div>
             </Reveal>
 
-            <Reveal className="rounded-[24px] border border-[color:var(--border)] bg-[color:var(--accent)] p-8 text-[color:var(--button-light-text)]">
+            <Reveal className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--accent)] p-6 text-[color:var(--button-light-text)] sm:p-8">
               <p className="text-xs uppercase tracking-[0.28em] text-white">Curriculum vitae</p>
               <p className="mt-4 text-lg leading-8 text-white">
                 Download the full CV if you want the formal version, but the short version is simple: I design clearly, work commercially, and understand users beyond the idealised version in a deck.
               </p>
               <Link
-                href="/cv/cory-fox-cv.pdf"
-                className="mt-6 inline-flex rounded-full border border-white/40 px-6 py-3 text-sm text-white transition hover:border-white hover:bg-white hover:text-[color:var(--accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                href="/cv/cory-fox-product-designer-cv.pdf"
+                className="btn-light mt-6 inline-flex rounded-full border-white/40 px-6 py-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Download CV
               </Link>

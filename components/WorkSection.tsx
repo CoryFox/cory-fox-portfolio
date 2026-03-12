@@ -5,7 +5,7 @@ import { WorkCaseStudy } from "@/lib/content";
 
 export function WorkSection({ intro, work }: { intro: string; work: WorkCaseStudy[] }) {
   return (
-    <section className="section-anchor overflow-hidden px-6 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="work">
+    <section className="section-anchor overflow-hidden px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="work">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <SectionHeading
@@ -16,7 +16,7 @@ export function WorkSection({ intro, work }: { intro: string; work: WorkCaseStud
           />
         </Reveal>
 
-        <Reveal className="mt-8 flex flex-wrap gap-4 border-y border-[color:var(--border)] py-4 text-xs uppercase tracking-[0.26em] text-[color:var(--text-secondary)]">
+        <Reveal className="mt-6 flex flex-wrap gap-x-3 gap-y-2 border-y border-[color:var(--border)] py-4 text-[0.68rem] uppercase tracking-[0.22em] text-[color:var(--text-secondary)] sm:mt-8 sm:gap-4 sm:text-xs sm:tracking-[0.26em]">
           <span>Product design</span>
           <span>/</span>
           <span>UX systems</span>
@@ -26,7 +26,7 @@ export function WorkSection({ intro, work }: { intro: string; work: WorkCaseStud
           <span>Interaction detail</span>
         </Reveal>
 
-        <div className="mt-16 space-y-28 lg:space-y-36">
+        <div className="mt-10 space-y-16 sm:mt-14 sm:space-y-20 lg:mt-16 lg:space-y-36">
           {work.map((project, index) => (
             <ShowcaseProject key={project.slug} project={project} index={index} />
           ))}

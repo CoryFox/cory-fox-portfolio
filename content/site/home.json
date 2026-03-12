@@ -1,54 +1,54 @@
 {
   "hero": {
     "eyebrow": "Hello, I'm Cory",
-    "headline": "Making complex products easier to understand.",
-    "description": "I'm a product designer with experience across SaaS, frontend development, and teaching. I focus on clearer journeys, lower friction, and interfaces people can trust quickly.",
-    "framing": "I enjoy working on products where complexity has started to get in the way of users. My role is usually to untangle the workflow and make the interface feel obvious again.",
+    "headline": "Designing clearer SaaS products for complex work.",
+    "description": "I'm a product designer and frontend developer with 6+ years of experience designing and shipping SaaS platforms. Most recently I was UX/UI Lead at FourJaw, shaping product direction through research, analytics, design systems, and implementation.",
+    "framing": "I do my best work where the workflow is messy, the product has grown quickly, and users need clarity more than novelty. My role is usually to find the friction, simplify the system, and help ship the improvement properly.",
     "primaryCta": {
       "label": "View work",
       "href": "#work"
     },
     "secondaryCta": {
       "label": "Download CV",
-      "href": "/cv/cory-fox-cv.pdf"
+      "href": "/cv/cory-fox-product-designer-cv.pdf"
     },
-    "titles": ["Product Designer", "UX Designer", "Graphic Designer"]
+    "titles": ["Product Designer", "UX/UI Lead", "Frontend Developer"]
   },
   "howIWork": {
     "title": "How I Work",
     "steps": [
       {
-        "title": "Understand the problem",
-        "description": "User interviews, analytics, and stakeholder conversations to identify where users are getting stuck."
+        "title": "Find the real friction",
+        "description": "I use interviews, usability testing, and behavioural analytics to understand where users are getting stuck and why."
       },
       {
-        "title": "Simplify the system",
-        "description": "Mapping journeys, clarifying hierarchy, and reducing unnecessary complexity."
+        "title": "Simplify the product",
+        "description": "I map workflows, tighten journeys, and improve hierarchy so complex tasks feel easier to understand and complete."
       },
       {
-        "title": "Design with implementation in mind",
-        "description": "Working closely with engineers so improvements ship as real product changes, not just mockups."
+        "title": "Design to ship",
+        "description": "Because I work comfortably in frontend code, I design with implementation in mind and stay close to delivery."
       }
     ]
   },
   "whatIEnjoy": {
     "title": "What I Enjoy Working On",
     "items": [
-      "Products where complexity has started to get in the way of users.",
-      "Interfaces that need stronger hierarchy and clearer information flow.",
-      "Platforms where analytics and user research can guide meaningful improvements."
+      "SaaS products with complex workflows, data-heavy interfaces, or multiple user contexts.",
+      "Teams that want tighter collaboration between discovery, design systems, and frontend delivery.",
+      "Platforms where analytics, research, and product judgement can guide meaningful UX improvements."
     ]
   },
-  "workIntro": "Simplifying journeys, tightening workflows, and improving how products feel to use.",
-  "writingIntro": "I occasionally write about product design, UX, accessibility, and the thinking behind clearer digital products.",
+  "workIntro": "Examples of product, UX, and frontend thinking applied to clearer workflows, stronger systems, and better day-to-day usability.",
+  "writingIntro": "I occasionally write about product design, UX, accessibility, and what it takes to make digital products clearer in practice.",
   "linkedin": {
-    "title": "For the professional side of the conversation, find me on LinkedIn.",
-    "description": "I share product thinking, writing, and the occasional reflection on design, accessibility, and teaching.",
+    "title": "For roles, recommendations, and a straighter career summary, find me on LinkedIn.",
+    "description": "It’s the best place to see the formal version of my background across product design, SaaS, frontend delivery, and teaching.",
     "href": "https://www.linkedin.com/in/corymetcalfe1"
   },
   "contact": {
-    "title": "If you're hiring, building something interesting, or just want to talk product design, feel free to get in touch.",
-    "description": "I'm open to product design roles, freelance work, and thoughtful collaborations. Send a few details and I'll come back to you.",
+    "title": "If you need a product designer who can think in systems and work close to implementation, get in touch.",
+    "description": "I'm open to product design roles, UX-focused frontend work, and thoughtful collaborations on SaaS products that need clearer journeys and stronger UX.",
     "email": "coryowenfox@gmail.com"
   }
 }

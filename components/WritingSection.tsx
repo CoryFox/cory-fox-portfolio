@@ -6,7 +6,7 @@ import { formatDate } from "@/lib/utils";
 
 export function WritingSection({ intro, posts }: { intro: string; posts: MediumPost[] }) {
   return (
-    <section className="section-anchor px-6 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="writing">
+    <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="writing">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <SectionHeading
@@ -16,12 +16,12 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
             description={intro}
           />
         </Reveal>
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-3 lg:gap-6">
           {posts.map((post, index) => (
             <Reveal
               key={post.link}
               delay={0.06 * index}
-              className="h-full rounded-[24px] border border-[color:var(--border)] bg-white/58 p-8 shadow-[var(--shadow-soft)]"
+              className="h-full rounded-[24px] border border-[color:var(--border)] bg-white/58 p-6 shadow-[var(--shadow-soft)] sm:p-8"
             >
               <article className="flex h-full flex-col">
                 <p className="text-xs uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">
