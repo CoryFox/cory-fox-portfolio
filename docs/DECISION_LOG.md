@@ -256,3 +256,25 @@ Decision:
 Reason:
 
 - feed access is not guaranteed in every environment, and image-less fallback cards looked unfinished
+
+### Contact Form Presentation
+
+Decision:
+
+- remove the launch-version helper copy under the contact form and keep the form visually clean
+- continue using a `mailto:` submission directly to `coryowenfox@gmail.com` for now
+
+Reason:
+
+- the helper text added noise without improving the user-facing experience
+- the current requirement is simply that enquiries route to the user's email address
+
+### Section Heading Wrap Behaviour
+
+Decision:
+
+- remove heading line clamping from section titles
+
+Reason:
+
+- on mobile, the clamp introduced visible ellipsis/overflow and made headings feel broken

@@ -85,6 +85,7 @@ Important:
 - dark/accent panels must use fully legible light text, not translucent white copy
 - body copy on light backgrounds should remain dark
 - muted grey is reserved for labels, metadata, and section subtitles
+- section headings should wrap naturally; avoid reintroducing line clamping that causes mobile ellipsis
 
 ## Content Notes
 
@@ -96,6 +97,7 @@ Current copy has already been pushed toward:
 - UX-focused designer/developer framing over generic portfolio wording
 
 The current work content is real project content from Fox Frame. Experience copy has also been aligned more closely to the CV timeline.
+The contact form currently uses a `mailto:` submission to `coryowenfox@gmail.com` with a fixed enquiry subject and no explanatory footer copy.
 
 ## Verification Status
 

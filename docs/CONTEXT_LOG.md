@@ -51,10 +51,13 @@
 - restyled demos to feel related to case study cards while remaining lighter-weight
 - tightened demo card spacing and added visual separation between badges and overview blocks
 - rebuilt the About principles panel into a 2x2 icon-led grid
+- replaced the accessibility principle icon with an eye icon after visual review
 - shortened LinkedIn and Contact headings and copy
 - added Medium fallback images and switched the writing CTAs to the site-wide dark button style
 - corrected experience ordering, filled missing dates, and fixed bullet formatting
-- replaced the accessibility principle icon with an eye icon after visual review
+- removed mobile section-header clamping after it caused visible ellipsis/truncation
+- aligned LinkedIn and Contact section headings to the same uppercase navy display treatment used elsewhere
+- simplified the contact form footer so enquiries submit directly to `coryowenfox@gmail.com` without the launch-version placeholder copy
 
 ### Repo structure and deployment
 
