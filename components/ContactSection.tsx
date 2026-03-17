@@ -76,10 +76,8 @@ export function ContactSection({ content }: { content: ContactContent }) {
                   className="rounded-[24px] border border-[color:var(--border)] bg-white/72 px-4 py-4 outline-none transition focus:border-[color:var(--accent)] focus:ring-2 focus:ring-[rgba(16,42,67,0.14)]"
                 />
               </label>
-              <div className="flex flex-col gap-4 lg:col-span-2 sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-sm leading-6 text-[color:var(--text)]">
-                  This launch version uses a mail-ready form structure and can be swapped to Formspree later without redesign.
-                </p>
+              <input type="hidden" name="subject" value="Portfolio enquiry" />
+              <div className="flex lg:col-span-2 sm:justify-end">
                 <button
                   type="submit"
                   className="btn-dark inline-flex items-center justify-center rounded-full px-6 py-3 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--button-dark)]"
