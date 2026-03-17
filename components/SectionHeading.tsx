@@ -22,7 +22,7 @@ export function SectionHeading({
       )}
     >
       <p className="text-xs font-medium uppercase tracking-[0.28em] text-[color:var(--text-muted)]">{label}</p>
-      <h2 className="section-title title-two-line mt-4 font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.05em] text-balance text-[color:var(--accent)]">
+      <h2 className="section-title mt-4 font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.05em] text-balance text-[color:var(--accent)]">
         {title}
       </h2>
       {description ? (

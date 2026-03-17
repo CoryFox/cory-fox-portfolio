@@ -40,7 +40,9 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
               >
                 <div className="flex flex-col gap-4 border-b border-[color:var(--border)] pb-4 sm:flex-row sm:items-end sm:justify-between">
                   <div>
-                    <h3 className="font-[family-name:var(--font-display)] text-3xl">{entry.role}</h3>
+                    <h3 className="font-[family-name:var(--font-display)] text-3xl font-bold uppercase tracking-[0.04em] text-[color:var(--accent)]">
+                      {entry.role}
+                    </h3>
                     <p className="text-base text-[color:var(--text)]">{entry.company}</p>
                   </div>
                   <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">{entry.period}</p>
