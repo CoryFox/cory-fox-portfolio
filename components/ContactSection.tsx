@@ -14,7 +14,7 @@ export function ContactSection({ content }: { content: ContactContent }) {
           <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="border-b border-[color:var(--border)] p-6 lg:border-b-0 lg:border-r lg:p-10">
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">Contact</p>
-              <h2 className="mt-4 font-[family-name:var(--font-display)] text-[2rem] leading-[0.98] sm:text-[2.6rem] lg:text-[3rem]">
+              <h2 className="mt-4 font-[family-name:var(--font-display)] text-[2rem] font-bold uppercase tracking-[0.05em] leading-[0.98] text-[color:var(--accent)] sm:text-[2.6rem] lg:text-[3rem]">
                 {content.title}
               </h2>
               <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--text)] sm:mt-6 sm:text-lg sm:leading-8">

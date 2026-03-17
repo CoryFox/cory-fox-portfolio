@@ -15,7 +15,7 @@ export function LinkedInSection({ content }: { content: LinkedInContent }) {
           <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-end lg:gap-8">
             <div>
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">LinkedIn</p>
-              <h2 className="mt-4 max-w-3xl font-[family-name:var(--font-display)] text-[2rem] leading-[0.98] sm:text-[2.6rem] lg:text-[3rem]">
+              <h2 className="mt-4 max-w-3xl font-[family-name:var(--font-display)] text-[2rem] font-bold uppercase tracking-[0.05em] leading-[0.98] text-[color:var(--accent)] sm:text-[2.6rem] lg:text-[3rem]">
                 {content.title}
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-7 text-[color:var(--text)] sm:mt-6 sm:text-lg sm:leading-8">
