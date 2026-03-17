@@ -8,66 +8,64 @@
 
 ## What Was Built
 
-- greenfield Next.js portfolio scaffold
-- homepage sections and case study route
-- content loaders
-- Medium RSS integration
+- Next.js portfolio scaffold
+- homepage sections and static case study route
+- local content loaders for site, work, and demos
+- Medium RSS integration with image-capable fallbacks
 - metadata routes
-- placeholder SVG work imagery
+- migrated case study and demo assets
 - CV download path
 
 ## What Changed During This Session
 
+### Fox Frame migration
+
+- replaced placeholder case studies with real FourJaw, Databowl, and SoloProtect content
+- migrated Fox Frame case study imagery into `public/images/work/*`
+- added a homepage demos section and copied legacy static demos into `public/demos`
+- added demo metadata in `content/site/demos.json`
+
 ### CV refresh
 
 - replaced the old CV asset with the new `public/cv/cory-fox-product-designer-cv.pdf` file
-- updated all site CV links to the new path and removed the retired root-level and `public/cv/` CV files
+- removed the temporary root-level replacement PDF after copying it into `public/cv/`
 
-### Copy alignment
+### Typography and visual system pass
 
-- tightened homepage copy using the updated CV as source material so the site positions Cory more clearly around SaaS product design, frontend delivery, and FourJaw leadership experience
-- updated the hero lead-in from "I work across" to "I'm a" so the animated role line reads naturally
-- rewrote the experience content to match the provided CV wording much more directly, including role bullets, skills, and education
+- switched typography to `Montserrat` for headings and `Inter` for body copy
+- aligned header and footer wordmarks to the CV style: uppercase, navy, bold Montserrat
+- enforced a clearer text-token split: dark body copy on light backgrounds, light copy on dark backgrounds, muted grey only for labels/subheadings
+- reduced oversized section headings and tightened long section subtitle copy
+- normalised homepage work cards and demo cards into a more consistent editorial card system
 
-### UI polish and mobile pass
+### Hero and homepage framing
 
-- corrected CTA contrast so dark buttons use light text and light buttons use dark text with clearer button affordance
-- tightened section spacing and typography for mobile layouts, especially across the homepage case study flow
-- restored explicit rounded corners across cards, panels, nav, and CTA pills after prior radius regressions
+- reworked the hero to position Cory as a UX-focused designer and developer with a block-shaped profile
+- restored the stronger animated "I'm a ..." line with short rotating titles
+- top-aligned the hero copy on desktop to prevent the left column from sitting too low
+- added full-stop consistency to the hero and `How I work.` section title
 
-### Hero layout
+### Section-by-section refinements
 
-- shortened the hero headline to a compact positioning line and moved the fuller explanation into the right-hand card
-- kept the established hero heading styling and limited the change to wording rather than another typographic restyle
-- aligned the static and animated parts of the "I work across" line on the same vertical axis while keeping the animated blur/shadow from clipping
+- rebuilt the homepage work section into a three-column case study card grid on desktop and one column on mobile
+- restyled demos to feel related to case study cards while remaining lighter-weight
+- tightened demo card spacing and added visual separation between badges and overview blocks
+- rebuilt the About principles panel into a 2x2 icon-led grid
+- shortened LinkedIn and Contact headings and copy
+- added Medium fallback images and switched the writing CTAs to the site-wide dark button style
+- corrected experience ordering, filled missing dates, and fixed bullet formatting
+- replaced the accessibility principle icon with an eye icon after visual review
 
-### Repo structure
+### Repo structure and deployment
 
-- added the missing root-level README and project docs so the active app now documents itself
-- aligned the written guidance around the root repo being the working project
-- merged the GitHub history into the root repo so `main` now shares ancestry with `origin/main`
-- removed the nested `cory-fox-portfolio/` folder after the root repo was confirmed as the only active project
-
-### Deployment
-
-- configured Next.js for static export so the site can run on GitHub Pages
-- added a GitHub Actions workflow that builds on pushes to `main` and deploys the `out/` directory to Pages
-- set the canonical site URL and Pages artifact domain to `coryfox.co.uk`
-
-### Portfolio framing
-
-- added a stronger product-framing line to the hero to position the work around untangling complexity
-- inserted a new "How I Work" section and a "What I Enjoy Working On" block to surface process, collaboration maturity, and design judgement
-- added role, focus, and outcome metadata to homepage work cards plus visible impact callouts under project imagery
-- restructured case study pages around a fast-scanning snapshot and a clearer Problem / Thinking / Solution / Result pattern
-- strengthened the teaching differentiator and simplified supporting homepage copy so the site reads more like a senior product portfolio and less like generic portfolio language
+- kept the root repo as the source of truth
+- retained the static-export GitHub Pages deployment path through GitHub Actions on `main`
 
 ## Known Weak Spots
 
-- real case study imagery and real project writing are still the next major improvement area
-- impact statements are structurally in place, but placeholder projects still limit how credible those outcomes can feel until replaced with real project evidence
+- Medium feed access is environment-dependent; when the live feed is unavailable, the site falls back to local article cards with local images
 - contact form is UI-only and mailto-based for now
-- Safari/browser caching can obscure live CSS changes, so verify against the active `next dev` server on `http://localhost:3000` with a hard refresh when styles appear stale
+- Safari/browser caching can obscure live CSS changes, so verify against the active `next dev` server with a hard refresh when styles appear stale
 
 ## Known Good Checks
 

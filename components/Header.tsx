@@ -5,11 +5,12 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Experience", href: "#experience" },
-  { label: "Writing", href: "#writing" },
-  { label: "Contact", href: "#contact" }
+  { label: "About", href: "/#about" },
+  { label: "Work", href: "/#work" },
+  { label: "Demos", href: "/#demos" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Writing", href: "/#writing" },
+  { label: "Contact", href: "/#contact" }
 ];
 
 export function Header() {
@@ -40,7 +41,10 @@ export function Header() {
             : "border-transparent bg-transparent"
         )}
       >
-        <Link href="/" className="font-[family-name:var(--font-display)] text-2xl tracking-[0.08em]">
+        <Link
+          href="/"
+          className="font-[family-name:var(--font-display)] text-2xl font-bold uppercase tracking-[0.12em] text-[color:var(--accent)]"
+        >
           Cory Fox
         </Link>
         <nav className="hidden items-center gap-8 lg:flex">

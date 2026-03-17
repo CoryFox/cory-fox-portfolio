@@ -1,6 +1,6 @@
 ---
 label: "About"
-title: "I'm a product designer with a frontend background, focused on making complex software easier to use."
+title: "Designing clearer software."
 principles:
   - "Clarity before cleverness"
   - "Design for real behaviour, not ideal users"

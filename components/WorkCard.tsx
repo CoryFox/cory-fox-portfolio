@@ -6,37 +6,59 @@ import { WorkCaseStudy } from "@/lib/content";
 export function WorkCard({ project, priority = false }: { project: WorkCaseStudy; priority?: boolean }) {
   return (
     <Reveal className="group">
-      <article className="overflow-hidden rounded-3xl border border-[color:var(--border)] bg-white/62 shadow-[var(--shadow-soft)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(17,17,17,0.12)]">
+      <article className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-white/70 shadow-[var(--shadow-soft)] transition duration-500 hover:-translate-y-1.5 hover:shadow-[0_28px_70px_rgba(17,17,17,0.12)]">
         <div className="overflow-hidden border-b border-[color:var(--border)] bg-[color:var(--bg-alt)]">
           <Image
-            src={project.cardImage}
-            alt={`${project.title} card artwork`}
+            src={project.heroImage}
+            alt={`${project.title} hero artwork`}
             width={1400}
-            height={1080}
-            className="h-auto w-full transition duration-700 group-hover:scale-[1.03]"
+            height={960}
+            className="aspect-[5/4] w-full object-cover object-center transition duration-700 group-hover:scale-[1.03]"
             priority={priority}
           />
         </div>
-        <div className="space-y-5 p-6 sm:p-7">
+        <div className="flex flex-1 flex-col space-y-4 p-5 sm:p-6">
+          <div className="flex items-start justify-between gap-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
+              {project.role}
+            </p>
+            <p className="shrink-0 text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
+              {project.year}
+            </p>
+          </div>
+          <div>
+            <h3 className="card-title title-two-line min-h-[2.2em] font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.045em] text-[color:var(--accent)]">
+              {project.title}
+            </h3>
+            <p className="mt-2 min-h-[7rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
+              {project.summary}
+            </p>
+          </div>
+          <div className="rounded-[1.35rem] border border-[color:var(--border)] bg-[color:var(--bg-alt)]/72 p-3.5">
+            <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[color:var(--text-muted)]">Focus</p>
+            <p className="mt-2 min-h-[3.75rem] text-sm leading-6 text-[color:var(--text)]">{project.focus}</p>
+          </div>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span key={tag} className="rounded-full border border-[color:var(--border)] px-3 py-1 text-xs text-[color:var(--text-secondary)]">
+              <span
+                key={tag}
+                className="rounded-full border border-[color:var(--border)] bg-white px-3 py-1 text-xs text-[color:var(--text-muted)]"
+              >
                 {tag}
               </span>
             ))}
           </div>
-          <div>
-            <h3 className="font-[family-name:var(--font-display)] text-4xl leading-none">{project.title}</h3>
-            <p className="mt-3 max-w-xl text-base leading-7 text-[color:var(--text-secondary)]">
-              {project.summary}
+          <div className="mt-auto flex items-center justify-between gap-4 border-t border-[color:var(--border)] pt-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
+              {project.status}
             </p>
+            <Link
+              href={`/work/${project.slug}`}
+              className="btn-dark inline-flex shrink-0 items-center justify-center rounded-full px-5 py-3.5 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
+            >
+              View case study
+            </Link>
           </div>
-          <Link
-            href={`/work/${project.slug}`}
-            className="inline-flex items-center gap-2 text-sm text-[color:var(--accent)] transition group-hover:gap-3"
-          >
-            View project <span aria-hidden="true">/</span>
-          </Link>
         </div>
       </article>
     </Reveal>

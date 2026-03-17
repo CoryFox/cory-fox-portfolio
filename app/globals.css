@@ -6,6 +6,7 @@
   --surface: rgba(255, 255, 255, 0.56);
   --text: #111111;
   --text-secondary: #4a4a4a;
+  --text-muted: #98a1ab;
   --border: #d7d0c6;
   --accent: #102a43;
   --accent-hover: #163a5f;
@@ -31,6 +32,8 @@ body {
     linear-gradient(180deg, #f9f6f1 0%, var(--bg) 34%, #f0e9df 100%);
   color: var(--text);
   text-rendering: optimizeLegibility;
+  font-weight: 400;
+  font-family: var(--font-sans), sans-serif;
 }
 
 a {
@@ -84,13 +87,19 @@ img {
 .prose-markdown h2 {
   margin: 0 0 1rem;
   font-size: clamp(1.8rem, 2vw, 2.4rem);
-  font-weight: 500;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
 }
 
 .prose-markdown h3 {
   margin: 1.5rem 0 0.75rem;
   font-size: 1.1rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
 }
 
 .prose-markdown ul {
@@ -106,12 +115,38 @@ img {
   text-wrap: balance;
 }
 
+.section-title {
+  font-size: clamp(2.1rem, 3.5vw, 3.5rem);
+  line-height: 0.98;
+}
+
+.card-title {
+  font-size: clamp(1.55rem, 2.2vw, 2.15rem);
+  line-height: 0.96;
+}
+
+.title-two-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent);
+}
+
 .btn-dark {
   border: 1px solid rgba(17, 17, 17, 0.06);
   background: var(--text) !important;
   color: var(--button-light-text) !important;
   box-shadow: 0 14px 30px rgba(17, 17, 17, 0.16);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .btn-dark:hover {
@@ -124,7 +159,7 @@ img {
   background: #ffffff !important;
   color: var(--text) !important;
   box-shadow: 0 12px 24px rgba(17, 17, 17, 0.08);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .btn-light:hover {

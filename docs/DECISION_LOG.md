@@ -197,3 +197,62 @@ Decision:
 Reason:
 
 - the user needs immediate visual feedback while iterating, and stale Safari caching plus unhealthy dev-server processes caused false negatives during review
+
+## 2026-03-17
+
+### Fox Frame Migration
+
+Decision:
+
+- replace the placeholder work content with migrated Fox Frame case studies and assets
+- add a dedicated demos section rather than merging legacy demos into the case study content model
+
+Reason:
+
+- the site needed to retain the Cory Fox layout while using the real Fox Frame copy and imagery
+- demos are useful supporting work, but they should remain distinct from the main case study structure
+
+### Homepage Work Presentation
+
+Decision:
+
+- replace the overlapping editorial showcase on the homepage with a uniform card grid
+
+Reason:
+
+- the layered outcome/image treatment created readability issues and visual collisions on desktop and mobile
+- the migrated work read more cleanly as a controlled three-card presentation
+
+### Typography Reset
+
+Decision:
+
+- use `Montserrat` for headings and `Inter` for body text
+- style the header/footer wordmark to match the CV treatment
+- constrain muted grey to metadata and subtitles only
+
+Reason:
+
+- the site needed to align more closely with the CV branding and improve body-copy accessibility
+
+### Hero Framing
+
+Decision:
+
+- position Cory as a UX-focused designer and developer with a block-shaped profile
+- keep the animated "I'm a ..." line, but simplify the rotating terms to short one-word labels
+
+Reason:
+
+- the hero needed to reflect the user's actual path from graphic design to UX to development without sounding generic or over-engineered
+
+### Medium Fallback Imagery
+
+Decision:
+
+- keep parsing real Medium thumbnails when available
+- provide local fallback writing images for the fallback Medium cards
+
+Reason:
+
+- feed access is not guaranteed in every environment, and image-less fallback cards looked unfinished

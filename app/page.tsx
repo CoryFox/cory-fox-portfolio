@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
+import { DemosSection } from "@/components/DemosSection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -10,6 +11,7 @@ import { WorkSection } from "@/components/WorkSection";
 import { WritingSection } from "@/components/WritingSection";
 import {
   getAboutContent,
+  getAllDemos,
   getExperienceContent,
   getFeaturedWork,
   getHomeContent
@@ -17,11 +19,12 @@ import {
 import { getLatestMediumPosts } from "@/lib/medium";
 
 export default async function HomePage() {
-  const [home, about, experience, work, posts] = await Promise.all([
+  const [home, about, experience, work, demos, posts] = await Promise.all([
     getHomeContent(),
     getAboutContent(),
     getExperienceContent(),
     getFeaturedWork(),
+    getAllDemos(),
     getLatestMediumPosts()
   ]);
 
@@ -33,6 +36,7 @@ export default async function HomePage() {
         <AboutSection content={about} />
         <HowIWorkSection content={home.howIWork} whatIEnjoy={home.whatIEnjoy} />
         <WorkSection intro={home.workIntro} work={work} />
+        <DemosSection intro={home.demosIntro} demos={demos} />
         <ExperienceSection content={experience} />
         <WritingSection intro={home.writingIntro} posts={posts} />
         <LinkedInSection content={home.linkedin} />

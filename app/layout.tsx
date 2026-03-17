@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const display = Cormorant_Garamond({
+const display = Montserrat({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"]
+  weight: ["500", "600", "700", "800"]
 });
 
 const sans = Inter({
   variable: "--font-sans",
-  subsets: ["latin"]
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"]
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://coryfox.design";

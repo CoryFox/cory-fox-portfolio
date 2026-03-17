@@ -29,7 +29,7 @@ export function HowIWorkSection({
             id="how-i-work-heading"
             label="How I Work"
             title={content.title}
-            description="A simple product design approach shaped by research, systems thinking, and close collaboration."
+            description="Research-led, systems-aware, close to delivery."
           />
         </Reveal>
 
@@ -40,23 +40,23 @@ export function HowIWorkSection({
               delay={0.05 * index}
               className="rounded-2xl border border-[color:var(--border)] bg-white/58 p-6 shadow-[var(--shadow-soft)] sm:p-8"
             >
-              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
+              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">
                 0{index + 1}
               </p>
               <h3 className="mt-4 font-[family-name:var(--font-display)] text-3xl leading-tight">{step.title}</h3>
-              <p className="mt-4 text-base leading-7 text-[color:var(--text-secondary)]">{step.description}</p>
+              <p className="mt-4 text-base leading-7 text-[color:var(--text)]">{step.description}</p>
             </Reveal>
           ))}
         </div>
 
         <Reveal className="mt-6 rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] p-6 sm:mt-8 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
+          <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">
             {whatIEnjoy.title}
           </p>
           <div className="mt-6 grid gap-4 lg:grid-cols-3">
             {whatIEnjoy.items.map((item) => (
               <div key={item} className="rounded-2xl border border-[color:var(--border)] bg-white/65 p-6">
-                <p className="text-base leading-7 text-[color:var(--text-secondary)]">{item}</p>
+                <p className="text-base leading-7 text-[color:var(--text)]">{item}</p>
               </div>
             ))}
           </div>

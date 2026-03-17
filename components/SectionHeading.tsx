@@ -21,8 +21,8 @@ export function SectionHeading({
         align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"
       )}
     >
-      <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">{label}</p>
-      <h2 className="mt-4 font-[family-name:var(--font-display)] text-[2.4rem] leading-[0.96] text-balance sm:text-5xl lg:text-6xl">
+      <p className="text-xs font-medium uppercase tracking-[0.28em] text-[color:var(--text-muted)]">{label}</p>
+      <h2 className="section-title title-two-line mt-4 font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.05em] text-balance text-[color:var(--accent)]">
         {title}
       </h2>
       {description ? (

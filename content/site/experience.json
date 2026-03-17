@@ -1,5 +1,5 @@
 {
-  "profileSummary": "Product designer and frontend developer with 6+ years' experience designing and shipping SaaS platforms. Former UX/UI Lead at manufacturing analytics startup FourJaw, where I led design system development, frontend modernisation and analytics-driven UX improvements across a global customer base. Experienced working across product discovery, interface design and implementation in fast-moving startup environments.",
+  "profileSummary": "Design, development, and product work across SaaS, operations, and education.",
   "timeline": [
     {
       "role": "UX/UI Lead",
@@ -29,23 +29,33 @@
     {
       "role": "Frontend Developer",
       "company": "Databowl",
-      "period": "",
+      "period": "January 2021 - July 2021",
       "bullets": [
-        "Developed Angular interfaces for a lead management SaaS platform handling complex workflows.",
-        "Built dashboards and analytics tools for campaign monitoring.",
-        "Contributed to development of a WYSIWYG landing page builder using GrapesJS.",
-        "Collaborated with backend engineers working with Laravel APIs."
+        "Returned to support frontend delivery across the lead management platform.",
+        "Worked on interface improvements, campaign tooling, and ongoing product maintenance.",
+        "Bridged UX thinking and implementation across day-to-day product work."
       ]
     },
     {
       "role": "UX/UI Designer & Developer",
       "company": "SoloProtect UK",
-      "period": "",
+      "period": "January 2020 - January 2021",
       "bullets": [
         "Designed the SoloProtect mobile application enabling lone workers to raise alerts and share live location.",
         "Led UX development of the Insights platform for monitoring worker alerts and safety status.",
         "Designed real-time geolocation monitoring tools using Google Maps and geofencing.",
         "Technologies: Google Maps API, Geolocation, Mobile UX, Alert Systems"
+      ]
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Databowl",
+      "period": "January 2018 - January 2020",
+      "bullets": [
+        "Developed Angular interfaces for a lead management SaaS platform handling complex workflows.",
+        "Built dashboards and analytics tools for campaign monitoring.",
+        "Contributed to development of a WYSIWYG landing page builder using GrapesJS.",
+        "Collaborated with backend engineers working with Laravel APIs."
       ]
     },
     {

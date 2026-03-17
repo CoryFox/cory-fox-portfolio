@@ -155,7 +155,7 @@ export default async function WorkDetailPage({
                   Gallery
                 </p>
                 <h2 className="mt-3 font-[family-name:var(--font-display)] text-[2.2rem] leading-[0.96] sm:text-5xl">
-                  A flexible visual system ready for final project imagery.
+                  Screens and flows from the shipped product work.
                 </h2>
               </div>
             </Reveal>

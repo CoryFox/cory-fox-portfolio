@@ -25,6 +25,7 @@ export type HomeContent = {
     items: string[];
   };
   workIntro: string;
+  demosIntro: string;
   writingIntro: string;
   linkedin: {
     title: string;
@@ -80,6 +81,22 @@ export type WorkCaseStudy = {
   content: string;
 };
 
+export type DemoProject = {
+  key: string;
+  category: string;
+  title: string;
+  subtitle: string;
+  tags: string[];
+  tech: string[];
+  desktopImage: string;
+  detailImage: string;
+  mobileImage: string;
+  url: string;
+  overview: string;
+  notes: string[];
+  order: number;
+};
+
 const contentDirectory = path.join(process.cwd(), "content");
 
 export const getHomeContent = cache(async (): Promise<HomeContent> => {
@@ -123,6 +140,12 @@ export const getAllWork = cache(async (): Promise<WorkCaseStudy[]> => {
 export const getFeaturedWork = cache(async (): Promise<WorkCaseStudy[]> => {
   const workItems = await getAllWork();
   return workItems.filter((item) => item.featured).slice(0, 4);
+});
+
+export const getAllDemos = cache(async (): Promise<DemoProject[]> => {
+  const file = await fs.readFile(path.join(contentDirectory, "site", "demos.json"), "utf8");
+  const demos = JSON.parse(file) as DemoProject[];
+  return demos.sort((a, b) => a.order - b.order);
 });
 
 export const getWorkBySlug = cache(async (slug: string): Promise<WorkCaseStudy | undefined> => {

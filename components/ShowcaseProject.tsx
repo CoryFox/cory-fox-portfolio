@@ -76,13 +76,13 @@ export function ShowcaseProject({
                 </span>
               ))}
             </div>
-            <div className="flex items-center justify-between gap-4 border-t border-[color:var(--border)] pt-6">
+            <div className="flex flex-col items-start gap-4 border-t border-[color:var(--border)] pt-6 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">
                 {project.year} / {project.status}
               </p>
               <Link
                 href={`/work/${project.slug}`}
-                className="btn-dark inline-flex items-center justify-center rounded-full px-6 py-3 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
+                className="btn-dark inline-flex shrink-0 whitespace-nowrap items-center justify-center rounded-full px-6 py-3 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
               >
                 View case study
               </Link>
@@ -94,41 +94,50 @@ export function ShowcaseProject({
           <motion.div
             style={{ y: accentY }}
             className={cn(
-              "absolute hidden rounded-[40px] border border-[color:var(--border)] bg-[linear-gradient(135deg,rgba(16,42,67,0.12),rgba(255,255,255,0.15))] lg:block",
-              isReverse ? "-left-8 top-16 h-[78%] w-[62%]" : "right-0 top-0 h-[76%] w-[58%]"
+              "absolute inset-x-6 top-6 bottom-6 hidden rounded-[40px] border border-[color:var(--border)] bg-[linear-gradient(135deg,rgba(16,42,67,0.1),rgba(255,255,255,0.18))] lg:block",
+              isReverse ? "right-20 left-0" : "left-20 right-0"
             )}
           />
-          <motion.div
-            style={{ y: imageY }}
-            className="relative overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[0_24px_60px_rgba(17,17,17,0.12)] sm:shadow-[0_32px_80px_rgba(17,17,17,0.12)]"
-          >
-            <Image
-              src={project.heroImage}
-              alt={`${project.title} showcase image`}
-              width={1600}
-              height={980}
-              className="h-auto w-full"
-              priority={index === 0}
-            />
-          </motion.div>
-          <div className="mt-3 rounded-2xl border border-[color:var(--border)] bg-white/80 px-4 py-3 text-sm leading-6 text-[color:var(--text-secondary)] sm:mt-4 sm:max-w-xl sm:px-5 sm:py-4">
-            {project.outcome}
+          <div className="relative grid gap-4 sm:gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(240px,0.58fr)] lg:p-6">
+            <motion.div
+              style={{ y: imageY }}
+              className="overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[0_24px_60px_rgba(17,17,17,0.12)] sm:shadow-[0_32px_80px_rgba(17,17,17,0.12)] lg:col-span-2"
+            >
+              <Image
+                src={project.heroImage}
+                alt={`${project.title} showcase image`}
+                width={1600}
+                height={980}
+                className="h-auto w-full"
+                priority={index === 0}
+              />
+            </motion.div>
+
+            <motion.div
+              style={{ y: accentY }}
+              className="rounded-[1.75rem] border border-[color:var(--border)] bg-white/88 p-5 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:p-6"
+            >
+              <p className="text-[0.68rem] uppercase tracking-[0.24em] text-[color:var(--text-secondary)] sm:text-xs">
+                Outcome
+              </p>
+              <p className="mt-3 text-sm leading-6 text-[color:var(--text-secondary)] sm:text-base sm:leading-7">
+                {project.outcome}
+              </p>
+            </motion.div>
+
+            <motion.div
+              style={{ y: accentY }}
+              className="overflow-hidden rounded-[1.75rem] border border-[color:var(--border)] bg-white/88 shadow-[var(--shadow-soft)]"
+            >
+              <Image
+                src={project.cardImage}
+                alt={`${project.title} detail image`}
+                width={1200}
+                height={900}
+                className="h-auto w-full"
+              />
+            </motion.div>
           </div>
-          <motion.div
-            style={{ y: accentY }}
-            className={cn(
-              "relative mt-[-32px] ml-auto hidden w-[56%] overflow-hidden rounded-[24px] border border-[color:var(--border)] bg-white/88 shadow-[var(--shadow-soft)] lg:block",
-              isReverse ? "mr-auto ml-8" : "mr-8"
-            )}
-          >
-            <Image
-              src={project.cardImage}
-              alt={`${project.title} detail image`}
-              width={1200}
-              height={900}
-              className="h-auto w-full"
-            />
-          </motion.div>
         </div>
       </div>
     </motion.article>

@@ -15,19 +15,22 @@ const fallbackPosts: MediumPost[] = [
     title: "Designing for clarity in complex products",
     link: "https://medium.com/@coryowenfox",
     pubDate: "2026-01-10T00:00:00.000Z",
-    excerpt: "A fallback article card used when the Medium feed is unavailable during build or runtime."
+    excerpt: "A fallback article card used when the Medium feed is unavailable during build or runtime.",
+    thumbnail: "/images/writing/clarity-complex-products.jpg"
   },
   {
     title: "What teaching sharpened in my UX practice",
     link: "https://medium.com/@coryowenfox",
     pubDate: "2025-12-02T00:00:00.000Z",
-    excerpt: "Notes on accessibility, cognitive load, and why communication quality matters in product design."
+    excerpt: "Notes on accessibility, cognitive load, and why communication quality matters in product design.",
+    thumbnail: "/images/writing/teaching-ux-practice.jpg"
   },
   {
     title: "Making adoption gains through smaller UX decisions",
     link: "https://medium.com/@coryowenfox",
     pubDate: "2025-10-18T00:00:00.000Z",
-    excerpt: "A short fallback summary covering iterative improvement, support reduction, and design system thinking."
+    excerpt: "A short fallback summary covering iterative improvement, support reduction, and design system thinking.",
+    thumbnail: "/images/writing/adoption-ux-decisions.jpg"
   }
 ];
 

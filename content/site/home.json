@@ -1,9 +1,9 @@
 {
   "hero": {
     "eyebrow": "Hello, I'm Cory",
-    "headline": "Designing clearer SaaS products for complex work.",
-    "description": "I'm a product designer and frontend developer with 6+ years of experience designing and shipping SaaS platforms. Most recently I was UX/UI Lead at FourJaw, shaping product direction through research, analytics, design systems, and implementation.",
-    "framing": "I do my best work where the workflow is messy, the product has grown quickly, and users need clarity more than novelty. My role is usually to find the friction, simplify the system, and help ship the improvement properly.",
+    "headline": "UX FOCUSED DESIGNER & DEVELOPER",
+    "description": "I started out in graphic design, specialised in UX, and moved into development to bring my own ideas to life. Since 2017 I’ve worked mainly in frontend, then grew into full-stack product development through roles at SoloProtect and FourJaw.",
+    "framing": "The phrase that fits best is probably block-shaped: strong across design, UX, frontend, and product thinking, with enough backend depth to ship properly. I’m most useful when a SaaS product needs clearer user journeys and better implementation, not just better screens.",
     "primaryCta": {
       "label": "View work",
       "href": "#work"
@@ -12,10 +12,10 @@
       "label": "Download CV",
       "href": "/cv/cory-fox-product-designer-cv.pdf"
     },
-    "titles": ["Product Designer", "UX/UI Lead", "Frontend Developer"]
+    "titles": ["Developer", "Designer", "Strategist"]
   },
   "howIWork": {
-    "title": "How I Work",
+    "title": "How I work.",
     "steps": [
       {
         "title": "Find the real friction",
@@ -40,15 +40,16 @@
     ]
   },
   "workIntro": "Examples of product, UX, and frontend thinking applied to clearer workflows, stronger systems, and better day-to-day usability.",
+  "demosIntro": "A small set of legacy marketing and lead-generation builds migrated from Fox Frame into this site, kept here to show execution range alongside the product case studies.",
   "writingIntro": "I occasionally write about product design, UX, accessibility, and what it takes to make digital products clearer in practice.",
   "linkedin": {
-    "title": "For roles, recommendations, and a straighter career summary, find me on LinkedIn.",
-    "description": "It’s the best place to see the formal version of my background across product design, SaaS, frontend delivery, and teaching.",
+    "title": "Find me on LinkedIn.",
+    "description": "For roles, referrals, and the formal version of my background.",
     "href": "https://www.linkedin.com/in/corymetcalfe1"
   },
   "contact": {
-    "title": "If you need a product designer who can think in systems and work close to implementation, get in touch.",
-    "description": "I'm open to product design roles, UX-focused frontend work, and thoughtful collaborations on SaaS products that need clearer journeys and stronger UX.",
+    "title": "Let’s talk.",
+    "description": "Open to product design roles, UX-focused development work, and thoughtful SaaS collaborations.",
     "email": "coryowenfox@gmail.com"
   }
 }

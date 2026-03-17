@@ -25,7 +25,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
           <SectionHeading
             id="experience-heading"
             label="Experience"
-            title="Product design, frontend development, and teaching."
+            title="Design, development, teaching."
             description={content.profileSummary}
           />
         </Reveal>
@@ -34,24 +34,22 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
           <div className="space-y-5">
             {content.timeline.map((entry, index) => (
               <Reveal
-                key={`${entry.role}-${entry.company}`}
+                key={`${entry.role}-${entry.company}-${entry.period}`}
                 delay={0.04 * index}
                 className="rounded-2xl border border-[color:var(--border)] bg-white/58 p-6 shadow-[var(--shadow-soft)] sm:p-8"
               >
                 <div className="flex flex-col gap-4 border-b border-[color:var(--border)] pb-4 sm:flex-row sm:items-end sm:justify-between">
                   <div>
                     <h3 className="font-[family-name:var(--font-display)] text-3xl">{entry.role}</h3>
-                    <p className="text-base text-[color:var(--text-secondary)]">{entry.company}</p>
+                    <p className="text-base text-[color:var(--text)]">{entry.company}</p>
                   </div>
-                  {entry.period ? (
-                    <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">{entry.period}</p>
-                  ) : null}
+                  <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">{entry.period}</p>
                 </div>
-                <ul className="mt-6 space-y-4 text-[color:var(--text-secondary)]">
+                <ul className="mt-6 space-y-3 text-[color:var(--text)]">
                   {entry.bullets.map((bullet) => (
-                    <li key={bullet} className="flex gap-4 leading-7">
-                      <span className="mt-3 h-1.5 w-1.5 rounded-full bg-[color:var(--accent)]" />
-                      <span>{bullet}</span>
+                    <li key={bullet} className="grid grid-cols-[0.5rem_1fr] items-start gap-x-4 leading-7">
+                      <span className="mt-2.5 h-1.5 w-1.5 rounded-full bg-[color:var(--accent)]" />
+                      <span className="min-w-0">{bullet}</span>
                     </li>
                   ))}
                 </ul>
@@ -66,12 +64,12 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
                 delay={0.08 * index}
                 className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] p-6 sm:p-8"
               >
-                <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
+                <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">
                   {group.category}
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {group.items.map((item) => (
-                    <span key={item} className="rounded-full border border-[color:var(--border)] bg-white/65 px-3 py-2 text-sm">
+                    <span key={item} className="rounded-full border border-[color:var(--border)] bg-white/65 px-3 py-2 text-sm text-[color:var(--text)]">
                       {item}
                     </span>
                   ))}
@@ -80,12 +78,12 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
             ))}
 
             <Reveal className="rounded-2xl border border-[color:var(--border)] bg-white/58 p-6 sm:p-8">
-              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
+              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">
                 Education
               </p>
               <div className="mt-6 space-y-4">
                 {content.education.map((item) => (
-                  <p key={item} className="border-b border-[color:var(--border)] pb-4 last:border-b-0 last:pb-0">
+                  <p key={item} className="border-b border-[color:var(--border)] pb-4 text-[color:var(--text)] last:border-b-0 last:pb-0">
                     {item}
                   </p>
                 ))}

@@ -21,7 +21,11 @@ export function AnimatedTitle({ titles }: { titles: string[] }) {
   }, [prefersReducedMotion, titles]);
 
   if (prefersReducedMotion) {
-    return <span className="inline-flex items-center whitespace-nowrap text-[color:var(--accent)]">{titles[0]}</span>;
+    return (
+      <span className="inline-flex items-center whitespace-nowrap font-semibold text-[color:var(--accent)]">
+        {titles[0]}
+      </span>
+    );
   }
 
   return (
@@ -36,7 +40,7 @@ export function AnimatedTitle({ titles }: { titles: string[] }) {
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           exit={{ opacity: 0, y: -24, filter: "blur(8px)" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute left-0 top-1/2 -translate-y-1/2 whitespace-nowrap text-[color:var(--accent)]"
+          className="absolute left-0 top-1/2 -translate-y-1/2 whitespace-nowrap font-semibold text-[color:var(--accent)]"
         >
           {titles[index]}
         </motion.span>

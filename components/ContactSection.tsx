@@ -13,15 +13,15 @@ export function ContactSection({ content }: { content: ContactContent }) {
         <Reveal className="overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[var(--shadow-soft)]">
           <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="border-b border-[color:var(--border)] p-6 lg:border-b-0 lg:border-r lg:p-10">
-              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">Contact</p>
-              <h2 className="mt-4 font-[family-name:var(--font-display)] text-[2.4rem] leading-[0.96] sm:text-5xl lg:text-6xl">
+              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">Contact</p>
+              <h2 className="mt-4 font-[family-name:var(--font-display)] text-[2rem] leading-[0.98] sm:text-[2.6rem] lg:text-[3rem]">
                 {content.title}
               </h2>
-              <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--text-secondary)] sm:mt-6 sm:text-lg sm:leading-8">
+              <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--text)] sm:mt-6 sm:text-lg sm:leading-8">
                 {content.description}
               </p>
               <div className="mt-8 rounded-2xl border border-[color:var(--border)] bg-white/60 p-6">
-                <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Email</p>
+                <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">Email</p>
                 <a
                   href={`mailto:${content.email}`}
                   className="mt-3 inline-block break-all font-[family-name:var(--font-display)] text-[1.8rem] leading-tight sm:text-3xl"
@@ -77,7 +77,7 @@ export function ContactSection({ content }: { content: ContactContent }) {
                 />
               </label>
               <div className="flex flex-col gap-4 lg:col-span-2 sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-sm leading-6 text-[color:var(--text-secondary)]">
+                <p className="text-sm leading-6 text-[color:var(--text)]">
                   This launch version uses a mail-ready form structure and can be swapped to Formspree later without redesign.
                 </p>
                 <button

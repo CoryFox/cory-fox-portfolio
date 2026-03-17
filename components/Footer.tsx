@@ -1,11 +1,12 @@
 import Link from "next/link";
 
 const footerLinks = [
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Experience", href: "#experience" },
-  { label: "Writing", href: "#writing" },
-  { label: "Contact", href: "#contact" }
+  { label: "About", href: "/#about" },
+  { label: "Work", href: "/#work" },
+  { label: "Demos", href: "/#demos" },
+  { label: "Experience", href: "/#experience" },
+  { label: "Writing", href: "/#writing" },
+  { label: "Contact", href: "/#contact" }
 ];
 
 export function Footer() {
@@ -14,7 +15,10 @@ export function Footer() {
       <div className="mx-auto max-w-7xl rounded-3xl border border-[color:var(--border)] bg-white/58 px-6 py-6 shadow-[var(--shadow-soft)] sm:px-8 sm:py-8">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <div>
-            <Link href="/" className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl">
+            <Link
+              href="/"
+              className="font-[family-name:var(--font-display)] text-3xl font-bold uppercase tracking-[0.12em] text-[color:var(--accent)] sm:text-4xl"
+            >
               Cory Fox
             </Link>
             <p className="mt-3 max-w-md text-base leading-7 text-[color:var(--text-secondary)]">

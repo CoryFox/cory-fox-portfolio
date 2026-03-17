@@ -12,7 +12,7 @@ Before making changes, also read:
 
 ## What This Site Is
 
-This is not a generic portfolio template. The target is a premium, editorial, founder-style personal portfolio for Cory Fox, visually close in spirit to `highfulminds.com` but fully rebranded and rewritten.
+This is Cory Fox's portfolio site, now populated with real migrated work from Fox Frame and tuned toward a premium editorial product-portfolio presentation.
 
 The site should feel:
 
@@ -43,6 +43,7 @@ Functions:
 - `getAboutContent()`
 - `getExperienceContent()`
 - `getAllWork()`
+- `getAllDemos()`
 - `getFeaturedWork()`
 - `getWorkBySlug()`
 
@@ -56,14 +57,15 @@ Key UI components:
 - `Hero`
 - `AboutSection`
 - `WorkSection`
-- `ShowcaseProject`
+- `WorkCard`
+- `DemosSection`
 - `ExperienceSection`
 - `WritingSection`
 - `LinkedInSection`
 - `ContactSection`
 - `Footer`
 
-`ShowcaseProject` is the current work showcase pattern. `WorkCard` still exists from an earlier implementation and is currently unused.
+`WorkCard` is the active homepage work showcase pattern. `ShowcaseProject` is legacy from the earlier editorial spread layout and is no longer the homepage source of truth.
 
 ## Styling Approach
 
@@ -73,7 +75,7 @@ The project currently uses:
 
 - CSS custom properties for palette
 - Tailwind utility classes for layout, spacing, radii, and type
-- `Cormorant Garamond` for display
+- `Montserrat` for display
 - `Inter` for sans/body
 
 Important:
@@ -81,6 +83,8 @@ Important:
 - explicit radii are used in component classes
 - avoid arbitrary Tailwind radius utilities that inject CSS variables here; they caused a visible regression
 - dark/accent panels must use fully legible light text, not translucent white copy
+- body copy on light backgrounds should remain dark
+- muted grey is reserved for labels, metadata, and section subtitles
 
 ## Content Notes
 
@@ -89,9 +93,9 @@ Current copy has already been pushed toward:
 - first-person voice
 - stronger positioning
 - recruiter-facing credibility
-- product-design framing over generic UX wording
+- UX-focused designer/developer framing over generic portfolio wording
 
-Some older-role copy is still partially inferred from CV/public profile context and should be replaced with Cory-approved specifics later.
+The current work content is real project content from Fox Frame. Experience copy has also been aligned more closely to the CV timeline.
 
 ## Verification Status
 
@@ -103,10 +107,9 @@ Recent local checks:
 ## Recommended Next Steps
 
 1. Do a browser-eye visual pass section by section.
-2. Tighten the work showcase art direction further using real imagery and stronger composition.
-3. Replace placeholder case studies with real project narratives.
-4. Rewrite older role bullets using confirmed LinkedIn/CV/user-provided detail.
-5. Add contact form backend integration.
+2. Verify the live Medium feed path from a network-enabled environment; fallback images are in place, but real feed thumbnails still depend on feed availability.
+3. Tighten any remaining copy using Cory-approved language.
+4. Add contact form backend integration if desired.
 
 ## Source Of Truth
 
