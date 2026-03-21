@@ -21,7 +21,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
   return (
     <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="experience">
       <div className="mx-auto max-w-7xl">
-        <Reveal>
+        <Reveal mode="immediate">
           <SectionHeading
             id="experience-heading"
             label="Experience"
@@ -98,7 +98,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
                 Download the full CV if you want the formal version, but the short version is simple: I design clearly, work commercially, and understand users beyond the idealised version in a deck.
               </p>
               <Link
-                href="/cv/cory-fox-product-designer-cv.pdf"
+                href="/cv/cory-fox-cv.pdf"
                 className="btn-light mt-6 inline-flex rounded-full border-white/40 px-6 py-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Download CV

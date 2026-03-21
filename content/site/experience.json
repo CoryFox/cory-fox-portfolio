@@ -1,38 +1,30 @@
 {
-  "profileSummary": "Design, development, and product work across SaaS, operations, and education.",
+  "profileSummary": "Full-stack product delivery across SaaS, operations, and education, with a frontend and UX bias backed by hands-on backend, data, Git, Linux, and Agile delivery experience.",
   "timeline": [
     {
-      "role": "UX/UI Lead",
+      "role": "Software Developer",
       "company": "FourJaw Manufacturing Analytics",
-      "period": "May 2023 - May 2024",
+      "period": "July 2021 - May 2024",
       "bullets": [
-        "Led UX and frontend evolution of a global manufacturing analytics SaaS platform used across the UK, Europe, the US and New Zealand.",
-        "Defined UX strategy and led continuous discovery through user interviews, usability testing and behavioural analytics.",
-        "Used Pendo, FullStory and Google Analytics to identify friction in workflows and improve feature adoption.",
-        "Led migration from legacy frontend architecture to a modern React, TypeScript and Sass stack.",
+        "Developed SaaS platform features across web and tablet applications.",
+        "Worked across the stack using Python, Flask, MongoDB, HTMX, Nunjucks, React, TypeScript, and Sass.",
+        "Promoted to UX/UI Lead in May 2023 while remaining hands-on with product delivery and implementation.",
+        "Defined UX strategy and led continuous discovery through user interviews, usability testing, behavioural analytics, Pendo, FullStory, and Google Analytics.",
+        "Led migration from legacy frontend architecture to a modern React, TypeScript, and Sass stack.",
         "Designed and implemented a scalable component-based design system using Material 3 and Figma.",
+        "Worked closely with product and engineering in Agile delivery cycles, balancing roadmap priorities with UX quality and technical constraints.",
         "Oversaw development of a tablet-first React Native operator interface used on factory floors.",
-        "Mentored two graduate developers and collaborated with product leadership on roadmap priorities."
+        "Mentored two graduate developers and collaborated with product leadership on roadmap priorities in a Git-led, Linux-based environment."
       ]
     },
     {
       "role": "Software Developer",
-      "company": "FourJaw Manufacturing Analytics",
-      "period": "July 2021 - May 2023",
-      "bullets": [
-        "Developed SaaS platform features across web and tablet applications.",
-        "Worked across the stack using Flask and MongoDB with HTMX and Nunjucks frontend.",
-        "Contributed to transition towards a modern React-based frontend architecture.",
-        "Delivered UX improvements alongside technical implementation."
-      ]
-    },
-    {
-      "role": "Frontend Developer",
       "company": "Databowl",
       "period": "January 2021 - July 2021",
       "bullets": [
-        "Returned to support frontend delivery across the lead management platform.",
-        "Worked on interface improvements, campaign tooling, and ongoing product maintenance.",
+        "Returned to support software delivery across the lead management platform.",
+        "Worked on Angular-based interface improvements, campaign tooling, and ongoing product maintenance.",
+        "Touched Postgres-backed product work, data flows, and day-to-day implementation across the platform.",
         "Bridged UX thinking and implementation across day-to-day product work."
       ]
     },
@@ -43,19 +35,30 @@
       "bullets": [
         "Designed the SoloProtect mobile application enabling lone workers to raise alerts and share live location.",
         "Led UX development of the Insights platform for monitoring worker alerts and safety status.",
+        "Delivered interfaces in a C# .NET MVVM/MVC environment while translating UX decisions into production-ready implementation.",
         "Designed real-time geolocation monitoring tools using Google Maps and geofencing.",
-        "Technologies: Google Maps API, Geolocation, Mobile UX, Alert Systems"
+        "Worked across UX, UI, and development in an Agile product environment shaped by operational reliability and engineering constraints."
       ]
     },
     {
-      "role": "Frontend Developer",
+      "role": "UX/UI Designer & Developer",
       "company": "Databowl",
       "period": "January 2018 - January 2020",
       "bullets": [
         "Developed Angular interfaces for a lead management SaaS platform handling complex workflows.",
         "Built dashboards and analytics tools for campaign monitoring.",
         "Contributed to development of a WYSIWYG landing page builder using GrapesJS.",
-        "Collaborated with backend engineers working with Laravel APIs."
+        "Collaborated with backend engineers working with Laravel APIs and touched supporting Postgres-backed product work."
+      ]
+    },
+    {
+      "role": "eLearning Developer",
+      "company": "Relish Learning",
+      "period": "March 2017 - December 2017",
+      "bullets": [
+        "Designed and developed SCORM eLearning packages for multinational companies.",
+        "Balanced visual design, instructional structure, and front-end build quality across browser-based learning content.",
+        "Translated stakeholder requirements into polished interactive learning experiences that were ready for deployment."
       ]
     },
     {
@@ -71,7 +74,7 @@
   ],
   "skills": [
     {
-      "category": "Product Design",
+      "category": "Product & UX",
       "items": [
         "User research",
         "UX strategy",
@@ -91,16 +94,30 @@
       "items": [
         "React",
         "TypeScript",
+        "Angular",
+        "JavaScript",
         "HTML",
         "CSS/Sass"
       ]
     },
     {
-      "category": "Backend",
+      "category": "Backend & Data",
       "items": [
+        "Python",
         "Flask",
         "MongoDB",
-        "REST APIs",
+        "Postgres",
+        "C# .NET",
+        "REST APIs"
+      ]
+    },
+    {
+      "category": "Workflow",
+      "items": [
+        "Agile delivery",
+        "Git",
+        "Linux",
+        "Azure DevOps",
         "Webpack"
       ]
     }

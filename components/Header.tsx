@@ -58,7 +58,7 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/cv/cory-fox-product-designer-cv.pdf"
+            href="/cv/cory-fox-cv.pdf"
             className="btn-light inline-flex rounded-full px-4 py-2 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
           >
             View CV
@@ -111,7 +111,7 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/cv/cory-fox-product-designer-cv.pdf"
+            href="/cv/cory-fox-cv.pdf"
             className="btn-dark mt-2 inline-flex justify-center rounded-full px-6 py-3 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--button-dark)]"
           >
             View CV

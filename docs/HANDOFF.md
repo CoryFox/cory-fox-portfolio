@@ -33,6 +33,8 @@ The site should feel:
 - `/sitemap.xml`
 - `/_not-found`
 
+App-shell metadata and favicon are defined in `app/layout.tsx` and `app/icon.svg`.
+
 ### Content Loading
 
 All content loading is in `lib/content.ts`.
@@ -46,6 +48,11 @@ Functions:
 - `getAllDemos()`
 - `getFeaturedWork()`
 - `getWorkBySlug()`
+
+`WorkCaseStudy` frontmatter now includes:
+
+- `technologies`
+- `responsibilities`
 
 Medium feed logic is in `lib/medium.ts`.
 
@@ -66,6 +73,7 @@ Key UI components:
 - `Footer`
 
 `WorkCard` is the active homepage work showcase pattern. `ShowcaseProject` is legacy from the earlier editorial spread layout and is no longer the homepage source of truth.
+`Reveal` supports both immediate rendering and in-view animation modes. Homepage section entry points use immediate mode where anchor navigation reliability matters; secondary content still uses scroll reveal.
 
 ## Styling Approach
 
@@ -98,6 +106,7 @@ Current copy has already been pushed toward:
 
 The current work content is real project content from Fox Frame. Experience copy has also been aligned more closely to the CV timeline.
 The contact form currently uses a `mailto:` submission to `coryowenfox@gmail.com` with a fixed enquiry subject and no explanatory footer copy.
+Case studies are now intentionally scan-first rather than article-style: visible technologies, responsibility bullets, concise problem/focus/outcome blocks, and inline imagery that adapts to the number of available screenshots.
 
 ## Verification Status
 

@@ -13,7 +13,7 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
   return (
     <section className="section-anchor overflow-hidden px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="demos">
       <div className="mx-auto max-w-7xl">
-        <Reveal>
+        <Reveal mode="immediate">
           <SectionHeading
             id="demos-heading"
             label="Demos"
@@ -42,17 +42,17 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
                 />
               </div>
 
-              <div className="flex flex-1 flex-col space-y-3 p-5 sm:p-6">
+                <div className="flex flex-1 flex-col space-y-3 p-5 sm:p-6">
                 <div className="flex flex-wrap items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
                   <span>{demo.category}</span>
                   <span>/</span>
                   <span>{demo.tech.slice(0, 2).join(" / ")}</span>
                 </div>
                 <div>
-                  <h3 className="card-title title-two-line min-h-[2.2em] font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.045em] text-[color:var(--accent)]">
+                  <h3 className="card-title title-two-line min-h-[1.4em] font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.045em] text-[color:var(--accent)]">
                     {demo.title}
                   </h3>
-                  <p className="mt-2 min-h-[3.75rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
+                  <p className="mt-1.5 min-h-[3rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
                     {demo.subtitle}
                   </p>
                 </div>
@@ -66,16 +66,13 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
                     </span>
                   ))}
                 </div>
-                <div className="mt-1 rounded-[1.35rem] border border-[color:var(--border)] bg-[color:var(--bg-alt)]/72 p-3.5">
+                <div className="mt-1 rounded-[1.35rem] border border-[color:var(--border)] bg-[color:var(--bg-alt)]/72 px-3.5 pb-5 pt-3.5">
                   <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
                     Overview
                   </p>
                   <p className="mt-2 text-sm leading-6 text-[color:var(--text)]">{demo.overview}</p>
                 </div>
-                <div className="mt-auto flex items-center justify-between gap-3 border-t border-[color:var(--border)] pt-4">
-                  <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
-                    Demo build
-                  </p>
+                <div className="mt-auto flex items-center justify-end gap-3 border-t border-[color:var(--border)] pt-3.5">
                   <Link
                     href={demo.url}
                     target="_blank"

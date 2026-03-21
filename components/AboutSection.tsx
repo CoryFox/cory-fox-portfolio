@@ -46,7 +46,7 @@ export function AboutSection({ content }: { content: AboutContent }) {
   return (
     <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="about">
       <div className="mx-auto max-w-7xl">
-        <Reveal>
+        <Reveal mode="immediate">
           <SectionHeading id="about-heading" label={content.label} title={content.title} />
         </Reveal>
         <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-6">

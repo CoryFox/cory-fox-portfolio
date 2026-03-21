@@ -19,9 +19,6 @@ export function WorkCard({ project, priority = false }: { project: WorkCaseStudy
         </div>
         <div className="flex flex-1 flex-col space-y-4 p-5 sm:p-6">
           <div className="flex items-start justify-between gap-4">
-            <p className="text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
-              {project.role}
-            </p>
             <p className="shrink-0 text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
               {project.year}
             </p>
@@ -30,6 +27,9 @@ export function WorkCard({ project, priority = false }: { project: WorkCaseStudy
             <h3 className="card-title title-two-line min-h-[2.2em] font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.045em] text-[color:var(--accent)]">
               {project.title}
             </h3>
+            <p className="mt-2 text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
+              {project.role}
+            </p>
             <p className="mt-2 min-h-[7rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
               {project.summary}
             </p>
@@ -48,10 +48,7 @@ export function WorkCard({ project, priority = false }: { project: WorkCaseStudy
               </span>
             ))}
           </div>
-          <div className="mt-auto flex items-center justify-between gap-4 border-t border-[color:var(--border)] pt-4">
-            <p className="text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
-              {project.status}
-            </p>
+          <div className="mt-auto flex items-center justify-end gap-4 border-t border-[color:var(--border)] pt-4">
             <Link
               href={`/work/${project.slug}`}
               className="btn-dark inline-flex shrink-0 items-center justify-center rounded-full px-5 py-3.5 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"

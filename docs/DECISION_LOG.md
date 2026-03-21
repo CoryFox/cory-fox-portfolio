@@ -278,3 +278,34 @@ Decision:
 Reason:
 
 - on mobile, the clamp introduced visible ellipsis/overflow and made headings feel broken
+
+## 2026-03-21
+
+### Credibility-Focused Shell Polish
+
+Decision:
+
+- keep the visible homepage layout and body copy unchanged for this pass
+- tighten only the site shell surfaces that affect first impressions: metadata framing, canonical domain, favicon, and CV download naming
+- frame the metadata around full-stack development with a frontend and UX bias rather than the older standalone product-designer label
+- where section-level copy is explicitly approved for change, shift work framing toward frontend engineering, UX architecture, and implementation quality over product-designer terminology
+- keep product and UX literacy visible in the wording so the portfolio still reads credibly to product-design-adjacent hiring managers
+- make concrete stack depth visible in the copy where it is true, especially where earlier wording understated backend, data, workflow, and engineering-environment experience
+- where possible, lead with the target hiring label explicitly in the hero while using the supporting copy to qualify the frontend/design bias
+- use the CV timeline and job titles as the source of truth, but surface promotions and technical environment details inside the supporting copy so recruiter scanning still sees the real scope of the work
+- let section headers and anchor targets render immediately, but keep secondary homepage content on scroll reveal so navigation feels reliable without losing motion
+- rebuild case studies around scannable sections and case-specific content rather than long article-style copy and gallery dumps
+- allow case-study media layouts to collapse around the number of unique available images instead of preserving empty slots
+
+Reason:
+
+- the current requirement is to improve recruiter-facing credibility without introducing unsanctioned layout or copy changes
+- browser tabs, link previews, favicon absence, and download filenames are high-signal quality markers that can be polished safely without changing the designed content
+- the work section should reinforce the intended hiring signal instead of pulling the site back toward a design-only reading
+- the strongest positioning here is not "designer no longer" but "developer with proven UX and product judgement"
+- specific technologies and environments are more credible than generic full-stack claims, especially for mid-senior engineering roles
+- recruiters often scan the hero first, so the primary label should be immediate and machine-readable without losing the differentiator
+- title fidelity protects trust, while the surrounding copy can do the heavier lifting on technical breadth and seniority
+- anchor navigation should never land on apparently missing content
+- recruiters scan case studies for stack, scope, and outcomes before they read long narrative copy
+- empty media slots and repeated imagery make handcrafted case studies feel unfinished

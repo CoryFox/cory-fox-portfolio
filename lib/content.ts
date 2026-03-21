@@ -67,6 +67,8 @@ export type WorkCaseStudy = {
   summary: string;
   role: string;
   focus: string;
+  technologies: string[];
+  responsibilities: string[];
   year: string;
   status: string;
   tags: string[];

@@ -34,10 +34,10 @@ export default async function HomePage() {
       <main>
         <Hero content={home.hero} />
         <AboutSection content={about} />
-        <HowIWorkSection content={home.howIWork} whatIEnjoy={home.whatIEnjoy} />
         <WorkSection intro={home.workIntro} work={work} />
-        <DemosSection intro={home.demosIntro} demos={demos} />
         <ExperienceSection content={experience} />
+        <HowIWorkSection content={home.howIWork} whatIEnjoy={home.whatIEnjoy} />
+        <DemosSection intro={home.demosIntro} demos={demos} />
         <WritingSection intro={home.writingIntro} posts={posts} />
         <LinkedInSection content={home.linkedin} />
         <ContactSection content={home.contact} />

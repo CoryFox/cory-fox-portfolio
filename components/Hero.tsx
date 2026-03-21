@@ -34,7 +34,7 @@ export function Hero({ content }: { content: HeroContent }) {
             <span className="text-[color:var(--accent)]">.</span>
           </h1>
           <div className="mt-5 flex flex-wrap items-center gap-2 text-[clamp(1.05rem,2.5vw,1.6rem)] leading-tight text-[color:var(--text-secondary)] sm:gap-3 sm:whitespace-nowrap">
-            <span>I&apos;m a</span>
+            <span>I work across</span>
             <AnimatedTitle titles={content.titles} />
           </div>
         </motion.div>
@@ -65,16 +65,16 @@ export function Hero({ content }: { content: HeroContent }) {
           </div>
           <div className="mt-8 grid gap-4 border-t border-[color:var(--border)] pt-6 sm:grid-cols-3">
             <div>
-              <p className="font-[family-name:var(--font-display)] text-3xl">6+ years</p>
-              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Designing SaaS products and digital tools</p>
+              <p className="font-[family-name:var(--font-display)] text-[1.5rem] leading-tight text-[color:var(--accent)] sm:text-[1.65rem]">6+ Years in SaaS</p>
+              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Product, frontend, and full-stack delivery across complex platforms</p>
             </div>
             <div>
-              <p className="font-[family-name:var(--font-display)] text-3xl">Former UX/UI Lead</p>
-              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Driving product clarity and system thinking</p>
+              <p className="font-[family-name:var(--font-display)] text-[1.5rem] leading-tight text-[color:var(--accent)] sm:text-[1.65rem]">UX/UI Leadership</p>
+              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Led discovery, design systems, and implementation in Agile teams</p>
             </div>
             <div>
-              <p className="font-[family-name:var(--font-display)] text-3xl">Teaching experience</p>
-              <p className="mt-1 text-sm text-[color:var(--text-muted)]">A constant reminder to design for real people</p>
+              <p className="font-[family-name:var(--font-display)] text-[1.5rem] leading-tight text-[color:var(--accent)] sm:text-[1.65rem]">Full-Stack Delivery</p>
+              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Angular, Flask, MongoDB, C# .NET, and modern React delivery</p>
             </div>
           </div>
         </motion.div>

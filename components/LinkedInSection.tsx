@@ -11,7 +11,7 @@ export function LinkedInSection({ content }: { content: LinkedInContent }) {
   return (
     <section className="px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
-        <Reveal className="rounded-3xl border border-[color:var(--border)] bg-[linear-gradient(135deg,rgba(255,255,255,0.68),rgba(239,234,226,0.9))] p-6 shadow-[var(--shadow-soft)] sm:p-10">
+        <Reveal mode="immediate" className="rounded-3xl border border-[color:var(--border)] bg-[linear-gradient(135deg,rgba(255,255,255,0.68),rgba(239,234,226,0.9))] p-6 shadow-[var(--shadow-soft)] sm:p-10">
           <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-end lg:gap-8">
             <div>
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">LinkedIn</p>

@@ -1,18 +1,18 @@
 {
   "hero": {
     "eyebrow": "Hello, I'm Cory",
-    "headline": "UX FOCUSED DESIGNER & DEVELOPER",
-    "description": "I started out in graphic design, specialised in UX, and moved into development to bring my own ideas to life. Since 2017 I’ve worked mainly in frontend, then grew into full-stack product development through roles at SoloProtect and FourJaw.",
-    "framing": "The phrase that fits best is probably block-shaped: strong across design, UX, frontend, and product thinking, with enough backend depth to ship properly. I’m most useful when a SaaS product needs clearer user journeys and better implementation, not just better screens.",
+    "headline": "FULL STACK DEVELOPER WITH UX DEPTH",
+    "description": "I’m a full stack developer with 6 years of SaaS experience across Angular, Flask, MongoDB, C# .NET, and modern React environments. My edge is combining product UX, frontend quality, and practical implementation detail.",
+    "framing": "I started out in graphic design, specialised in UX, and moved into development to bring my own ideas to life. That background still shapes how I work: I care about architecture and engineering standards, but also how the product looks, feels, and earns user trust.",
     "primaryCta": {
       "label": "View work",
       "href": "#work"
     },
     "secondaryCta": {
       "label": "Download CV",
-      "href": "/cv/cory-fox-product-designer-cv.pdf"
+      "href": "/cv/cory-fox-cv.pdf"
     },
-    "titles": ["Developer", "Designer", "Strategist"]
+    "titles": ["Development", "Design", "Leadership"]
   },
   "howIWork": {
     "title": "How I work.",
@@ -27,7 +27,7 @@
       },
       {
         "title": "Design to ship",
-        "description": "Because I work comfortably in frontend code, I design with implementation in mind and stay close to delivery."
+        "description": "Because I work comfortably across frontend and supporting backend delivery, I design with implementation in mind and stay close to what actually ships."
       }
     ]
   },
@@ -35,13 +35,13 @@
     "title": "What I Enjoy Working On",
     "items": [
       "SaaS products with complex workflows, data-heavy interfaces, or multiple user contexts.",
-      "Teams that want tighter collaboration between discovery, design systems, and frontend delivery.",
-      "Platforms where analytics, research, and product judgement can guide meaningful UX improvements."
+      "Teams that want tighter collaboration between discovery, design systems, frontend delivery, and backend implementation.",
+      "Platforms where analytics, research, and product judgement can guide meaningful UX improvements and technical decisions."
     ]
   },
-  "workIntro": "Examples of product, UX, and frontend thinking applied to clearer workflows, stronger systems, and better day-to-day usability.",
-  "demosIntro": "A small set of legacy marketing and lead-generation builds migrated from Fox Frame into this site, kept here to show execution range alongside the product case studies.",
-  "writingIntro": "I occasionally write about product design, UX, accessibility, and what it takes to make digital products clearer in practice.",
+  "workIntro": "Examples of full-stack product work, UX architecture, and implementation thinking applied to clearer workflows, stronger systems, and better day-to-day usability.",
+  "demosIntro": "A small set of legacy marketing and lead-generation builds, kept here to show execution range alongside the product case studies.",
+  "writingIntro": "I occasionally write about frontend craft, UX, accessibility, and what it takes to make digital products clearer in practice.",
   "linkedin": {
     "title": "Find me on LinkedIn.",
     "description": "For roles, referrals, and the formal version of my background.",
@@ -49,7 +49,7 @@
   },
   "contact": {
     "title": "Let’s talk.",
-    "description": "Open to product design roles, UX-focused development work, and thoughtful SaaS collaborations.",
+    "description": "Open to frontend and full stack roles, product-minded development work, and thoughtful SaaS collaborations.",
     "email": "coryowenfox@gmail.com"
   }
 }

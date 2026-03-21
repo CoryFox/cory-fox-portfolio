@@ -46,7 +46,7 @@ export function Footer() {
               Medium
             </Link>
             <a href="mailto:coryowenfox@gmail.com">coryowenfox@gmail.com</a>
-            <Link href="/cv/cory-fox-product-designer-cv.pdf">Download CV</Link>
+            <Link href="/cv/cory-fox-cv.pdf">Download CV</Link>
           </div>
           <p>© {new Date().getFullYear()} Cory Fox. All rights reserved.</p>
         </div>

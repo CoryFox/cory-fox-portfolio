@@ -24,12 +24,12 @@ export function HowIWorkSection({
   return (
     <section className="px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
-        <Reveal>
+        <Reveal mode="immediate">
           <SectionHeading
             id="how-i-work-heading"
             label="How I Work"
             title={content.title}
-            description="Research-led, systems-aware, close to delivery."
+            description="Research-led, systems-aware, and close to delivery across design and engineering."
           />
         </Reveal>
 

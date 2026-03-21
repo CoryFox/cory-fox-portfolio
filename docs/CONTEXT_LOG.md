@@ -4,7 +4,7 @@
 
 - repo path: `/Users/coryfox/Desktop/Cory Fox Portfolio`
 - branch: `main`
-- current local HEAD: `961f698`
+- current local HEAD: `ef606eb`
 
 ## What Was Built
 
@@ -63,6 +63,38 @@
 
 - kept the root repo as the source of truth
 - retained the static-export GitHub Pages deployment path through GitHub Actions on `main`
+
+### Credibility polish pass
+
+- corrected the default metadata domain to `https://coryfox.co.uk`
+- replaced the stale `Product Designer` browser/share metadata framing with a full-stack developer framing that still reflects the frontend and UX bias
+- added an app-level SVG favicon for the Next app shell
+- renamed the CV download path from `cory-fox-product-designer-cv.pdf` to `cory-fox-cv.pdf` and updated internal links
+- retuned the selected case studies section label strip and intro copy to lead with frontend engineering and UX architecture rather than product-designer framing
+- softened the remaining homepage/about/writing/contact role language so the site now leans toward frontend and full stack roles without excluding product-minded recruiters
+- removed the Fox Frame reference from the demos intro and strengthened the about/experience copy to reflect Python, Flask, MongoDB, Angular, Postgres, C# .NET, Git, and Linux experience alongside the design-led positioning
+- updated the hero headline to lead with `Full Stack Developer` while preserving the frontend/design edge in the supporting copy
+- replaced the hero date-range phrasing with a cleaner `6 years in SaaS` signal and retuned the hero proof points toward more corporate-safe recruiter language
+- reduced repeated frontend/design wording across the homepage and brought the top-of-page framing closer to full-stack, backend-aware product delivery
+- aligned the experience timeline and case study metadata to the CV-style source of truth: single FourJaw software-developer entry with promotion called out, corrected Databowl titles, added Relish Learning, and surfaced technical environments more clearly in work summaries
+- reordered the homepage for recruiter scanning so work and experience appear before process content
+- rewrote the hero support copy to lead with current full-stack value before the design-to-development background
+- restored scroll reveal on secondary homepage content while keeping section entry points immediate for anchor navigation
+
+### Case study template rebuild
+
+- rebuilt the `/work/[slug]` layout around scannable sections: technologies, responsibilities, problem, focus, outcome, and approach
+- shortened and retuned the case study copy to remove generic portfolio-helper language and surface technical environments faster
+- threaded case study imagery through the page instead of dumping everything into a gallery at the bottom
+- made the case study image layout responsive to available unique images, with no repeated images and no forced cropping
+- added skeleton-style image placeholders with centered three-dot loading cues on case study media
+
+### Visual polish refinements
+
+- renamed the CV download asset to `cory-fox-cv.pdf` and updated all internal links
+- tightened homepage work-card metadata layout so long job titles no longer wrap awkwardly in the top row
+- refined demo card spacing and footer treatment to better match the case study card system
+- corrected the SoloProtect case study to lead with a tablet-oriented hero image rather than the square phone-led asset
 
 ## Known Weak Spots
 

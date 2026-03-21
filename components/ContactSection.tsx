@@ -10,7 +10,7 @@ export function ContactSection({ content }: { content: ContactContent }) {
   return (
     <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="contact">
       <div className="mx-auto max-w-7xl">
-        <Reveal className="overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[var(--shadow-soft)]">
+        <Reveal mode="immediate" className="overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[var(--shadow-soft)]">
           <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="border-b border-[color:var(--border)] p-6 lg:border-b-0 lg:border-r lg:p-10">
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">Contact</p>

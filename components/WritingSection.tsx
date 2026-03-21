@@ -9,11 +9,11 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
   return (
     <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="writing">
       <div className="mx-auto max-w-7xl">
-        <Reveal>
+        <Reveal mode="immediate">
           <SectionHeading
             id="writing-heading"
             label="Writing"
-            title="Writing on product design, UX, and accessibility."
+            title="Writing on frontend craft, UX, and accessibility."
             description={intro}
           />
         </Reveal>
