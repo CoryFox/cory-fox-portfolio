@@ -5,6 +5,24 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { MediumPost } from "@/lib/medium";
 import { formatDate } from "@/lib/utils";
 
+function getPositionedExcerpt(post: MediumPost) {
+  const title = post.title.toLowerCase();
+
+  if (title.includes("clarity")) {
+    return "Thoughts on making products easier to use through better structure and implementation-aware UX.";
+  }
+
+  if (title.includes("teaching")) {
+    return "Reflections on explaining difficult ideas clearly, reducing cognitive overload, and supporting confidence.";
+  }
+
+  if (title.includes("adoption")) {
+    return "Notes on the smaller UX decisions that improve adoption and support better day-to-day delivery.";
+  }
+
+  return post.excerpt;
+}
+
 export function WritingSection({ intro, posts }: { intro: string; posts: MediumPost[] }) {
   return (
     <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="writing">
@@ -12,8 +30,8 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
         <Reveal mode="immediate">
           <SectionHeading
             id="writing-heading"
-            label="Writing"
-            title="Writing on frontend craft, UX, and accessibility."
+            label="WRITING"
+            title="WRITING ON SYSTEMS, UX, AND DELIVERY."
             description={intro}
           />
         </Reveal>
@@ -45,7 +63,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
                     {post.title}
                   </h3>
                   <p className="mt-4 flex-1 text-base leading-7 text-[color:var(--text)]">
-                    {post.excerpt}
+                    {getPositionedExcerpt(post)}
                   </p>
                   <Link
                     href={post.link}

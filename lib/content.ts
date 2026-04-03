@@ -12,29 +12,49 @@ export type HomeContent = {
     primaryCta: { label: string; href: string };
     secondaryCta: { label: string; href: string };
     titles: string[];
+    cards: Array<{
+      title: string;
+      body: string;
+    }>;
   };
-  howIWork: {
+  implementation: {
+    label: string;
     title: string;
-    steps: Array<{
+    intro: string;
+    items: Array<{
       title: string;
       description: string;
     }>;
-  };
-  whatIEnjoy: {
-    title: string;
-    items: string[];
   };
   workIntro: string;
   demosIntro: string;
   writingIntro: string;
   linkedin: {
+    label: string;
     title: string;
     description: string;
+    focusTitle: string;
+    focusBody: string;
+    bestForTitle: string;
+    bestForBody: string;
+    buttonLabel: string;
     href: string;
   };
-  contact: {
+  idealRoles: {
+    label: string;
     title: string;
     description: string;
+    themes: Array<{
+      title: string;
+      body: string;
+    }>;
+    supportingText: string;
+  };
+  contact: {
+    label: string;
+    title: string;
+    description: string[];
+    helperText: string;
     email: string;
   };
 };
@@ -80,6 +100,7 @@ export type WorkCaseStudy = {
   approach: string;
   outcome: string;
   gallery: string[];
+  nextSlug?: string;
   content: string;
 };
 

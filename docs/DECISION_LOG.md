@@ -218,6 +218,64 @@ Decision:
 
 - replace the overlapping editorial showcase on the homepage with a uniform card grid
 
+## 2026-04-03
+
+### Positioning Reset
+
+Decision:
+
+- replace the earlier `Implementation Consultant` framing with `Implementation Specialist` only where the title meaningfully helps
+- rely more heavily on implementation, onboarding, workflow, delivery, and product-enablement language across the rest of the site
+
+Reason:
+
+- `consultant` read as overstated and too business-specific for the intended transition back into tech
+- the site needed to stay implementation-relevant without sounding like a formal consultancy profile
+
+### Copy Tightening Rule
+
+Decision:
+
+- tighten all major homepage and case-study copy blocks toward shorter sentences, less repetition, and fewer stacked positioning terms
+- avoid repeating `complex systems`, `clarity`, `stakeholder communication`, and similar framing language unless it is pulling real weight
+
+Reason:
+
+- the first rewrite established the direction, but it still felt too insistent in places
+- the stronger version is calmer, more direct, and more credible
+
+### Visual QA Method
+
+Decision:
+
+- use real local screenshot capture to validate homepage and case-study layout changes instead of relying on code inspection or browser inspector tweaks alone
+
+Reason:
+
+- the spacing, heading-wrap, and card-density issues only became obvious in rendered views across breakpoints
+
+### Utility Override Rule
+
+Decision:
+
+- do not keep inspector-led global overrides that target Tailwind-generated utility selectors such as escaped arbitrary-value classes or broad utilities like `sm:text-3xl`
+- implement typography changes either on the component class itself or through a clearly named semantic class
+
+Reason:
+
+- those overrides are brittle, difficult to reason about, and too easy to accidentally broaden beyond the intended component
+
+### Role-Fit Section Direction
+
+Decision:
+
+- replace the literal `Ideal Roles` title-list section with a broader `Where I fit best` section built around themes rather than exact role titles
+
+Reason:
+
+- the role list felt visually weak and too prescriptive, even though it matched the surrounding system
+- a broader fit section preserves the direction without making the page feel like a job-title checklist
+
 Reason:
 
 - the layered outcome/image treatment created readability issues and visual collisions on desktop and mobile

@@ -4,7 +4,7 @@
 
 - repo path: `/Users/coryfox/Desktop/Cory Fox Portfolio`
 - branch: `main`
-- current local HEAD: `545022d`
+- current local HEAD: `fe621a3`
 
 ## What Was Built
 
@@ -29,6 +29,33 @@
 
 - replaced the old CV asset with the new `public/cv/cory-fox-product-designer-cv.pdf` file
 - removed the temporary root-level replacement PDF after copying it into `public/cv/`
+
+### Implementation-specialist repositioning pass
+
+- rewrote the homepage and case study framing around implementation, onboarding, workflow design, product enablement, and practical delivery
+- added a new implementation section after the hero and replaced the old process-oriented sectioning with more recruiter-relevant homepage order
+- renamed `Work` to `Case Studies` and `Demos` to `Additional Work`, including updated anchor targets in navigation and footer links
+- rewrote all three case study cards and detail pages to emphasise onboarding, workflows, operational UX, and delivery while staying grounded in the underlying experience
+- rewrote the About, Experience, Writing, LinkedIn, Contact, and footer copy around implementation-focused positioning
+- added and then reworked the post-LinkedIn fit section into a broader `Where I fit best` block instead of a literal list of target job titles
+- shifted the leading role language away from `Implementation Consultant` and toward `Implementation Specialist`, while reducing role-title repetition across the rest of the site
+
+### Copy tightening and visual QA pass
+
+- tightened hero, about, implementation, experience, case study, LinkedIn, contact, and footer copy to reduce repeated phrasing and stacked positioning terms
+- shortened the hero support-card copy and locked that block into a real three-column layout with smaller headings
+- reduced the hero headline scale on mobile and adjusted the desktop clamp to avoid clipping and over-dominance at mid-width breakpoints
+- tightened case study card and additional-work card text heights so the grids feel less padded after the copy reductions
+- reduced the spacing gap between the homepage case studies and experience sections after visual review
+- reduced the mobile contact email size to improve wrapping
+- verified the visual pass with local Playwright screenshot captures across desktop and mobile, then fixed the issues found rather than relying on code inspection alone
+
+### Repo hygiene and local runtime fixes
+
+- replaced the live CV asset with the new `public/cv/cory-fox-cv.pdf` file
+- removed the temporary root-level `Cory_Fox_IC_CV-4.pdf` after copying it into `public/cv/`
+- added `playwright` as a dev dependency to support screenshot-based QA
+- fixed local ownership regressions on `.next` and `out` after browser-based QA created root-owned files that blocked `npm run dev` and `npm run build`
 
 ### Typography and visual system pass
 
@@ -108,11 +135,13 @@ Verified successfully:
 
 - `npm run lint`
 - `npm run build`
+- local Playwright screenshot pass across home, case-study, and contact views
 
 ## Operational Notes For Next Session
 
 1. Work in `/Users/coryfox/Desktop/Cory Fox Portfolio`
 2. Treat this root repo as the only active project
 3. Use the current content files as the editing surface for copy changes
-4. Prefer visual review in browser before making another system-level polish pass
-5. Read and follow `docs/SESSION_PROTOCOL.md`
+4. Be careful with elevated browser/screenshot tooling; it can leave `.next` or `out` root-owned and break normal local builds until ownership is reset
+5. Prefer real rendered review when adjusting typography or spacing, not inspector-only overrides of Tailwind-generated utility selectors
+6. Read and follow `docs/SESSION_PROTOCOL.md`

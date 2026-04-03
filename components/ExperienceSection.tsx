@@ -19,13 +19,13 @@ type ExperienceContent = {
 
 export function ExperienceSection({ content }: { content: ExperienceContent }) {
   return (
-    <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="experience">
+    <section className="section-anchor px-6 py-14 sm:px-8 sm:py-18 lg:px-10 lg:py-18" id="experience">
       <div className="mx-auto max-w-7xl">
         <Reveal mode="immediate">
           <SectionHeading
             id="experience-heading"
-            label="Experience"
-            title="Design, development, teaching."
+            label="EXPERIENCE"
+            title="IMPLEMENTATION, PRODUCT DELIVERY, AND STRUCTURED COMMUNICATION."
             description={content.profileSummary}
           />
         </Reveal>
@@ -80,6 +80,9 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
             ))}
 
             <Reveal className="rounded-2xl border border-[color:var(--border)] bg-white/58 p-6 sm:p-8">
+              <p className="mb-6 text-base leading-7 text-[color:var(--text-secondary)]">
+                Teaching strengthened my ability to explain difficult ideas clearly, support different needs, and guide people through structured processes with confidence.
+              </p>
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">
                 Education
               </p>
@@ -95,7 +98,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
             <Reveal className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--accent)] p-6 text-[color:var(--button-light-text)] sm:p-8">
               <p className="text-xs uppercase tracking-[0.28em] text-white">Curriculum vitae</p>
               <p className="mt-4 text-lg leading-8 text-white">
-                Download the full CV if you want the formal version, but the short version is simple: I design clearly, work commercially, and understand users beyond the idealised version in a deck.
+                Download the full CV for the formal version of my background across implementation, product delivery, UX, and teaching.
               </p>
               <Link
                 href="/cv/cory-fox-cv.pdf"

@@ -1,8 +1,10 @@
 import { Reveal } from "@/components/Reveal";
 
 type ContactContent = {
+  label: string;
   title: string;
-  description: string;
+  description: string[];
+  helperText: string;
   email: string;
 };
 
@@ -13,18 +15,20 @@ export function ContactSection({ content }: { content: ContactContent }) {
         <Reveal mode="immediate" className="overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg-alt)] shadow-[var(--shadow-soft)]">
           <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="border-b border-[color:var(--border)] p-6 lg:border-b-0 lg:border-r lg:p-10">
-              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">Contact</p>
+              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">{content.label}</p>
               <h2 className="mt-4 font-[family-name:var(--font-display)] text-[2rem] font-bold uppercase tracking-[0.05em] leading-[0.98] text-[color:var(--accent)] sm:text-[2.6rem] lg:text-[3rem]">
                 {content.title}
               </h2>
-              <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--text)] sm:mt-6 sm:text-lg sm:leading-8">
-                {content.description}
-              </p>
+              <div className="mt-5 max-w-xl space-y-4 text-base leading-7 text-[color:var(--text)] sm:mt-6 sm:text-lg sm:leading-8">
+                {content.description.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
               <div className="mt-8 rounded-2xl border border-[color:var(--border)] bg-white/60 p-6">
                 <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">Email</p>
                 <a
                   href={`mailto:${content.email}`}
-                  className="mt-3 inline-block break-all font-[family-name:var(--font-display)] text-[1.8rem] leading-tight sm:text-3xl"
+                  className="mt-3 inline-block break-all font-[family-name:var(--font-display)] text-[1.5rem] leading-tight sm:text-3xl"
                 >
                   {content.email}
                 </a>
@@ -36,6 +40,7 @@ export function ContactSection({ content }: { content: ContactContent }) {
               method="post"
               encType="text/plain"
             >
+              <p className="text-sm text-[color:var(--text-secondary)] lg:col-span-2">{content.helperText}</p>
               <label className="flex flex-col gap-2 text-sm">
                 Name
                 <input

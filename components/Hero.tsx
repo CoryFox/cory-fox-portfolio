@@ -12,14 +12,18 @@ type HeroContent = {
   primaryCta: { label: string; href: string };
   secondaryCta: { label: string; href: string };
   titles: string[];
+  cards: Array<{
+    title: string;
+    body: string;
+  }>;
 };
 
 export function Hero({ content }: { content: HeroContent }) {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <section className="px-6 pb-16 pt-28 sm:px-8 sm:pb-24 sm:pt-40 lg:px-10 lg:pb-24 lg:pt-40">
-      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-10">
+    <section className="px-6 pb-12 pt-28 sm:px-8 sm:pb-20 sm:pt-36 lg:px-10 lg:pb-20 lg:pt-40">
+      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-start lg:gap-10">
         <motion.div
           initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
           animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
@@ -29,11 +33,11 @@ export function Hero({ content }: { content: HeroContent }) {
           <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--text-muted)]">
             {content.eyebrow}
           </p>
-          <h1 className="mt-6 max-w-[11ch] font-[family-name:var(--font-display)] text-[clamp(3rem,6.2vw,5.8rem)] font-bold uppercase leading-[0.92] tracking-[0.04em] text-balance text-[color:var(--accent)]">
+          <h1 className="mt-6 max-w-[12ch] font-[family-name:var(--font-display)] text-[clamp(2.2rem,9.4vw,4rem)] font-bold uppercase leading-[0.92] tracking-[0.02em] text-balance text-[color:var(--accent)] sm:max-w-[10.8ch] sm:text-[clamp(3.1rem,4.5vw,5.4rem)] sm:tracking-[0.035em]">
             {content.headline}
             <span className="text-[color:var(--accent)]">.</span>
           </h1>
-          <div className="mt-5 flex flex-wrap items-center gap-2 text-[clamp(1.05rem,2.5vw,1.6rem)] leading-tight text-[color:var(--text-secondary)] sm:gap-3 sm:whitespace-nowrap">
+          <div className="mt-5 flex flex-wrap items-center gap-2 text-[clamp(1rem,2.2vw,1.45rem)] leading-tight text-[color:var(--text-secondary)] sm:gap-3 sm:whitespace-nowrap">
             <span>I work across</span>
             <AnimatedTitle titles={content.titles} />
           </div>
@@ -45,8 +49,8 @@ export function Hero({ content }: { content: HeroContent }) {
           transition={{ duration: 0.85, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
           className="rounded-3xl border border-[color:var(--border)] bg-[rgba(255,255,255,0.52)] p-6 shadow-[var(--shadow-soft)] sm:p-8"
         >
-          <p className="text-lg leading-8 text-[color:var(--text)]">{content.description}</p>
-          <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--text)]">
+          <p className="text-base leading-7 text-[color:var(--text)] sm:text-lg sm:leading-8">{content.description}</p>
+          <p className="mt-4 max-w-xl text-sm leading-7 text-[color:var(--text)] sm:mt-5 sm:text-base">
             {content.framing}
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -63,19 +67,17 @@ export function Hero({ content }: { content: HeroContent }) {
               {content.secondaryCta.label}
             </Link>
           </div>
-          <div className="mt-8 grid gap-4 border-t border-[color:var(--border)] pt-6 sm:grid-cols-3">
-            <div>
-              <p className="font-[family-name:var(--font-display)] text-[1.5rem] leading-tight text-[color:var(--accent)] sm:text-[1.65rem]">6+ Years in SaaS</p>
-              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Product, frontend, and full-stack delivery across complex platforms</p>
-            </div>
-            <div>
-              <p className="font-[family-name:var(--font-display)] text-[1.5rem] leading-tight text-[color:var(--accent)] sm:text-[1.65rem]">UX/UI Leadership</p>
-              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Led discovery, design systems, and implementation in Agile teams</p>
-            </div>
-            <div>
-              <p className="font-[family-name:var(--font-display)] text-[1.5rem] leading-tight text-[color:var(--accent)] sm:text-[1.65rem]">Full-Stack Delivery</p>
-              <p className="mt-1 text-sm text-[color:var(--text-muted)]">Angular, Flask, MongoDB, C# .NET, and modern React delivery</p>
-            </div>
+          <div className="mt-8 grid gap-3 border-t border-[color:var(--border)] pt-5 md:grid-cols-3">
+            {content.cards.map((card) => (
+              <div key={card.title}>
+                <p className="font-[family-name:var(--font-display)] text-[1.12rem] leading-tight text-[color:var(--accent)] sm:text-[1.2rem] lg:text-[1.1rem]">
+                  {card.title}
+                </p>
+                <p className="mt-1 text-[0.78rem] leading-5 text-[color:var(--text-muted)] sm:text-[0.82rem] lg:text-[0.78rem]">
+                  {card.body}
+                </p>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>

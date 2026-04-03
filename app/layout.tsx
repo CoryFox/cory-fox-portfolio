@@ -20,17 +20,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Cory Fox Portfolio",
   title: {
-    default: "Cory Fox | Full Stack Developer",
+    default: "Cory Fox | Implementation Specialist",
     template: "%s | Cory Fox"
   },
   description:
-    "Cory Fox is a full stack developer focused on frontend, UX design, and shipping clearer SaaS products.",
+    "Cory Fox is an implementation specialist with UX and systems depth, focused on onboarding, workflows, and practical SaaS delivery.",
   keywords: [
     "Cory Fox",
-    "full stack developer",
-    "frontend developer",
-    "UX developer",
-    "product design",
+    "implementation specialist",
+    "onboarding",
+    "workflow design",
+    "product enablement",
+    "UX",
     "SaaS"
   ],
   authors: [{ name: "Cory Fox", url: siteUrl }],
@@ -41,18 +42,18 @@ export const metadata: Metadata = {
     shortcut: "/icon.svg"
   },
   openGraph: {
-    title: "Cory Fox | Full Stack Developer",
+    title: "Cory Fox | Implementation Specialist",
     description:
-      "Full stack product work with a frontend and UX design bias, shaped by SaaS delivery, clarity-first thinking, and practical implementation.",
+      "Implementation, onboarding, workflow design, and practical product delivery across SaaS systems.",
     url: siteUrl,
     siteName: "Cory Fox",
     type: "website"
   },
   twitter: {
     card: "summary",
-    title: "Cory Fox | Full Stack Developer",
+    title: "Cory Fox | Implementation Specialist",
     description:
-      "Full stack product work with a frontend and UX design bias, shaped by SaaS delivery and clarity-first implementation."
+      "Implementation, onboarding, workflow design, and practical product delivery across SaaS systems."
   },
   alternates: {
     canonical: siteUrl

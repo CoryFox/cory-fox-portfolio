@@ -2,8 +2,14 @@ import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 
 type LinkedInContent = {
+  label: string;
   title: string;
   description: string;
+  focusTitle: string;
+  focusBody: string;
+  bestForTitle: string;
+  bestForBody: string;
+  buttonLabel: string;
   href: string;
 };
 
@@ -14,7 +20,7 @@ export function LinkedInSection({ content }: { content: LinkedInContent }) {
         <Reveal mode="immediate" className="rounded-3xl border border-[color:var(--border)] bg-[linear-gradient(135deg,rgba(255,255,255,0.68),rgba(239,234,226,0.9))] p-6 shadow-[var(--shadow-soft)] sm:p-10">
           <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-end lg:gap-8">
             <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">LinkedIn</p>
+              <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">{content.label}</p>
               <h2 className="mt-4 max-w-3xl font-[family-name:var(--font-display)] text-[2rem] font-bold uppercase tracking-[0.05em] leading-[0.98] text-[color:var(--accent)] sm:text-[2.6rem] lg:text-[3rem]">
                 {content.title}
               </h2>
@@ -24,12 +30,12 @@ export function LinkedInSection({ content }: { content: LinkedInContent }) {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-[color:var(--border)] bg-white/65 p-6">
-                <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">Focus</p>
-                <p className="mt-3 font-[family-name:var(--font-display)] text-2xl sm:text-3xl">SaaS, UX, design systems, frontend</p>
+                <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">{content.focusTitle}</p>
+                <p className="mt-3 font-[family-name:var(--font-display)] text-xl leading-tight sm:text-xl">{content.focusBody}</p>
               </div>
               <div className="rounded-2xl border border-[color:var(--border)] bg-white/65 p-6">
-                <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">Best for</p>
-                <p className="mt-3 font-[family-name:var(--font-display)] text-2xl sm:text-3xl">Roles, referrals, smart conversations</p>
+                <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">{content.bestForTitle}</p>
+                <p className="mt-3 font-[family-name:var(--font-display)] text-xl leading-tight sm:text-xl">{content.bestForBody}</p>
               </div>
               <div className="sm:col-span-2">
                 <Link
@@ -38,7 +44,7 @@ export function LinkedInSection({ content }: { content: LinkedInContent }) {
                   rel="noreferrer"
                   className="btn-dark inline-flex rounded-full px-6 py-3 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--button-dark)]"
                 >
-                  Connect on LinkedIn
+                  {content.buttonLabel}
                 </Link>
               </div>
             </div>

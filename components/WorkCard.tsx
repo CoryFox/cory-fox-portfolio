@@ -30,13 +30,13 @@ export function WorkCard({ project, priority = false }: { project: WorkCaseStudy
             <p className="mt-2 text-[0.72rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
               {project.role}
             </p>
-            <p className="mt-2 min-h-[7rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
+            <p className="mt-2 min-h-[6rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
               {project.summary}
             </p>
           </div>
           <div className="rounded-[1.35rem] border border-[color:var(--border)] bg-[color:var(--bg-alt)]/72 p-3.5">
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-[color:var(--text-muted)]">Focus</p>
-            <p className="mt-2 min-h-[3.75rem] text-sm leading-6 text-[color:var(--text)]">{project.focus}</p>
+            <p className="mt-2 min-h-[3.25rem] text-sm leading-6 text-[color:var(--text)]">{project.focus}</p>
           </div>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (

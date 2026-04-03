@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const footerLinks = [
   { label: "About", href: "/#about" },
-  { label: "Work", href: "/#work" },
-  { label: "Demos", href: "/#demos" },
+  { label: "Case Studies", href: "/#case-studies" },
+  { label: "Additional Work", href: "/#additional-work" },
   { label: "Experience", href: "/#experience" },
   { label: "Writing", href: "/#writing" },
   { label: "Contact", href: "/#contact" }
@@ -22,7 +22,7 @@ export function Footer() {
               Cory Fox
             </Link>
             <p className="mt-3 max-w-md text-base leading-7 text-[color:var(--text-secondary)]">
-              I design digital products that make complex systems easier to understand.
+              I help make systems easier to implement and easier to use.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">

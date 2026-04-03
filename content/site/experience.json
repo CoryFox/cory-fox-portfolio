@@ -1,43 +1,18 @@
 {
-  "profileSummary": "Full-stack product delivery across SaaS, operations, and education, with a frontend and UX bias backed by hands-on backend, data, Git, Linux, and Agile delivery experience.",
+  "profileSummary": "Experience across SaaS delivery, workflow design, UX, and education, with a practical understanding of how products are implemented, improved, and explained to different users.",
   "timeline": [
     {
-      "role": "Software Developer",
+      "role": "Software Developer -> UX/UI Lead",
       "company": "FourJaw Manufacturing Analytics",
       "period": "July 2021 - May 2024",
       "bullets": [
-        "Developed SaaS platform features across web and tablet applications.",
-        "Worked across the stack using Python, Flask, MongoDB, HTMX, Nunjucks, React, TypeScript, and Sass.",
-        "Promoted to UX/UI Lead in May 2023 while remaining hands-on with product delivery and implementation.",
-        "Defined UX strategy and led continuous discovery through user interviews, usability testing, behavioural analytics, Pendo, FullStory, and Google Analytics.",
-        "Led migration from legacy frontend architecture to a modern React, TypeScript, and Sass stack.",
-        "Designed and implemented a scalable component-based design system using Material 3 and Figma.",
-        "Worked closely with product and engineering in Agile delivery cycles, balancing roadmap priorities with UX quality and technical constraints.",
-        "Oversaw development of a tablet-first React Native operator interface used on factory floors.",
-        "Mentored two graduate developers and collaborated with product leadership on roadmap priorities in a Git-led, Linux-based environment."
-      ]
-    },
-    {
-      "role": "Software Developer",
-      "company": "Databowl",
-      "period": "January 2021 - July 2021",
-      "bullets": [
-        "Returned to support software delivery across the lead management platform.",
-        "Worked on Angular-based interface improvements, campaign tooling, and ongoing product maintenance.",
-        "Touched Postgres-backed product work, data flows, and day-to-day implementation across the platform.",
-        "Bridged UX thinking and implementation across day-to-day product work."
-      ]
-    },
-    {
-      "role": "UX/UI Designer & Developer",
-      "company": "SoloProtect UK",
-      "period": "January 2020 - January 2021",
-      "bullets": [
-        "Designed the SoloProtect mobile application enabling lone workers to raise alerts and share live location.",
-        "Led UX development of the Insights platform for monitoring worker alerts and safety status.",
-        "Delivered interfaces in a C# .NET MVVM/MVC environment while translating UX decisions into production-ready implementation.",
-        "Designed real-time geolocation monitoring tools using Google Maps and geofencing.",
-        "Worked across UX, UI, and development in an Agile product environment shaped by operational reliability and engineering constraints."
+        "Improved onboarding and workflows across web and tablet SaaS products.",
+        "Worked across product, UX, and implementation in Python, Flask, MongoDB, React, TypeScript, and Sass environments.",
+        "Promoted to UX/UI Lead while staying close to delivery.",
+        "Led discovery and usability work to find friction and improve adoption.",
+        "Helped modernise frontend architecture and increase consistency through a design system.",
+        "Collaborated closely with product and engineering in Agile delivery.",
+        "Supported tablet-first operator tooling in live operational settings."
       ]
     },
     {
@@ -45,30 +20,32 @@
       "company": "Databowl",
       "period": "January 2018 - January 2020",
       "bullets": [
-        "Developed Angular interfaces for a lead management SaaS platform handling complex workflows.",
-        "Built dashboards and analytics tools for campaign monitoring.",
-        "Contributed to development of a WYSIWYG landing page builder using GrapesJS.",
-        "Collaborated with backend engineers working with Laravel APIs and touched supporting Postgres-backed product work."
+        "Improved onboarding, setup journeys, and campaign workflows in a lead management SaaS platform.",
+        "Built and refined Angular interfaces for complex validation and data-led tasks.",
+        "Worked across UX and implementation to make day-to-day platform use clearer and easier to maintain.",
+        "Contributed to product structure, workflow design, and delivery in a Postgres-backed environment."
       ]
     },
     {
-      "role": "eLearning Developer",
-      "company": "Relish Learning",
-      "period": "March 2017 - December 2017",
+      "role": "UX/UI Designer & Developer",
+      "company": "SoloProtect UK",
+      "period": "January 2020 - January 2021",
       "bullets": [
-        "Designed and developed SCORM eLearning packages for multinational companies.",
-        "Balanced visual design, instructional structure, and front-end build quality across browser-based learning content.",
-        "Translated stakeholder requirements into polished interactive learning experiences that were ready for deployment."
+        "Designed workflows for monitoring, alerts, and location-aware decision-making in a safety-focused platform.",
+        "Translated UX decisions into production-ready interfaces in a C# .NET and Xamarin environment.",
+        "Improved geolocation-led tooling for faster operational awareness.",
+        "Worked across UX, UI, and delivery in a high-reliability context."
       ]
     },
     {
-      "role": "Teacher of Design & Technology",
+      "role": "Design & Technology Teacher",
       "company": "Thrybergh Academy",
       "period": "June 2025 - Present",
       "bullets": [
-        "Deliver engineering and design education to secondary students.",
-        "Develop structured learning experiences for students including SEND learners.",
-        "Apply clear information design to reduce cognitive overload in complex topics."
+        "Design and deliver structured learning experiences across practical and technical topics.",
+        "Communicate clearly to users with different needs and confidence levels.",
+        "Sequence information to reduce cognitive overload and improve understanding.",
+        "Support accessibility, confidence-building, and practical progress in high-variation environments."
       ]
     }
   ],
@@ -76,49 +53,38 @@
     {
       "category": "Product & UX",
       "items": [
-        "User research",
-        "UX strategy",
-        "Design systems"
+        "Onboarding",
+        "Workflow design",
+        "Usability testing"
       ]
     },
     {
-      "category": "Analytics",
+      "category": "Stakeholder & Delivery",
       "items": [
-        "Pendo",
-        "FullStory",
-        "Google Analytics"
+        "Structured communication",
+        "Agile delivery",
+        "Cross-functional collaboration"
       ]
     },
     {
-      "category": "Frontend",
+      "category": "Technical Context",
       "items": [
         "React",
         "TypeScript",
         "Angular",
-        "JavaScript",
-        "HTML",
-        "CSS/Sass"
-      ]
-    },
-    {
-      "category": "Backend & Data",
-      "items": [
         "Python",
         "Flask",
         "MongoDB",
         "Postgres",
-        "C# .NET",
-        "REST APIs"
+        "C# .NET"
       ]
     },
     {
-      "category": "Workflow",
+      "category": "Research & Insight",
       "items": [
-        "Agile delivery",
-        "Git",
-        "Linux",
-        "Azure DevOps",
-        "Webpack"
+        "Discovery",
+        "Behavioural analytics",
+        "Accessibility"
       ]
     }
   ],

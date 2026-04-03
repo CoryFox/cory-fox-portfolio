@@ -5,7 +5,8 @@ import { ExperienceSection } from "@/components/ExperienceSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { HowIWorkSection } from "@/components/HowIWorkSection";
+import { IdealRolesSection } from "@/components/IdealRolesSection";
+import { ImplementationSection } from "@/components/ImplementationSection";
 import { LinkedInSection } from "@/components/LinkedInSection";
 import { WorkSection } from "@/components/WorkSection";
 import { WritingSection } from "@/components/WritingSection";
@@ -33,13 +34,14 @@ export default async function HomePage() {
       <Header />
       <main>
         <Hero content={home.hero} />
+        <ImplementationSection content={home.implementation} />
         <AboutSection content={about} />
         <WorkSection intro={home.workIntro} work={work} />
         <ExperienceSection content={experience} />
-        <HowIWorkSection content={home.howIWork} whatIEnjoy={home.whatIEnjoy} />
         <DemosSection intro={home.demosIntro} demos={demos} />
         <WritingSection intro={home.writingIntro} posts={posts} />
         <LinkedInSection content={home.linkedin} />
+        <IdealRolesSection content={home.idealRoles} />
         <ContactSection content={home.contact} />
       </main>
       <Footer />

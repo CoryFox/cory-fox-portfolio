@@ -96,7 +96,10 @@ export default async function WorkDetailPage({
     notFound();
   }
 
-  const nextProject = projects.find((item) => item.slug !== slug) ?? projects[0];
+  const nextProject =
+    projects.find((item) => item.slug === project.nextSlug) ??
+    projects.find((item) => item.slug !== slug) ??
+    projects[0];
   const detailImages = Array.from(new Set(project.gallery.filter((image) => image !== project.heroImage)));
   const hasImageOne = Boolean(detailImages[0]);
   const hasImageTwo = Boolean(detailImages[1]);
@@ -272,7 +275,7 @@ export default async function WorkDetailPage({
 
           <Reveal mode="immediate" className="mt-14 rounded-3xl border border-[color:var(--border)] bg-white/65 px-6 py-6 sm:mt-20 sm:px-10 sm:py-8">
             <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-secondary)]">
-              Next project
+              Next case study
             </p>
             <div className="mt-4 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
               <div>

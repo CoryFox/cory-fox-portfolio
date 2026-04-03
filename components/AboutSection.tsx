@@ -62,6 +62,9 @@ export function AboutSection({ content }: { content: AboutContent }) {
               <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-muted)]">
                 Principles
               </p>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-[color:var(--text-secondary)]">
+                These are the principles I bring to onboarding, implementation, and workflow design.
+              </p>
               <div className="mt-6 grid gap-4 sm:grid-cols-2 sm:grid-rows-2">
                 {content.principles.map((item) => (
                   <div

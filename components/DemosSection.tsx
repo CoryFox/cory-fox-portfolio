@@ -11,13 +11,13 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <section className="section-anchor overflow-hidden px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="demos">
+    <section className="section-anchor overflow-hidden px-6 py-12 sm:px-8 sm:py-16 lg:px-10 lg:py-18" id="additional-work">
       <div className="mx-auto max-w-7xl">
         <Reveal mode="immediate">
           <SectionHeading
             id="demos-heading"
-            label="Demos"
-            title="Smaller demo builds."
+            label="ADDITIONAL WORK"
+            title="ADDITIONAL WORK."
             description={intro}
           />
         </Reveal>
@@ -30,7 +30,7 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
               whileInView={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10% 0px" }}
               transition={{ duration: 0.65, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
-              className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-white/70 shadow-[var(--shadow-soft)] backdrop-blur-sm"
+              className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-[color:var(--border)] bg-white/48 shadow-[0_18px_44px_rgba(17,17,17,0.08)] backdrop-blur-sm"
             >
               <div className="overflow-hidden border-b border-[color:var(--border)] bg-[color:var(--bg-alt)]">
                 <Image
@@ -42,7 +42,7 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
                 />
               </div>
 
-                <div className="flex flex-1 flex-col space-y-3 p-5 sm:p-6">
+              <div className="flex flex-1 flex-col space-y-3 p-5 sm:p-6">
                 <div className="flex flex-wrap items-center gap-3 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-[color:var(--text-muted)]">
                   <span>{demo.category}</span>
                   <span>/</span>
@@ -52,7 +52,7 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
                   <h3 className="card-title title-two-line min-h-[1.4em] font-[family-name:var(--font-display)] font-bold uppercase tracking-[0.045em] text-[color:var(--accent)]">
                     {demo.title}
                   </h3>
-                  <p className="mt-1.5 min-h-[3rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
+                  <p className="mt-1.5 min-h-[2.6rem] text-[0.98rem] leading-7 text-[color:var(--text)]">
                     {demo.subtitle}
                   </p>
                 </div>
@@ -77,7 +77,7 @@ export function DemosSection({ intro, demos }: { intro: string; demos: DemoProje
                     href={demo.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="btn-dark inline-flex items-center justify-center rounded-full px-5 py-3.5 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
+                    className="btn-light inline-flex items-center justify-center rounded-full px-5 py-3.5 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
                   >
                     Open demo
                   </Link>
