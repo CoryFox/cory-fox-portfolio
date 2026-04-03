@@ -103,8 +103,13 @@ export async function getLatestMediumPosts(): Promise<MediumPost[]> {
 
     const xml = await response.text();
     const feed = await parser.parseString(xml);
+    const sortedItems = [...(feed.items ?? [])].sort((a, b) => {
+      const aTime = a.pubDate ? new Date(a.pubDate).getTime() : 0;
+      const bTime = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+      return bTime - aTime;
+    });
 
-    return (feed.items ?? []).slice(0, 3).map((item) => ({
+    return sortedItems.slice(0, 3).map((item) => ({
       title: item.title ?? "Untitled post",
       link: item.link ?? "https://medium.com/@coryowenfox",
       pubDate: item.pubDate ?? new Date().toISOString(),

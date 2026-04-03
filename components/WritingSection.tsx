@@ -1,9 +1,58 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { startTransition, useEffect, useState } from "react";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MediumPost } from "@/lib/medium";
 import { formatDate } from "@/lib/utils";
+
+type RssToJsonResponse = {
+  status?: string;
+  items?: Array<{
+    title?: string;
+    link?: string;
+    pubDate?: string;
+    description?: string;
+    content?: string;
+    thumbnail?: string;
+  }>;
+};
+
+function extractThumbnail(...sources: Array<string | undefined>) {
+  for (const source of sources) {
+    const matches = source?.matchAll(/<img[^>]+src="([^"]+)"/gi);
+
+    if (!matches) {
+      continue;
+    }
+
+    for (const match of matches) {
+      const src = match[1];
+
+      if (src && !src.includes("/_/stat?event=")) {
+        return src;
+      }
+    }
+  }
+
+  return undefined;
+}
+
+function stripHtml(value: string) {
+  return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function buildExcerpt(value: string) {
+  const text = stripHtml(value);
+
+  if (text.length <= 160) {
+    return text;
+  }
+
+  return `${text.slice(0, 160).trim()}...`;
+}
 
 function getPositionedExcerpt(post: MediumPost) {
   const title = post.title.toLowerCase();
@@ -24,6 +73,62 @@ function getPositionedExcerpt(post: MediumPost) {
 }
 
 export function WritingSection({ intro, posts }: { intro: string; posts: MediumPost[] }) {
+  const [livePosts, setLivePosts] = useState(posts);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadLivePosts() {
+      try {
+        const response = await fetch(
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@coryowenfox",
+          {
+            cache: "no-store"
+          }
+        );
+
+        if (!response.ok) {
+          return;
+        }
+
+        const data = (await response.json()) as RssToJsonResponse;
+
+        if (data.status !== "ok" || !data.items?.length) {
+          return;
+        }
+
+        const nextPosts = data.items
+          .sort((a, b) => {
+            const aTime = a.pubDate ? new Date(a.pubDate).getTime() : 0;
+            const bTime = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+            return bTime - aTime;
+          })
+          .slice(0, 3)
+          .map((item) => ({
+            title: item.title ?? "Untitled post",
+            link: item.link ?? "https://medium.com/@coryowenfox",
+            pubDate: item.pubDate ?? new Date().toISOString(),
+            excerpt: buildExcerpt(item.description ?? item.content ?? ""),
+            thumbnail: item.thumbnail ?? extractThumbnail(item.content, item.description)
+          }));
+
+        if (!cancelled && nextPosts.length) {
+          startTransition(() => {
+            setLivePosts(nextPosts);
+          });
+        }
+      } catch {
+        // Keep the statically rendered posts as the fallback for export/runtime failures.
+      }
+    }
+
+    void loadLivePosts();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [posts]);
+
   return (
     <section className="section-anchor px-6 py-16 sm:px-8 sm:py-24 lg:px-10 lg:py-24" id="writing">
       <div className="mx-auto max-w-7xl">
@@ -36,7 +141,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
           />
         </Reveal>
         <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-3 lg:gap-6">
-          {posts.map((post, index) => (
+          {livePosts.map((post, index) => (
             <Reveal
               key={post.link}
               delay={0.06 * index}
