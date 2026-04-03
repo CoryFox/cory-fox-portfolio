@@ -33,7 +33,7 @@ export function Hero({ content }: { content: HeroContent }) {
           <p className="text-xs uppercase tracking-[0.32em] text-[color:var(--text-muted)]">
             {content.eyebrow}
           </p>
-          <h1 className="mt-6 max-w-[12ch] font-[family-name:var(--font-display)] text-[clamp(2.2rem,9.4vw,4rem)] font-bold uppercase leading-[0.92] tracking-[0.02em] text-balance text-[color:var(--accent)] sm:max-w-[10.8ch] sm:text-[clamp(3.1rem,4.5vw,5.4rem)] sm:tracking-[0.035em]">
+          <h1 className="mt-6 max-w-[12ch] font-[family-name:var(--font-display)] text-[clamp(2.08rem,8.9vw,3.8rem)] font-bold uppercase leading-[0.92] tracking-[0.02em] text-balance text-[color:var(--accent)] sm:max-w-[10.8ch] sm:text-[clamp(3.1rem,4.5vw,5.4rem)] sm:tracking-[0.035em]">
             {content.headline}
             <span className="text-[color:var(--accent)]">.</span>
           </h1>

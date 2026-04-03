@@ -42,6 +42,23 @@ function normalisePosts(posts: MediumPost[]) {
     .slice(0, 3);
 }
 
+function mergePostsWithFallback(nextPosts: MediumPost[], fallbackPosts: MediumPost[]) {
+  return normalisePosts(nextPosts).map((post) => {
+    if (post.thumbnail) {
+      return post;
+    }
+
+    const fallbackMatch = fallbackPosts.find(
+      (fallbackPost) => fallbackPost.link === post.link || fallbackPost.title === post.title
+    );
+
+    return {
+      ...post,
+      thumbnail: fallbackMatch?.thumbnail
+    };
+  });
+}
+
 function extractThumbnail(...sources: Array<string | undefined>) {
   for (const source of sources) {
     const matches = source?.matchAll(/<img[^>]+src="([^"]+)"/gi);
@@ -132,7 +149,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
 
         if (!cancelled && nextPosts.length) {
           startTransition(() => {
-            setLivePosts(normalisePosts(nextPosts));
+            setLivePosts(mergePostsWithFallback(nextPosts, posts));
           });
         }
       } catch {
