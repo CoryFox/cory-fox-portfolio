@@ -20,6 +20,28 @@ type RssToJsonResponse = {
   }>;
 };
 
+function byNewest(a: { pubDate?: string }, b: { pubDate?: string }) {
+  const aTime = a.pubDate ? new Date(a.pubDate).getTime() : 0;
+  const bTime = b.pubDate ? new Date(b.pubDate).getTime() : 0;
+  return bTime - aTime;
+}
+
+function normalisePosts(posts: MediumPost[]) {
+  const seen = new Set<string>();
+
+  return [...posts]
+    .sort(byNewest)
+    .filter((post) => {
+      if (seen.has(post.link)) {
+        return false;
+      }
+
+      seen.add(post.link);
+      return true;
+    })
+    .slice(0, 3);
+}
+
 function extractThumbnail(...sources: Array<string | undefined>) {
   for (const source of sources) {
     const matches = source?.matchAll(/<img[^>]+src="([^"]+)"/gi);
@@ -73,7 +95,7 @@ function getPositionedExcerpt(post: MediumPost) {
 }
 
 export function WritingSection({ intro, posts }: { intro: string; posts: MediumPost[] }) {
-  const [livePosts, setLivePosts] = useState(posts);
+  const [livePosts, setLivePosts] = useState(() => normalisePosts(posts));
 
   useEffect(() => {
     let cancelled = false;
@@ -98,11 +120,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
         }
 
         const nextPosts = data.items
-          .sort((a, b) => {
-            const aTime = a.pubDate ? new Date(a.pubDate).getTime() : 0;
-            const bTime = b.pubDate ? new Date(b.pubDate).getTime() : 0;
-            return bTime - aTime;
-          })
+          .sort(byNewest)
           .slice(0, 3)
           .map((item) => ({
             title: item.title ?? "Untitled post",
@@ -114,7 +132,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
 
         if (!cancelled && nextPosts.length) {
           startTransition(() => {
-            setLivePosts(nextPosts);
+            setLivePosts(normalisePosts(nextPosts));
           });
         }
       } catch {
@@ -141,7 +159,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
           />
         </Reveal>
         <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-3 lg:gap-6">
-          {livePosts.map((post, index) => (
+          {normalisePosts(livePosts).map((post, index) => (
             <Reveal
               key={post.link}
               delay={0.06 * index}
