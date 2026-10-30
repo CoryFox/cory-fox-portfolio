@@ -25,7 +25,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
           <SectionHeading
             id="experience-heading"
             label="EXPERIENCE"
-            title="IMPLEMENTATION, PRODUCT DELIVERY, AND STRUCTURED COMMUNICATION."
+            title="LEARNING PLATFORMS, DIGITAL CONTENT, AND USER SUPPORT."
             description={content.profileSummary}
           />
         </Reveal>
@@ -98,7 +98,7 @@ export function ExperienceSection({ content }: { content: ExperienceContent }) {
             <Reveal className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--accent)] p-6 text-[color:var(--button-light-text)] sm:p-8">
               <p className="text-xs uppercase tracking-[0.28em] text-white">Curriculum vitae</p>
               <p className="mt-4 text-lg leading-8 text-white">
-                Download the full CV for the formal version of my background across implementation, product delivery, UX, and teaching.
+                Download my CV for learning platform implementation at Aptem, eLearning development at Relish Learning, and the UX and teaching experience behind my approach.
               </p>
               <Link
                 href="/cv/cory-fox-cv.pdf"

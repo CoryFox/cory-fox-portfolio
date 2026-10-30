@@ -374,5 +374,12 @@ Reason:
 
 - Use Cory's actual title, Implementation Consultant at Aptem, from May 2026. The earlier preference for Implementation Specialist predated that employment.
 - Keep client names out of new public Aptem copy; describe the verified work without introducing claims of full LMS ownership, supplier management, or unverified business results.
-- Keep website and CV experience consistent through `content/site/experience.json`. The refreshed CV files remain separate until publication is approved.
+- Keep website and CV experience consistent through `content/site/experience.json`. The user subsequently approved publishing the refreshed PDF at the existing website download URL; the editable Word copy remains separate.
 - Preserve the existing public CV path and GitHub Pages publication route.
+
+### Learning technology role focus
+
+- Lead with learning technology and implementation, using Aptem and Relish Learning as the strongest relevant experience. Keep real job titles intact.
+- Put Aptem and Relish on the CV's first page under Learning technology experience, with clearly dated Further experience on page two.
+- Surface Relish near the top of the website as well as in the full chronological timeline.
+- Tailor evidence to platform support, eLearning tools and standards, reporting, documentation, stakeholder work, and learner experience without inventing LMS administration, integration ownership, or vendor management experience.

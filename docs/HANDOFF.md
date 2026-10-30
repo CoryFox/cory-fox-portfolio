@@ -104,12 +104,12 @@ Important:
 Current copy is now pushed toward:
 
 - first-person voice
-- implementation-specialist positioning
+- learning technology and implementation positioning
 - recruiter-facing credibility
 - onboarding, workflow, delivery, and product-enablement language
 - UX and systems depth as supporting context rather than the lead identity
 
-The current work content is real project content from Fox Frame. Current positioning is Implementation Consultant at Aptem, with learning technology, reporting, UX, and teaching experience. The current experience content is in `content/site/experience.json`. The live PDF remains at `public/cv/cory-fox-cv.pdf`; its replacement has been prepared separately and awaits explicit publication approval.
+The current work content is real project content from Fox Frame. Current positioning is Implementation Consultant at Aptem, with learning technology, reporting, UX, and teaching experience. The current experience content is in `content/site/experience.json`. The role-focused live PDF is `public/cv/cory-fox-cv.pdf`, with Aptem and Relish Learning together on its first page. The editable Word version is maintained separately. Relish should remain visible near the top of the homepage as well as in the career timeline.
 The contact form currently uses a `mailto:` submission to `coryowenfox@gmail.com` with a fixed enquiry subject and no explanatory footer copy.
 Case studies are now intentionally scan-first rather than article-style: visible technologies, responsibility bullets, concise problem/focus/outcome blocks, and inline imagery that adapts to the number of available screenshots.
 The post-LinkedIn fit section is intentionally broader and more ambiguous than a literal target-role list.

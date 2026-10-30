@@ -1,16 +1,16 @@
 {
-  "profileSummary": "Current implementation experience at Aptem, supported by a background in SaaS development, UX, eLearning, and teaching. My work combines client requirements, reporting, data validation, and clear documentation.",
+  "profileSummary": "Learning platform implementation at Aptem and eLearning development at Relish Learning, supported by experience in teaching, UX, and software development. My work connects technical troubleshooting, reporting, stakeholder requirements, and the learner experience.",
   "timeline": [
     {
       "role": "Implementation Consultant",
       "company": "Aptem",
       "period": "May 2026 - Present",
       "bullets": [
-        "Support client implementation of learning and employability software, translating requirements into practical workflows and reporting solutions.",
-        "Build client reports with Excel Power Query and OData, using staged queries to extract, transform, and combine platform data.",
-        "Validate field mappings and reporting outputs, investigate missing data, and troubleshoot query issues.",
-        "Create technical documentation and handover guides covering query structure, transformation rules, and maintenance.",
-        "Work with client stakeholders to clarify requirements and explain technical processes in plain English."
+        "Support clients implementing Aptem learning and employability platforms, clarifying requirements and translating them into workflows and reporting solutions.",
+        "Build repeatable Excel Power Query and OData reports to extract, transform, and combine programme data.",
+        "Investigate missing data and query issues, validate field mappings, and check outputs against reporting requirements.",
+        "Create technical documentation and step-by-step handover guides covering reporting logic, query structure, and maintenance.",
+        "Explain technical processes and reporting rules to client stakeholders in plain English."
       ]
     },
     {
@@ -29,13 +29,11 @@
       "company": "FourJaw Manufacturing Analytics",
       "period": "July 2021 - May 2024",
       "bullets": [
-        "Improved onboarding and workflows across web and tablet SaaS products.",
-        "Worked across product, UX, and implementation in Python, Flask, MongoDB, React, TypeScript, and Sass environments.",
-        "Promoted to UX/UI Lead while staying close to delivery.",
-        "Led discovery and usability work to find friction and improve adoption.",
-        "Helped modernise frontend architecture and increase consistency through a design system.",
-        "Collaborated closely with product and engineering in Agile delivery.",
-        "Supported tablet-first operator tooling in live operational settings."
+        "Improved onboarding and operational workflows across web and tablet SaaS products.",
+        "Led discovery and usability work to understand user needs, identify friction, and shape improvements.",
+        "Worked with product and engineering to deliver new functionality and support user adoption.",
+        "Helped modernise the frontend and introduce a design system for more consistent interfaces.",
+        "Developed platform features in Python, Flask, MongoDB, React, and TypeScript environments; promoted to UX/UI Lead."
       ]
     },
     {
@@ -65,13 +63,25 @@
       "company": "Relish Learning",
       "period": "2017",
       "bullets": [
-        "Built SCORM-compliant eLearning using Articulate Storyline and custom code.",
-        "Worked with clients to clarify learning requirements and turn complex subject matter into structured digital content.",
+        "Led client discovery to understand learning requirements and business objectives.",
+        "Built SCORM-compliant eLearning packages using Articulate Storyline and custom code.",
+        "Worked with stakeholders to translate complex subject matter into clear, structured digital learning experiences.",
         "Delivered learning solutions for organisations including Sainsbury’s, EY, and SDL."
       ]
     }
   ],
   "skills": [
+    {
+      "category": "Learning Technology",
+      "items": [
+        "Aptem",
+        "Articulate Storyline",
+        "SCORM",
+        "Digital learning design",
+        "Learner guidance",
+        "Assessment processes"
+      ]
+    },
     {
       "category": "Implementation & Support",
       "items": [
@@ -92,16 +102,6 @@
         "SQL",
         "REST APIs",
         "Troubleshooting"
-      ]
-    },
-    {
-      "category": "Learning Technology",
-      "items": [
-        "Articulate Storyline",
-        "SCORM",
-        "Learning design",
-        "User guides",
-        "Assessment processes"
       ]
     },
     {

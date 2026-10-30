@@ -6,13 +6,24 @@
 - branch: `main`
 - current revision: use `git log -1 --oneline` in the active checkout; historical notes below describe earlier sessions.
 
+## 2026-10-30 Learning technology tailoring and public CV
+
+- User explicitly requested publication of the website and refreshed CV, with copy tailored to National Grid's Learning Technology Specialist vacancy.
+- Reframed the homepage around learning technology and implementation while retaining Implementation Consultant as the actual current job title.
+- Made Relish Learning visible in the hero, supporting cards, learning technology highlights, About, career history, and contact copy.
+- Emphasised verified experience in Articulate Storyline, SCORM, platform implementation, reporting, troubleshooting, documentation, stakeholder requirements, and learner support.
+- Put Aptem and Relish together on page one of the two-page CV. Further experience remains clearly dated on page two.
+- Replaced `public/cv/cory-fox-cv.pdf` with the reviewed, role-focused CV. Editable Word is maintained separately.
+- Checks: lint, production build with the previously recorded TLS environment setting, two-page CV visual inspection, and whitespace validation.
+- Keep the established case studies, visual styling, public URL, and GitHub Pages workflow.
+
 ## 2026-10-30 Aptem experience and CV update
 
 - Added Implementation Consultant at Aptem, May 2026 to Present, as the first experience entry.
 - Updated the hero, About, skills, implementation examples, and metadata to reflect the current role.
 - Focused new claims on client implementation, Power Query/OData reporting, data validation, troubleshooting, stakeholder communication, and handover documentation.
 - Closed the existing teaching entry in May 2026 and retained its existing June 2025 start date. Reordered the timeline with current work first and added the established Relish eLearning experience.
-- Prepared a two-page PDF CV and editable Word version separately. Updating the public CV download remains pending explicit publication approval; this commit does not replace `public/cv/cory-fox-cv.pdf`.
+- Prepared a two-page PDF CV and editable Word version separately. Publication was initially deferred; the subsequent update above records the explicit instruction to publish.
 - Kept the established layout, case studies, domain, CV URL, and GitHub Pages deployment workflow.
 - Checks passed: `npm run lint`, production build, TypeScript validation during build, JSON parsing, `git diff --check`, and visual inspection of both CV pages.
 - The local build required `NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1` to fetch the existing Google Fonts through this environment's certificate configuration. No application configuration change was needed.

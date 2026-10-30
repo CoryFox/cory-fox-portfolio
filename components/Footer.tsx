@@ -22,7 +22,7 @@ export function Footer() {
               Cory Fox
             </Link>
             <p className="mt-3 max-w-md text-base leading-7 text-[color:var(--text-secondary)]">
-              I help make systems easier to implement and easier to use.
+              I help make learning platforms and digital content easier to use.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
