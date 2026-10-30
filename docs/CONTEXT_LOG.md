@@ -2,9 +2,22 @@
 
 ## Current Repo State
 
-- repo path: `/Users/coryfox/Desktop/Cory Fox Portfolio`
+- canonical repository: `https://github.com/CoryFox/cory-fox-portfolio`
 - branch: `main`
-- current local HEAD: `fe621a3`
+- current revision: use `git log -1 --oneline` in the active checkout; historical notes below describe earlier sessions.
+
+## 2026-10-30 Aptem experience and CV update
+
+- Added Implementation Consultant at Aptem, May 2026 to Present, as the first experience entry.
+- Updated the hero, About, skills, implementation examples, and metadata to reflect the current role.
+- Focused new claims on client implementation, Power Query/OData reporting, data validation, troubleshooting, stakeholder communication, and handover documentation.
+- Closed the existing teaching entry in May 2026 and retained its existing June 2025 start date. Reordered the timeline with current work first and added the established Relish eLearning experience.
+- Prepared a two-page PDF CV and editable Word version separately. Updating the public CV download remains pending explicit publication approval; this commit does not replace `public/cv/cory-fox-cv.pdf`.
+- Kept the established layout, case studies, domain, CV URL, and GitHub Pages deployment workflow.
+- Checks passed: `npm run lint`, production build, TypeScript validation during build, JSON parsing, `git diff --check`, and visual inspection of both CV pages.
+- The local build required `NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1` to fetch the existing Google Fonts through this environment's certificate configuration. No application configuration change was needed.
+- Managed local browser preview was unavailable: the preview runner appended Vite-only `--host` and `--strictPort` flags to `next dev`. Do not modify the working application to accommodate that runner.
+- Publication continues through the existing GitHub Pages workflow on `main`. Check the workflow for the actual published commit.
 
 ## What Was Built
 
@@ -139,7 +152,7 @@ Verified successfully:
 
 ## Operational Notes For Next Session
 
-1. Work in `/Users/coryfox/Desktop/Cory Fox Portfolio`
+1. Work at the root of a checkout of `CoryFox/cory-fox-portfolio`
 2. Treat this root repo as the only active project
 3. Use the current content files as the editing surface for copy changes
 4. Be careful with elevated browser/screenshot tooling; it can leave `.next` or `out` root-owned and break normal local builds until ownership is reset

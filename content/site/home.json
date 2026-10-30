@@ -1,9 +1,9 @@
 {
   "hero": {
     "eyebrow": "HELLO, I’M CORY",
-    "headline": "IMPLEMENTATION SPECIALIST WITH UX AND SYSTEMS DEPTH",
-    "description": "I help make products and workflows easier to understand and easier to use. My background across SaaS delivery, UX, frontend implementation, and teaching means I am comfortable improving onboarding, shaping better journeys, and helping people use platforms with confidence.",
-    "framing": "I have worked on onboarding, workflow design, validation-heavy products, and day-to-day SaaS delivery. I bring user focus, structured communication, and practical technical understanding.",
+    "headline": "IMPLEMENTATION CONSULTANT WITH UX AND SYSTEMS DEPTH",
+    "description": "I am an Implementation Consultant at Aptem, helping clients use learning and employability software. I bring experience in SaaS delivery, UX, eLearning, and teaching to client onboarding, reporting, and user support.",
+    "framing": "My current work includes Power Query and OData reporting, data validation, and technical handovers. I turn requirements into practical solutions and explain how they work.",
     "primaryCta": {
       "label": "View case studies",
       "href": "#case-studies"
@@ -16,43 +16,43 @@
       "Implementation",
       "Onboarding",
       "UX",
-      "Process Design"
+      "Learning Tech"
     ],
     "cards": [
       {
-        "title": "SaaS Implementation Thinking",
-        "body": "Onboarding, workflows, product structure, and delivery"
+        "title": "Client Implementation",
+        "body": "Requirements, onboarding, and practical platform support"
       },
       {
-        "title": "UX-Led Enablement",
-        "body": "Discovery, better journeys, usability, and adoption"
+        "title": "Learning Technology",
+        "body": "Aptem, digital learning, and user experience"
       },
       {
-        "title": "Technical Delivery Context",
-        "body": "Product, frontend, data, and delivery awareness"
+        "title": "Data & Reporting",
+        "body": "Power Query, OData, validation, and documentation"
       }
     ]
   },
   "implementation": {
     "label": "IMPLEMENTATION",
     "title": "WHAT I BRING TO IMPLEMENTATION.",
-    "intro": "I work well in roles where users, workflows, and delivery need aligning. I am comfortable spotting friction, shaping better journeys, and helping products feel easier to use in practice.",
+    "intro": "At Aptem, I help clients connect their requirements with how the platform works in practice. My UX and teaching background helps me make technical processes easier to follow.",
     "items": [
       {
-        "title": "Clear onboarding thinking",
-        "description": "I focus on the early points where users hit friction, shaping journeys that are easier to follow and complete."
+        "title": "Client onboarding",
+        "description": "I help clarify requirements and turn them into practical steps for using the platform."
       },
       {
-        "title": "Workflow design",
-        "description": "I improve day-to-day tasks so products feel more structured, reliable, and usable."
+        "title": "Reporting and validation",
+        "description": "I build reports with Power Query and OData, check field mappings, and investigate gaps in the data."
       },
       {
         "title": "Stakeholder communication",
-        "description": "I explain product decisions clearly and keep delivery grounded in what users actually need."
+        "description": "I explain technical decisions and reporting rules in language clients can use."
       },
       {
-        "title": "Technical understanding",
-        "description": "I work comfortably with product and engineering, with enough technical context to help shape practical solutions."
+        "title": "Documentation and handover",
+        "description": "I document query structure, transformation rules, and maintenance steps so others can work with the solution."
       }
     ]
   },
@@ -64,7 +64,7 @@
     "title": "FIND ME ON LINKEDIN.",
     "description": "For roles, referrals, and the more formal version of my background.",
     "focusTitle": "FOCUS",
-    "focusBody": "Implementation, onboarding, workflow design, UX, and product thinking",
+    "focusBody": "Implementation, learning technology, reporting, onboarding, and UX",
     "bestForTitle": "BEST FOR",
     "bestForBody": "Implementation roles, referrals, and product or onboarding conversations",
     "buttonLabel": "Connect on LinkedIn",
@@ -73,7 +73,7 @@
   "idealRoles": {
     "label": "ROLES",
     "title": "WHERE I FIT BEST.",
-    "description": "I am looking for implementation-focused work where onboarding, workflows, and product delivery all matter.",
+    "description": "I work best where implementation, learning technology, and user experience come together.",
     "themes": [
       {
         "title": "Onboarding and implementation",
@@ -94,7 +94,7 @@
     "label": "CONTACT",
     "title": "LET’S TALK.",
     "description": [
-      "Open to implementation, onboarding, and product enablement roles where workflow improvement and thoughtful delivery matter.",
+      "Open to conversations about implementation, learning technology, and user enablement roles.",
       "Especially interested in SaaS teams where I can help make systems easier to adopt and easier to use."
     ],
     "helperText": "Tell me a little about the role, team, or problem space.",

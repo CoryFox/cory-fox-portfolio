@@ -1,6 +1,29 @@
 {
-  "profileSummary": "Experience across SaaS delivery, workflow design, UX, and education, with a practical understanding of how products are implemented, improved, and explained to different users.",
+  "profileSummary": "Current implementation experience at Aptem, supported by a background in SaaS development, UX, eLearning, and teaching. My work combines client requirements, reporting, data validation, and clear documentation.",
   "timeline": [
+    {
+      "role": "Implementation Consultant",
+      "company": "Aptem",
+      "period": "May 2026 - Present",
+      "bullets": [
+        "Support client implementation of learning and employability software, translating requirements into practical workflows and reporting solutions.",
+        "Build client reports with Excel Power Query and OData, using staged queries to extract, transform, and combine platform data.",
+        "Validate field mappings and reporting outputs, investigate missing data, and troubleshoot query issues.",
+        "Create technical documentation and handover guides covering query structure, transformation rules, and maintenance.",
+        "Work with client stakeholders to clarify requirements and explain technical processes in plain English."
+      ]
+    },
+    {
+      "role": "Design & Technology Teacher",
+      "company": "Thrybergh Academy",
+      "period": "June 2025 - May 2026",
+      "bullets": [
+        "Designed and delivered structured learning across practical and technical topics.",
+        "Created step-by-step resources and video walkthroughs for learners with different needs and confidence levels.",
+        "Supported assessment, evidence collection, and coursework against qualification requirements.",
+        "Introduced digital tools and explained their use clearly to support learning."
+      ]
+    },
     {
       "role": "Software Developer -> UX/UI Lead",
       "company": "FourJaw Manufacturing Analytics",
@@ -17,17 +40,6 @@
     },
     {
       "role": "UX/UI Designer & Developer",
-      "company": "Databowl",
-      "period": "January 2018 - January 2020",
-      "bullets": [
-        "Improved onboarding, setup journeys, and campaign workflows in a lead management SaaS platform.",
-        "Built and refined Angular interfaces for complex validation and data-led tasks.",
-        "Worked across UX and implementation to make day-to-day platform use clearer and easier to maintain.",
-        "Contributed to product structure, workflow design, and delivery in a Postgres-backed environment."
-      ]
-    },
-    {
-      "role": "UX/UI Designer & Developer",
       "company": "SoloProtect UK",
       "period": "January 2020 - January 2021",
       "bullets": [
@@ -38,36 +50,72 @@
       ]
     },
     {
-      "role": "Design & Technology Teacher",
-      "company": "Thrybergh Academy",
-      "period": "June 2025 - Present",
+      "role": "UX/UI Designer & Developer",
+      "company": "Databowl",
+      "period": "January 2018 - January 2020",
       "bullets": [
-        "Design and deliver structured learning experiences across practical and technical topics.",
-        "Communicate clearly to users with different needs and confidence levels.",
-        "Sequence information to reduce cognitive overload and improve understanding.",
-        "Support accessibility, confidence-building, and practical progress in high-variation environments."
+        "Improved onboarding, setup journeys, and campaign workflows in a lead management SaaS platform.",
+        "Built and refined Angular interfaces for complex validation and data-led tasks.",
+        "Worked across UX and implementation to make day-to-day platform use clearer and easier to maintain.",
+        "Contributed to product structure, workflow design, and delivery in a Postgres-backed environment."
+      ]
+    },
+    {
+      "role": "eLearning Developer",
+      "company": "Relish Learning",
+      "period": "2017",
+      "bullets": [
+        "Built SCORM-compliant eLearning using Articulate Storyline and custom code.",
+        "Worked with clients to clarify learning requirements and turn complex subject matter into structured digital content.",
+        "Delivered learning solutions for organisations including Sainsbury’s, EY, and SDL."
       ]
     }
   ],
   "skills": [
     {
+      "category": "Implementation & Support",
+      "items": [
+        "Aptem",
+        "Client onboarding",
+        "Requirements gathering",
+        "Workflow mapping",
+        "Stakeholder communication",
+        "Technical documentation"
+      ]
+    },
+    {
+      "category": "Data & Reporting",
+      "items": [
+        "Excel Power Query",
+        "OData",
+        "Data validation",
+        "SQL",
+        "REST APIs",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "category": "Learning Technology",
+      "items": [
+        "Articulate Storyline",
+        "SCORM",
+        "Learning design",
+        "User guides",
+        "Assessment processes"
+      ]
+    },
+    {
       "category": "Product & UX",
       "items": [
-        "Onboarding",
-        "Workflow design",
-        "Usability testing"
+        "Usability testing",
+        "Discovery",
+        "Accessibility",
+        "Workflow improvement",
+        "Agile delivery"
       ]
     },
     {
-      "category": "Stakeholder & Delivery",
-      "items": [
-        "Structured communication",
-        "Agile delivery",
-        "Cross-functional collaboration"
-      ]
-    },
-    {
-      "category": "Technical Context",
+      "category": "Software Development",
       "items": [
         "React",
         "TypeScript",
@@ -77,14 +125,6 @@
         "MongoDB",
         "Postgres",
         "C# .NET"
-      ]
-    },
-    {
-      "category": "Research & Insight",
-      "items": [
-        "Discovery",
-        "Behavioural analytics",
-        "Accessibility"
       ]
     }
   ],

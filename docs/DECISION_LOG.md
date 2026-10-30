@@ -367,3 +367,12 @@ Reason:
 - anchor navigation should never land on apparently missing content
 - recruiters scan case studies for stack, scope, and outcomes before they read long narrative copy
 - empty media slots and repeated imagery make handcrafted case studies feel unfinished
+
+## 2026-10-30
+
+### Current role and CV consistency
+
+- Use Cory's actual title, Implementation Consultant at Aptem, from May 2026. The earlier preference for Implementation Specialist predated that employment.
+- Keep client names out of new public Aptem copy; describe the verified work without introducing claims of full LMS ownership, supplier management, or unverified business results.
+- Keep website and CV experience consistent through `content/site/experience.json`. The refreshed CV files remain separate until publication is approved.
+- Preserve the existing public CV path and GitHub Pages publication route.

@@ -20,14 +20,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Cory Fox Portfolio",
   title: {
-    default: "Cory Fox | Implementation Specialist",
+    default: "Cory Fox | Implementation Consultant",
     template: "%s | Cory Fox"
   },
   description:
-    "Cory Fox is an implementation specialist with UX and systems depth, focused on onboarding, workflows, and practical SaaS delivery.",
+    "Cory Fox is an Implementation Consultant at Aptem, combining learning technology, client onboarding, reporting, UX, and software development experience.",
   keywords: [
     "Cory Fox",
-    "implementation specialist",
+    "implementation consultant",
+    "learning technology",
+    "Aptem",
+    "Power Query",
     "onboarding",
     "workflow design",
     "product enablement",
@@ -42,18 +45,18 @@ export const metadata: Metadata = {
     shortcut: "/icon.svg"
   },
   openGraph: {
-    title: "Cory Fox | Implementation Specialist",
+    title: "Cory Fox | Implementation Consultant",
     description:
-      "Implementation, onboarding, workflow design, and practical product delivery across SaaS systems.",
+      "Implementation Consultant at Aptem with experience in learning technology, reporting, client onboarding, and UX.",
     url: siteUrl,
     siteName: "Cory Fox",
     type: "website"
   },
   twitter: {
     card: "summary",
-    title: "Cory Fox | Implementation Specialist",
+    title: "Cory Fox | Implementation Consultant",
     description:
-      "Implementation, onboarding, workflow design, and practical product delivery across SaaS systems."
+      "Implementation Consultant at Aptem with experience in learning technology, reporting, client onboarding, and UX."
   },
   alternates: {
     canonical: siteUrl
