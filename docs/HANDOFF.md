@@ -88,6 +88,7 @@ The project currently uses:
 - Tailwind utility classes for layout, spacing, radii, and type
 - `Montserrat` for display
 - `Inter` for sans/body
+- bundled Latin WOFF2 font files in `app/fonts`, loaded with `next/font/local` so builds do not fetch Google Fonts
 
 Important:
 

@@ -20,6 +20,13 @@
 - Production preview uses an isolated static-export QA directory with the managed preview runner, avoiding its incompatible flags for `next dev`. QA files are not part of the published site.
 - Validation: lint and production build, two-page visual CV review and font embedding check, responsive browser review from 320 to 2560 px. See current git history and the GitHub Pages workflow for publication status.
 
+## 2026-11-09 Deployment font repair
+
+- The first AI-focused commit passed local lint and build, but GitHub Actions failed in `next/font/google` with `next/font/google queries have exactly one entry` while resolving Montserrat font URLs containing query parameters.
+- Switched to `next/font/local` and committed the exact Latin WOFF2 bytes from the reviewed export, preserving Montserrat and Inter and their existing weight ranges. Included both original SIL Open Font License files.
+- This removes Google font fetching from clean builds and avoids depending on local font-fetch caches or environment-specific TLS settings.
+- Clean `npm run build` passed without the previous TLS environment setting; lint and whitespace checks also passed. Bundled font bytes match the reviewed export exactly. Responsive browser review passed again from 320 to 2560 px after changing the font loader; desktop rendering retained the same measured layout.
+
 ## 2026-10-30 Learning technology tailoring and public CV
 
 - User explicitly requested publication of the website and refreshed CV, with copy tailored to National Grid's Learning Technology Specialist vacancy.

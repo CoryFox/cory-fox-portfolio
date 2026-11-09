@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const display = Montserrat({
+const display = localFont({
+  src: "./fonts/montserrat-latin.woff2",
   variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"]
+  weight: "500 800",
+  style: "normal",
+  display: "swap"
 });
 
-const sans = Inter({
+const sans = localFont({
+  src: "./fonts/inter-latin.woff2",
   variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"]
+  weight: "400 700",
+  style: "normal",
+  display: "swap"
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://coryfox.co.uk";

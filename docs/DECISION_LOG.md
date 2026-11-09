@@ -399,3 +399,9 @@ Reason:
 - Size the hero headline relative to its own column, allow grid children to shrink, and constrain long section headings on mobile.
 - Preserve Montserrat, Inter, and the navy / warm neutral palette. Match the CV to this system through fonts, hierarchy, whitespace, and restrained colour.
 - Keep a two-page, text-based CV with actual job titles and dates. Do not publish editable Word files or intermediate QA output in the website repository.
+
+### Bundle the approved fonts
+
+- Load committed Montserrat and Inter WOFF2 files using `next/font/local` instead of downloading fonts during builds.
+- Preserve the exact reviewed font bytes and existing CSS variables and weight ranges. Include the upstream SIL Open Font License files.
+- The GitHub Pages build failed in the Google font resolver after the initial AI-focused commit. Bundling fonts fixes the build dependency without changing the design, upgrading the framework, or changing hosting.
