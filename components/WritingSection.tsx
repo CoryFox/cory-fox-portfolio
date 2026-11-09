@@ -199,7 +199,7 @@ export function WritingSection({ intro, posts }: { intro: string; posts: MediumP
                   <p className="text-xs uppercase tracking-[0.18em] text-[color:var(--text-muted)]">
                     {formatDate(post.pubDate)}
                   </p>
-                  <h3 className="mt-4 font-[family-name:var(--font-display)] text-3xl leading-tight">
+                  <h3 className="mt-4 break-words font-[family-name:var(--font-display)] text-2xl leading-tight sm:text-3xl lg:text-2xl xl:text-3xl">
                     {post.title}
                   </h3>
                   <p className="mt-4 flex-1 text-base leading-7 text-[color:var(--text)]">

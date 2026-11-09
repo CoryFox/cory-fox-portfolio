@@ -17,7 +17,7 @@ export function SectionHeading({
     <div
       id={id}
       className={cn(
-        "section-anchor",
+        "section-anchor section-heading min-w-0",
         align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"
       )}
     >

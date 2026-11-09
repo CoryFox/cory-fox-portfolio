@@ -383,3 +383,19 @@ Reason:
 - Put Aptem and Relish on the CV's first page under Learning technology experience, with clearly dated Further experience on page two.
 - Surface Relish near the top of the website as well as in the full chronological timeline.
 - Tailor evidence to platform support, eLearning tools and standards, reporting, documentation, stakeholder work, and learner experience without inventing LMS administration, integration ownership, or vendor management experience.
+
+## 2026-11-09
+
+### AI implementation is the lead positioning
+
+- Supersede the earlier vacancy-specific learning technology emphasis with AI implementation, transformation, and adoption.
+- Attribute the newly confirmed AI transformation and cross-platform automation work to Aptem, retaining Implementation Consultant as the employment title.
+- Show software development, UX, client implementation, and teaching as the combined differentiator. Keep Relish and learning technology visible as evidence rather than the target sector.
+- Distinguish confirmed work from unsupported specifics. No named employer AI stack, numerical impact, AI engineering specialism, or integration ownership has been supplied.
+
+### Typography must fit its container
+
+- Supersede the earlier instruction to solve hero overflow only through shorter copy. A viewport-sized headline can overrun a fixed-width column even with sensible copy.
+- Size the hero headline relative to its own column, allow grid children to shrink, and constrain long section headings on mobile.
+- Preserve Montserrat, Inter, and the navy / warm neutral palette. Match the CV to this system through fonts, hierarchy, whitespace, and restrained colour.
+- Keep a two-page, text-based CV with actual job titles and dates. Do not publish editable Word files or intermediate QA output in the website repository.

@@ -1,16 +1,16 @@
 {
-  "profileSummary": "Learning platform implementation at Aptem and eLearning development at Relish Learning, supported by experience in teaching, UX, and software development. My work connects technical troubleshooting, reporting, stakeholder requirements, and the learner experience.",
+  "profileSummary": "AI transformation and client implementation at Aptem, backed by SaaS development, UX leadership, and teaching. I connect business needs with technical delivery and clear guidance for the people using the system.",
   "timeline": [
     {
       "role": "Implementation Consultant",
       "company": "Aptem",
       "period": "May 2026 - Present",
       "bullets": [
-        "Support clients implementing Aptem learning and employability platforms, clarifying requirements and translating them into workflows and reporting solutions.",
-        "Build repeatable Excel Power Query and OData reports to extract, transform, and combine programme data.",
-        "Investigate missing data and query issues, validate field mappings, and check outputs against reporting requirements.",
-        "Create technical documentation and step-by-step handover guides covering reporting logic, query structure, and maintenance.",
-        "Explain technical processes and reporting rules to client stakeholders in plain English."
+        "Use AI to improve processes across multiple teams at Aptem, building automations across different software platforms and business use cases.",
+        "Translate team requirements into practical AI-enabled workflows, combining implementation knowledge with software development and UX experience.",
+        "Support clients implementing Aptem learning and employability platforms, clarifying requirements and shaping workflows and reporting solutions.",
+        "Build repeatable Excel Power Query and OData reports; investigate data issues, validate field mappings, and check outputs against requirements.",
+        "Create technical documentation and step-by-step handover guides, explaining reporting logic and technical processes in plain English."
       ]
     },
     {
@@ -72,25 +72,24 @@
   ],
   "skills": [
     {
-      "category": "Learning Technology",
+      "category": "AI & Automation",
       "items": [
-        "Aptem",
-        "Articulate Storyline",
-        "SCORM",
-        "Digital learning design",
-        "Learner guidance",
-        "Assessment processes"
+        "AI transformation",
+        "Cross-platform automation",
+        "Business requirements",
+        "Workflow improvement",
+        "Cross-team implementation"
       ]
     },
     {
-      "category": "Implementation & Support",
+      "category": "Implementation & Adoption",
       "items": [
-        "Aptem",
         "Client onboarding",
         "Requirements gathering",
         "Workflow mapping",
         "Stakeholder communication",
-        "Technical documentation"
+        "Technical documentation",
+        "User guidance"
       ]
     },
     {
@@ -107,10 +106,10 @@
     {
       "category": "Product & UX",
       "items": [
+        "User research",
         "Usability testing",
-        "Discovery",
         "Accessibility",
-        "Workflow improvement",
+        "Design systems",
         "Agile delivery"
       ]
     },
@@ -125,6 +124,16 @@
         "MongoDB",
         "Postgres",
         "C# .NET"
+      ]
+    },
+    {
+      "category": "Teaching & Digital Learning",
+      "items": [
+        "Structured learning",
+        "Articulate Storyline",
+        "SCORM",
+        "Step-by-step resources",
+        "Learner support"
       ]
     }
   ],

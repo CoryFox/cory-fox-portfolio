@@ -115,9 +115,31 @@ img {
   text-wrap: balance;
 }
 
+.hero-copy {
+  container-type: inline-size;
+}
+
+.hero-title {
+  /* Fit the actual column, including when the page reaches its max width. */
+  max-width: 100%;
+  font-size: clamp(1.5rem, 8.7cqi, 3.65rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+}
+
 .section-title {
   font-size: clamp(2.1rem, 3.5vw, 3.5rem);
   line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.section-heading {
+  container-type: inline-size;
+}
+
+.section-heading .section-title {
+  font-size: min(clamp(2.1rem, 3.5vw, 3.5rem), 9cqi);
 }
 
 .card-title {

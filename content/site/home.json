@@ -1,9 +1,9 @@
 {
   "hero": {
     "eyebrow": "HELLO, I’M CORY",
-    "headline": "LEARNING TECHNOLOGY AND IMPLEMENTATION",
-    "description": "I am an Implementation Consultant at Aptem, with earlier eLearning development experience at Relish Learning. I help clients use learning and employability platforms, understand their data, and turn requirements into practical solutions.",
-    "framing": "My background combines Articulate Storyline and SCORM, Power Query and OData reporting, UX, and teaching. I bring technical problem-solving and clear guidance to the way people learn and use software.",
+    "headline": "AI IMPLEMENTATION & ADOPTION",
+    "description": "I’m an Implementation Consultant at Aptem, working on AI transformation across multiple teams. I use AI to improve processes and build automations across different software platforms and business use cases.",
+    "framing": "I combine software development and UX with a teaching background. That means I can understand the technical detail, design around how people work, and explain the change clearly.",
     "primaryCta": {
       "label": "View case studies",
       "href": "#case-studies"
@@ -13,50 +13,49 @@
       "href": "/cv/cory-fox-cv.pdf"
     },
     "titles": [
-      "Learning Tech",
+      "AI & Automation",
       "Implementation",
-      "eLearning",
-      "UX"
+      "UX & Adoption"
     ],
     "cards": [
       {
-        "title": "Aptem",
-        "body": "Learning platforms, client implementation, and reporting"
+        "title": "AI delivery",
+        "body": "Cross-team transformation and practical automation"
       },
       {
-        "title": "Relish Learning",
-        "body": "Articulate Storyline, SCORM, and digital learning"
+        "title": "Technical depth",
+        "body": "Software, APIs, data validation, and reporting"
       },
       {
-        "title": "Teaching & UX",
-        "body": "Learner support, clear guidance, and usability"
+        "title": "User adoption",
+        "body": "UX, clear guidance, and a teaching background"
       }
     ]
   },
   "implementation": {
-    "label": "LEARNING TECHNOLOGY",
-    "title": "PLATFORMS, CONTENT, AND LEARNER EXPERIENCE.",
-    "intro": "I connect current platform implementation at Aptem with eLearning development at Relish Learning, classroom teaching, and SaaS user experience.",
+    "label": "WHAT I BRING",
+    "title": "FROM BUSINESS NEED TO EVERYDAY USE.",
+    "intro": "AI implementation needs an understanding of the process, the technology, and the people using it. My experience connects all three.",
     "items": [
       {
-        "title": "Learning platforms at Aptem",
-        "description": "I support client implementation, build Power Query and OData reports, investigate data issues, and document solutions for handover."
+        "title": "AI transformation",
+        "description": "At Aptem, I use AI to improve processes across teams and build automations across software platforms, shaped around different business needs."
       },
       {
-        "title": "eLearning at Relish Learning",
-        "description": "I built SCORM-compliant learning packages with Articulate Storyline and custom code, working with clients including Sainsbury’s, EY, and SDL."
+        "title": "Technical delivery",
+        "description": "I bring hands-on software development, REST API, and data experience, alongside Power Query and OData reporting, validation, and troubleshooting."
       },
       {
-        "title": "Learner support and guidance",
-        "description": "Teaching developed my ability to explain technical tasks, create step-by-step resources, and support people with different learning needs."
+        "title": "Usable workflows",
+        "description": "At FourJaw, Databowl, and SoloProtect, I combined UX and development to improve onboarding, simplify complex tasks, and support day-to-day platform use."
       },
       {
-        "title": "User experience and adoption",
-        "description": "At FourJaw, I used discovery and usability work to improve onboarding and workflows, collaborating with product and engineering on practical changes."
+        "title": "Clear guidance",
+        "description": "Teaching and eLearning development at Relish Learning taught me how to explain complex ideas, structure learning, and support people with different needs."
       }
     ]
   },
-  "workIntro": "Examples of improving onboarding, usability, and operational workflows. These projects underpin how I approach learning platforms and user adoption.",
+  "workIntro": "SaaS projects showing the technical delivery, workflow design, and user research that underpin my approach to AI implementation.",
   "demosIntro": "A smaller set of commercial and conversion-focused builds retained to show execution range, separate from the core SaaS case studies.",
   "writingIntro": "I write occasionally about digital products, UX, delivery, and making systems easier to use.",
   "linkedin": {
@@ -64,38 +63,38 @@
     "title": "FIND ME ON LINKEDIN.",
     "description": "For roles, referrals, and the more formal version of my background.",
     "focusTitle": "FOCUS",
-    "focusBody": "Learning technology, digital learning, platform implementation, reporting, and user experience",
+    "focusBody": "AI implementation, cross-platform automation, process improvement, and user adoption",
     "bestForTitle": "BEST FOR",
-    "bestForBody": "Learning technology and implementation opportunities, referrals, and professional conversations",
+    "bestForBody": "AI transformation and implementation opportunities, referrals, and professional conversations",
     "buttonLabel": "Connect on LinkedIn",
     "href": "https://www.linkedin.com/in/corymetcalfe1"
   },
   "idealRoles": {
     "label": "ROLES",
     "title": "WHERE I FIT BEST.",
-    "description": "I work best where learning platforms, digital content, and user support need to work together.",
+    "description": "I work best where AI needs to become a practical part of how a business operates.",
     "themes": [
       {
-        "title": "Learning technology",
-        "body": "Helping organisations support and improve the platforms people use to learn."
+        "title": "AI implementation",
+        "body": "Turning business needs into practical AI workflows, with attention to the people and processes involved."
       },
       {
-        "title": "Reporting and improvement",
-        "body": "Investigating data issues, making reporting dependable, and identifying practical changes to workflows."
+        "title": "Workflow automation",
+        "body": "Connecting software platforms and improving processes across teams, supported by technical and data experience."
       },
       {
-        "title": "Learner experience",
-        "body": "Combining digital learning, clear guidance, and usability to make technology easier to adopt."
+        "title": "Adoption and enablement",
+        "body": "Using UX, documentation, and teaching experience to make new ways of working easier to understand and adopt."
       }
     ],
-    "supportingText": "My background spans the technical platform, the learning content, and the person using them."
+    "supportingText": "My strength is connecting business requirements, technical delivery, and the people who need to use the result."
   },
   "contact": {
     "label": "CONTACT",
     "title": "LET’S TALK.",
     "description": [
-      "Open to learning technology and implementation opportunities where platform support, digital learning, and user experience matter.",
-      "I bring current Aptem implementation experience alongside eLearning development at Relish Learning, UX, and teaching."
+      "Open to AI implementation, transformation, and automation opportunities where practical delivery and user adoption matter.",
+      "I bring current AI transformation experience at Aptem, backed by software development, UX leadership, and teaching."
     ],
     "helperText": "Tell me a little about the role, team, or problem space.",
     "email": "coryowenfox@gmail.com"

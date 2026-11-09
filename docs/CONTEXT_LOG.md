@@ -6,6 +6,20 @@
 - branch: `main`
 - current revision: use `git log -1 --oneline` in the active checkout; historical notes below describe earlier sessions.
 
+## 2026-11-09 AI implementation positioning and design repair
+
+- Cory changed the focus from the National Grid learning technology vacancy to AI implementation, transformation, and adoption across sectors.
+- He confirmed six months of AI transformation work across multiple teams, building efficiencies and automations across software platforms and business use cases, as part of his Aptem role.
+- Lead copy, metadata, skills, About, experience introduction, contact, and footer now reflect that work. Preserve the actual title Implementation Consultant. Do not invent named AI platforms, quantified savings, enterprise rollout ownership, or formal ROI claims.
+- Keep learning technology as supporting evidence. Relish remains in the homepage capability cards, About, timeline, and CV; teaching supports communication, learning, and adoption.
+- Rebuilt the two-page CV with Montserrat headings, Inter body text, navy accents, warm grey metadata, aligned dates, hanging bullets, and clearer spacing. Aptem and FourJaw lead under Selected experience; other roles remain explicitly dated under Further experience.
+- The reproducible DOCX authoring script is `scripts/build_cv.py`. It requires python-docx and locally installed Montserrat/Inter fonts. Render and visually inspect every page before replacing `public/cv/cory-fox-cv.pdf`. The editable Word file is maintained separately from the public repository.
+- Fixed hero overflow at the source: zero-minimum grid tracks, shrinkable children, and headline typography sized from its column with container query units. The old viewport-based size continued growing after the column reached its maximum width.
+- Small-screen review also found long section headings overflowing. Their size is now constrained by the section width, with wrapping as a fallback. Experience job headings and dates now stack cleanly. Capability cards, LinkedIn details, and writing titles also adapt at the narrower desktop breakpoint after QA found cramped text there.
+- Simplified rotating title transitions to keep text readable rather than starting each title blurred and invisible.
+- Production preview uses an isolated static-export QA directory with the managed preview runner, avoiding its incompatible flags for `next dev`. QA files are not part of the published site.
+- Validation: lint and production build, two-page visual CV review and font embedding check, responsive browser review from 320 to 2560 px. See current git history and the GitHub Pages workflow for publication status.
+
 ## 2026-10-30 Learning technology tailoring and public CV
 
 - User explicitly requested publication of the website and refreshed CV, with copy tailored to National Grid's Learning Technology Specialist vacancy.

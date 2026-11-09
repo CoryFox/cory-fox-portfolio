@@ -36,10 +36,10 @@ export function AnimatedTitle({ titles }: { titles: string[] }) {
       <AnimatePresence mode="wait">
         <motion.span
           key={titles[index]}
-          initial={{ opacity: 0, y: 26, filter: "blur(8px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          exit={{ opacity: 0, y: -24, filter: "blur(8px)" }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          initial={false}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
           className="absolute left-0 top-1/2 -translate-y-1/2 whitespace-nowrap font-semibold text-[color:var(--accent)]"
         >
           {titles[index]}

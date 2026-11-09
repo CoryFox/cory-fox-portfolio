@@ -28,16 +28,16 @@ export function LinkedInSection({ content }: { content: LinkedInContent }) {
                 {content.description}
               </p>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               <div className="rounded-2xl border border-[color:var(--border)] bg-white/65 p-6">
                 <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">{content.focusTitle}</p>
-                <p className="mt-3 font-[family-name:var(--font-display)] text-xl leading-tight sm:text-xl">{content.focusBody}</p>
+                <p className="mt-3 break-words font-[family-name:var(--font-display)] text-lg leading-snug">{content.focusBody}</p>
               </div>
               <div className="rounded-2xl border border-[color:var(--border)] bg-white/65 p-6">
                 <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--text-muted)]">{content.bestForTitle}</p>
-                <p className="mt-3 font-[family-name:var(--font-display)] text-xl leading-tight sm:text-xl">{content.bestForBody}</p>
+                <p className="mt-3 break-words font-[family-name:var(--font-display)] text-lg leading-snug">{content.bestForBody}</p>
               </div>
-              <div className="sm:col-span-2">
+              <div className="sm:col-span-2 lg:col-span-1 xl:col-span-2">
                 <Link
                   href={content.href}
                   target="_blank"

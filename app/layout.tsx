@@ -20,24 +20,22 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Cory Fox Portfolio",
   title: {
-    default: "Cory Fox | Learning Technology & Implementation",
+    default: "Cory Fox | AI Implementation & Transformation",
     template: "%s | Cory Fox"
   },
   description:
-    "Cory Fox combines Aptem platform implementation with eLearning development at Relish Learning, Articulate Storyline, SCORM, reporting, UX, and teaching.",
+    "Cory Fox is an Implementation Consultant at Aptem working on AI transformation, cross-platform automation, and process improvement, backed by software development, UX, and teaching.",
   keywords: [
     "Cory Fox",
+    "AI implementation",
+    "AI transformation",
     "implementation consultant",
-    "learning technology",
+    "workflow automation",
+    "cross-platform automation",
+    "process improvement",
+    "user adoption",
     "Aptem",
-    "Power Query",
-    "Relish Learning",
-    "Articulate Storyline",
-    "SCORM",
-    "digital learning",
-    "onboarding",
-    "workflow design",
-    "product enablement",
+    "software development",
     "UX",
     "SaaS"
   ],
@@ -49,18 +47,18 @@ export const metadata: Metadata = {
     shortcut: "/icon.svg"
   },
   openGraph: {
-    title: "Cory Fox | Learning Technology & Implementation",
+    title: "Cory Fox | AI Implementation & Transformation",
     description:
-      "Aptem implementation, Relish Learning eLearning development, SCORM, Articulate Storyline, reporting, and learner experience.",
+      "AI transformation at Aptem, cross-platform automation, technical delivery, and user adoption. A background spanning software development, UX, and teaching.",
     url: siteUrl,
     siteName: "Cory Fox",
     type: "website"
   },
   twitter: {
     card: "summary",
-    title: "Cory Fox | Learning Technology & Implementation",
+    title: "Cory Fox | AI Implementation & Transformation",
     description:
-      "Aptem implementation, Relish Learning eLearning development, SCORM, Articulate Storyline, reporting, and learner experience."
+      "AI transformation at Aptem, cross-platform automation, technical delivery, and user adoption. A background spanning software development, UX, and teaching."
   },
   alternates: {
     canonical: siteUrl

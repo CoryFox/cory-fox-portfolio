@@ -24,7 +24,7 @@ export function ImplementationSection({ content }: { content: ImplementationCont
           />
         </Reveal>
 
-        <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-4 lg:gap-6">
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:mt-10 lg:gap-6 xl:grid-cols-4">
           {content.items.map((item, index) => (
             <Reveal
               key={item.title}
