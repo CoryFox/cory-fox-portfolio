@@ -25,6 +25,14 @@
       ]
     },
     {
+      "role": "PGCE Secondary Design & Technology",
+      "company": "Sheffield Hallam University",
+      "period": "May 2024 - May 2025",
+      "bullets": [
+        "Studied for my PGCE, developing practical teaching skills and clear approaches to explaining technical subjects."
+      ]
+    },
+    {
       "role": "Software Developer -> UX/UI Lead",
       "company": "FourJaw Manufacturing Analytics",
       "period": "July 2021 - May 2024",
@@ -34,6 +42,14 @@
         "Worked with product and engineering to deliver new functionality and support user adoption.",
         "Helped modernise the frontend and introduce a design system for more consistent interfaces.",
         "Developed platform features in Python, Flask, MongoDB, React, and TypeScript environments; promoted to UX/UI Lead."
+      ]
+    },
+    {
+      "role": "Short-term return",
+      "company": "Databowl",
+      "period": "January 2021 - June 2021",
+      "bullets": [
+        "Returned to support the team during a period of increased workload."
       ]
     },
     {
@@ -66,7 +82,7 @@
         "Led client discovery to understand learning requirements and business objectives.",
         "Built SCORM-compliant eLearning packages using Articulate Storyline and custom code.",
         "Worked with stakeholders to translate complex subject matter into clear, structured digital learning experiences.",
-        "Delivered learning solutions for organisations including Sainsbury’s, EY, and SDL."
+        "Delivered learning solutions for organisations including Sainsbury\u2019s, EY, and SDL."
       ]
     }
   ],
@@ -139,6 +155,6 @@
   ],
   "education": [
     "BA (Hons) Graphic Design (User Experience), First Class, Sheffield Hallam University",
-    "PGCE Secondary Design & Technology · Qualified Teacher Status"
+    "PGCE Secondary Design & Technology \u00b7 May 2024 - May 2025 \u00b7 Qualified Teacher Status"
   ]
 }

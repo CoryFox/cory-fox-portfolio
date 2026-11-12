@@ -120,9 +120,9 @@ def expertise(label, text):
     p.add_run(text)
 
 
-def role(company, bullets=None):
+def role(company, bullets=None, period=None, title=None):
     entry = by_company[company]
-    title = entry['role'].replace(' -> ', ' / ')
+    title = title or entry['role'].replace(' -> ', ' / ')
     doc.add_paragraph(title, 'Heading 2')
     p = doc.add_paragraph()
     p.paragraph_format.keep_with_next = True
@@ -132,7 +132,7 @@ def role(company, bullets=None):
     r.bold = True
     r.font.size = Pt(9.5)
     r.font.color.rgb = RGBColor.from_string(NAVY)
-    r = p.add_run('\t' + entry['period'])
+    r = p.add_run('\t' + (period or entry['period']))
     r.font.size = Pt(9)
     r.font.color.rgb = RGBColor.from_string(MUTED)
     for item in (entry['bullets'] if bullets is None else bullets):
@@ -173,12 +173,14 @@ role('Thrybergh Academy', [
     'Created step-by-step resources and video walkthroughs; introduced digital tools and guided learners through their use.',
     'Supported assessment, evidence collection and coursework against qualification requirements.'
 ])
+role('Databowl', ['Returned to support the team during a period of increased workload.'],
+     period='January 2021 - June 2021', title='Short-term return')
 role('SoloProtect UK', [
     'Designed monitoring, alert and location-aware workflows for a safety-focused platform, supporting clear operational decisions.',
     'Translated UX decisions into production-ready interfaces in a C# .NET and Xamarin environment.'
 ])
 role('Databowl', [
-    'Improved onboarding, setup journeys and campaign workflows in a lead management SaaS platform. Returned on a short-term basis from January to July 2021 to support increased workload.',
+    'Improved onboarding, setup journeys and campaign workflows in a lead management SaaS platform.',
     'Built Angular interfaces for complex validation and data-led tasks, contributing to workflow design and delivery in a Postgres-backed environment.'
 ])
 role('Relish Learning', [
@@ -191,7 +193,7 @@ r = p.add_run('BA Graphic Design (User Experience)'); r.bold = True
 p.add_run('\nFirst Class Honours | Sheffield Hallam University')
 p = doc.add_paragraph()
 r = p.add_run('PGCE Secondary Design & Technology'); r.bold = True
-p.add_run('\nSheffield Hallam University | Qualified Teacher Status')
+p.add_run('\nMay 2024 - May 2025 | Sheffield Hallam University\nQualified Teacher Status')
 
 # Quiet running reference keeps detached pages identifiable.
 footer = sec.footer.paragraphs[0]

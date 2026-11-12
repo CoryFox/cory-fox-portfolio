@@ -6,6 +6,12 @@
 - branch: `main`
 - current revision: use `git log -1 --oneline` in the active checkout; historical notes below describe earlier sessions.
 
+## 2026-11-12 Career chronology clarification
+
+- Cory clarified that he returned to Databowl from January to June 2021 to help with increased workload, and studied for his PGCE from May 2024 to May 2025.
+- Added both as dated website timeline entries. The Databowl return is a distinct CV entry; PGCE dates appear in CV education. These latest dates supersede earlier recollections.
+- Preserved the visual style, role positioning and anonymous project. Both CV pages were rendered and visually checked. Lint, production build and whitespace checks passed before publication.
+
 ## 2026-11-12 Technical implementation positioning
 
 - Implemented the employer-focused proposal: Technical Implementation Consultant, specialising in AI, automation and user adoption. Actual employment title remains Implementation Consultant.

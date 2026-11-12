@@ -413,3 +413,7 @@ Reason:
 - Keep employer attribution out of this case study, metadata and illustrations. Use explanatory HTML workflow visuals; no internal templates, recordings or production screenshots.
 - Keep navy/off-white and bundled Montserrat/Inter. Reduce repeated biography; put work after the hero. Archive earlier web demos without changing their existing paths.
 - Keep GitHub Pages and the existing deployment workflow. Public PDF belongs in the repository; editable DOCX is maintained separately. CORY_CV_OUTPUT supports generating it outside the checkout.
+
+## 2026-11-12 Explicit employment and study periods
+
+Show the January-June 2021 Databowl return as a distinct period and the May 2024-May 2025 PGCE as study, rather than leaving apparent gaps. Use the user's latest confirmed dates.
