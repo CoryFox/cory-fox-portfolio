@@ -1,10 +1,10 @@
 ---
-title: "Designing location-aware monitoring tools"
+title: "Designing tools for lone-worker monitoring"
 client: "SoloProtect UK"
 slug: "soloprotect"
-summary: "Led UX and delivery work for monitoring and incident-response workflows in a safety-critical environment."
-role: "UX/UI DESIGNER & DEVELOPER"
-focus: "Monitoring, incident response, geolocation-led workflows, and production-ready delivery."
+summary: "I designed monitoring, alert and location screens for SoloProtect, then helped build them into the product."
+role: "UX/UI Designer & Developer"
+focus: "Monitoring, alerts, location information and app development."
 technologies:
   - "C# .NET"
   - "Xamarin"
@@ -13,10 +13,9 @@ technologies:
   - "Figma"
   - "Axure RP"
 responsibilities:
-  - "Designed high-stakes workflows for live monitoring, oversight, and incident-response journeys."
-  - "Translated approved UX work into production-ready interfaces and components."
-  - "Improved geolocation-led tooling to support faster awareness and clearer status visibility."
-  - "Supported app delivery as part of the first iteration of the updated SoloProtect experience."
+  - "Designed screens for monitoring workers, reviewing alerts and checking locations."
+  - "Turned approved prototypes into product interfaces."
+  - "Worked on location tools and the updated app experience."
 year: "JANUARY 2020 - JANUARY 2021"
 status: "Delivered"
 tags:
@@ -28,9 +27,9 @@ heroImage: "/images/work/soloprotect/soloprotect-location.webp"
 cardImage: "/images/work/soloprotect/soloprotect-insights.webp"
 featured: false
 order: 4
-challenge: "Supervisory users needed clearer location-aware monitoring and response tools, while the product team needed UX decisions that could hold up in a high-stakes operational environment."
-approach: "I redesigned supervisor workflows, helped shape the geolocation-led service experience, and translated approved prototypes into production-ready interfaces."
-outcome: "Delivered monitoring and geolocation interfaces, translating approved UX work into production components."
+challenge: "Supervisors needed to understand a worker’s location and status, then use that information when responding to an incident. The monitoring screens had to make those details easy to find and follow."
+approach: "I worked through the supervisor journeys in prototypes, then helped turn the approved designs into interfaces in C# .NET and Xamarin."
+outcome: "Delivered monitoring and location interfaces and contributed to the first iteration of the updated app."
 gallery:
   - "/images/work/soloprotect/soloprotect-location.webp"
   - "/images/work/soloprotect/soloprotect-insights.webp"
@@ -39,8 +38,12 @@ gallery:
 nextSlug: "fourjaw"
 ---
 
-SoloProtect combines lone-worker devices, live monitoring, and operational response tooling. The work sat in a demanding environment where speed, usability, and engineering reliability all mattered.
+## Understanding the monitoring work
 
-My role covered both UX direction and production delivery. I worked on desktop monitoring tools, geolocation-led journeys, and the first iteration of the updated app experience, then helped move approved work into a C# .NET and Xamarin codebase.
+SoloProtect combines lone-worker devices with monitoring and incident response tools. I worked on the desktop tools supervisors used to follow activity and understand what was happening, including location and status information.
 
-The result was a tighter connection between UX decisions and shipped product behaviour in a space where interface quality had direct operational consequences.
+## From prototype to working interface
+
+I worked across UX design and development, using prototypes to work through the journeys before helping implement the approved screens in C# .NET and Xamarin.
+
+My work also included location features and the first iteration of the updated app. Being involved in both the design and the build helped me follow the detail through from a proposed interaction to the working product.

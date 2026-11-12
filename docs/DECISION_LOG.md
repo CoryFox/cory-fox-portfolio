@@ -417,3 +417,7 @@ Reason:
 ## 2026-11-12 Explicit employment and study periods
 
 Show the January-June 2021 Databowl return as a distinct period and the May 2024-May 2025 PGCE as study, rather than leaving apparent gaps. Use the user's latest confirmed dates.
+
+## 2026-11-12 Case-study voice
+
+Use natural first-person descriptions of what Cory built and why. Keep the approximate 50% result and team adoption; omit sample-size callouts and statistical caveats from the public page, as requested. Preserve the calculation in internal notes and avoid annual extrapolation or guaranteed savings. This supersedes the earlier requirement to display the sample count on the website.

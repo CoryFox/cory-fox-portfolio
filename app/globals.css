@@ -311,7 +311,7 @@ h6 {
 .case-context { display: flex; flex-wrap: wrap; gap: 18px 40px; border-block: 1px solid var(--border); padding-block: 22px; margin-bottom: 32px; }
 .case-context dt { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 7px; }
 .case-context dd { font-size: 14px; color: var(--accent); }
-.case-metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin: 32px 0 18px; }
+.case-metrics { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin: 32px 0 18px; }
 .case-metrics>div { border-left: 2px solid var(--border); padding-left: 20px; }
 .case-metrics strong { display: block; font-family: var(--font-display); font-size: 42px; font-weight: 650; color: var(--accent); letter-spacing: -.04em; }
 .case-metrics span { display: block; font-size: 14px; line-height: 1.6; color: var(--text-secondary); }

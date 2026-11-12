@@ -2,9 +2,9 @@
 title: "Simplifying manufacturing workflows"
 client: "FourJaw Manufacturing Analytics"
 slug: "fourjaw"
-summary: "Improved onboarding and operator workflows in a B2B SaaS product, making real-time manufacturing interfaces easier to use and easier to trust."
-role: "SOFTWARE DEVELOPER, PROMOTED TO UX/UI LEAD"
-focus: "Onboarding, operator workflows, trust in operational data, and more consistent delivery."
+summary: "I worked on the setup and day-to-day use of FourJaw’s manufacturing software, moving from software development into UX/UI leadership."
+role: "Software Developer, promoted to UX/UI Lead"
+focus: "Account setup, machine setup and the screens used by operators."
 technologies:
   - "Python"
   - "Flask"
@@ -14,10 +14,10 @@ technologies:
   - "Sass"
   - "React Native"
 responsibilities:
-  - "Improved onboarding journeys by simplifying setup, user creation, machine setup, and connected workflow steps."
-  - "Clarified operator workflows across uptime, downtime, and job lifecycle interactions used in live manufacturing settings."
-  - "Worked across product, UX, and delivery to support consistent implementation across web and tablet experiences."
-  - "Helped strengthen system consistency through component-led thinking and design-system standards."
+  - "Worked on account, user and machine setup."
+  - "Designed and developed screens for recording uptime, downtime and job activity."
+  - "Worked with product and engineering across the web and tablet products."
+  - "Helped modernise the frontend and introduce a shared design system."
 year: "JULY 2021 - MAY 2024"
 status: "Live product"
 tags:
@@ -29,9 +29,9 @@ heroImage: "/images/work/fourjaw/fourjaw-hydrafeed-downtime.webp"
 cardImage: "/images/work/fourjaw/fourjaw-sps-operator.webp"
 featured: true
 order: 2
-challenge: "Users needed to get value quickly, but onboarding and operational workflows carried unnecessary friction. In live manufacturing environments, interfaces also needed to support fast understanding and trust in real-time data."
-approach: "I focused on the highest-friction journeys, worked closely with engineering on real-world behaviour, and helped move delivery towards a more consistent product experience."
-outcome: "Delivered changes to onboarding and operator workflows, alongside frontend modernisation and design-system work."
+challenge: "FourJaw needed to work for people setting up the software and for operators using it on the factory floor. Setup involved users, machines and connected steps, while operators needed to record uptime, downtime and jobs without getting lost in the interface."
+approach: "I worked with product and engineering on the steps users found difficult, using discovery and usability work to guide changes to the web and tablet interfaces."
+outcome: "My work covered changes to setup and operator screens, frontend development and a shared design system."
 gallery:
   - "/images/work/fourjaw/fourjaw-hydrafeed-downtime.webp"
   - "/images/work/fourjaw/fourjaw-sps-operator.webp"
@@ -39,8 +39,14 @@ gallery:
 nextSlug: "databowl"
 ---
 
-FourJaw is a manufacturing analytics platform used in live operational environments. My work covered onboarding, operator workflows, frontend improvement, and later UX/UI leadership.
+## Working across design and development
 
-I focused on the parts of the product where trust and usability mattered most: helping users get set up with less friction, improving confidence in day-to-day workflows, and strengthening the link between UX direction and shipped behaviour.
+I joined FourJaw as a software developer and later became UX/UI Lead. Having worked in the codebase, I could discuss how a proposed design would work with the developers building it.
 
-The work connected UX decisions with shipped interfaces. This case study describes the delivered changes; a quantified adoption or usability improvement is not claimed.
+My work included Python, Flask and MongoDB, as well as React and TypeScript on the frontend. I also helped introduce a design system so the team could reuse interface patterns across the product.
+
+## Following the work onto the factory floor
+
+The product had to support both initial setup and everyday use. I worked on onboarding, user and machine setup, alongside the screens operators used to record uptime, downtime and job activity.
+
+Discovery and usability work helped me understand where those journeys became difficult. I used that understanding to shape changes with product and engineering, carrying the design through to the web and tablet interfaces.

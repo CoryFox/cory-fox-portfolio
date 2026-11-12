@@ -1,10 +1,10 @@
 ---
-title: "Making configuration-heavy workflows clearer"
+title: "Making Databowl easier to set up"
 client: "Databowl"
 slug: "databowl"
-summary: "Improved a validation-heavy SaaS platform by making setup, workflows, and day-to-day configuration easier to follow."
-role: "UX/UI DESIGNER & DEVELOPER"
-focus: "Setup journeys, validation-heavy workflows, configuration, and product structure."
+summary: "I designed and built interfaces to help users set up campaigns, validation rules and exports in Databowl’s lead management platform."
+role: "UX/UI Designer & Developer"
+focus: "Campaign setup, validation rules and export configuration."
 technologies:
   - "Angular"
   - "Postgres"
@@ -13,10 +13,9 @@ technologies:
   - "Laravel APIs"
   - "Figma"
 responsibilities:
-  - "Improved onboarding and setup journeys by turning complex, validation-heavy tasks into clearer guided flows."
-  - "Reduced ambiguity in core workflows such as validation, deduplication, and export configuration."
-  - "Built and refined product UI for complex data-led tasks in an Angular-based SaaS environment."
-  - "Supported stronger product structure, clearer handoff, and more maintainable delivery patterns."
+  - "Designed onboarding and campaign setup journeys."
+  - "Worked on interfaces for validation, duplicate checks and exports."
+  - "Built and refined the Angular UI for these tasks."
 year: "JANUARY 2018 - JANUARY 2020"
 status: "Delivered"
 tags:
@@ -28,9 +27,9 @@ heroImage: "/images/work/databowl/solutions-system.webp"
 cardImage: "/images/work/databowl/solutions-lead-generation.webp"
 featured: false
 order: 3
-challenge: "New users needed to configure validation logic, deduplication, and export workflows correctly, but the legacy experience made progression unclear and increased onboarding risk."
-approach: "I simplified the highest-friction journeys, delivered clearer step-by-step interfaces, and made key setup tasks easier to understand and maintain."
-outcome: "Delivered guided interfaces for onboarding, validation and export configuration in an Angular-based SaaS platform."
+challenge: "Setting up a campaign meant making decisions about validation, duplicate records and exports. Users needed to understand those choices and how the steps fitted together."
+approach: "I broke the setup work into clearer steps and built the interfaces in Angular, working through the design and implementation together."
+outcome: "Delivered interfaces for onboarding, campaign setup, validation and exports."
 gallery:
   - "/images/work/databowl/solutions-system.webp"
   - "/images/work/databowl/solutions-lead-generation.webp"
@@ -38,8 +37,12 @@ gallery:
 nextSlug: "fourjaw"
 ---
 
-Databowl is a lead-validation and management platform with configuration-heavy journeys and a high risk of user error if setup is unclear.
+## Making the choices easier to follow
 
-My role blended UX architecture, interface delivery, and product cleanup. I worked on the parts most closely tied to adoption: onboarding, campaign setup, validation logic, and export configuration.
+Databowl is a lead validation and management platform. Much of my work involved helping users understand the settings they needed to choose before a campaign was ready to use.
 
-The value of the work was not visual polish alone. It was making the system feel more structured, more usable, and easier to configure with confidence.
+I worked across onboarding, campaign setup, validation rules and export configuration, turning those tasks into more structured journeys.
+
+## Taking the design into the product
+
+My role combined UX design with development. I built and refined the Angular interfaces, working in a platform backed by Postgres and Laravel APIs. That let me carry the detail of a design into the screens people actually used.

@@ -1,42 +1,40 @@
 ---
-title: "Turning reporting requirements into repeatable outputs"
+title: "Building reports the team could use again"
 slug: "reporting-implementation"
-client: "Client reporting · Anonymised overview"
-summary: "Power Query and OData reporting work, bringing together field mapping, data transformation, output validation and clear handover guidance."
+client: "Client reporting"
+summary: "I used Power Query and OData to turn client reporting requirements into reports they could refresh and use again, with checks and guidance to support the handover."
 role: "Implementation Consultant"
-focus: "Requirements, field mappings, data validation and handover."
+focus: "Working out the field mappings, checking the data and explaining the report."
 technologies: ["Excel Power Query", "OData", "Data validation"]
 responsibilities:
-  - "Translated reporting requirements into field mappings and repeatable query steps."
-  - "Built Power Query reports using OData sources and investigated data issues."
-  - "Checked outputs against requirements and documented the reporting logic."
+  - "Mapped the required report fields to the available platform data."
+  - "Built the queries in Excel Power Query using OData sources."
+  - "Investigated missing values, checked the outputs and wrote the handover guidance."
 year: "Recent implementation"
-status: "Reporting delivery and handover"
+status: "Delivered and handed over"
 tags: ["Reporting", "Data validation", "Implementation"]
 heroImage: ""
 cardImage: ""
 diagram: "reporting"
 featured: true
 order: 1
-challenge: "Client reporting requirements needed to be translated into repeatable outputs from platform data. The work required careful interpretation of fields, transformation rules and gaps in the underlying data."
-approach: "Separate data retrieval, transformation, validation and final output so the reporting logic can be understood and checked."
-outcome: "Repeatable reports with documented mappings, validation checks and step-by-step handover guidance."
-evidenceNote: "This overview describes the delivered reporting work. No numerical time-saving or accuracy claim is made."
+challenge: "The client needed reports built from platform data, but the required fields did not always map neatly to the source. I had to work out where each value belonged, how it should be transformed and what to do when information was missing."
+approach: "Build the report in clear stages, then check the results against the client’s requirements."
+outcome: "Delivered refreshable reports with field mappings and step-by-step guidance explaining how they worked."
 gallery: []
 nextSlug: "fourjaw"
 ---
-## From requirements to field mappings
 
-I worked with reporting requirements and source data to establish how fields should map into the required output. This included clarifying definitions, investigating available values and identifying gaps that needed further attention.
+## Working out where the data belonged
 
-## A staged reporting process
+I started with the reporting requirements and traced each field back to the source data. That meant checking what the fields actually represented, looking at the values available and identifying anything the source could not provide.
 
-I built Excel Power Query reports using OData sources, organising the work into stages for source retrieval, transformation and final output. Separating these steps made the reporting logic easier to follow and individual issues easier to investigate.
+## Building the report in stages
 
-## Checking the result
+I used OData to retrieve the data and Excel Power Query to transform it. I separated the queries into stages for retrieving, cleaning, combining and preparing the final output. When a value looked wrong, I could follow it through those steps and see where it had changed.
 
-Data validation was part of the implementation work: checking field mappings, investigating missing values and comparing outputs against the requirements. Where the source data did not support a required value, the gap needed to be surfaced rather than silently filled.
+## Checking and handing it over
 
-## Handover and maintainability
+I checked the field mappings and final output against the requirements, investigating missing values as I went. Where information was missing from the source, I flagged it so it could be addressed.
 
-I created technical documentation and step-by-step guidance explaining the query stages and reporting logic. The deliverable included a repeatable reporting process and the information needed to understand how its output was produced.
+I also wrote step-by-step guidance covering the query stages, reporting logic and refresh process. That gave the team a report they could use again and a reference for understanding how it worked.

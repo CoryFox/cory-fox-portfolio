@@ -10,8 +10,8 @@ export function WorkSection({ intro, work }: { intro: string; work: WorkCaseStud
     <div className="portfolio-container">
       <div className="section-intro"><p className="eyebrow">Selected work</p><h2>Practical solutions.<br />Evidence of delivery.</h2><p>{intro}</p></div>
       <article className="featured-project">
-        <div className="featured-copy"><p className="eyebrow">Featured implementation · Anonymous case study</p><h3><Link href={`/work/${featured.slug}/`}>{featured.title}</Link></h3><p>{featured.summary}</p>
-          <div className="project-result"><strong>~50%</strong><span>less email preparation time<br /><small>Across 21 logged examples</small></span></div>
+        <div className="featured-copy"><p className="eyebrow">Featured project</p><h3><Link href={`/work/${featured.slug}/`}>{featured.title}</Link></h3><p>{featured.summary}</p>
+          <div className="project-result"><strong>~50%</strong><span>less time preparing emails<br /><small>Used by all 10 consultants</small></span></div>
           <p className="project-stack">{featured.technologies.join(" · ")}</p><Link className="text-link" href={`/work/${featured.slug}/`}>Read the implementation story <span aria-hidden="true">→</span></Link>
         </div>
         <WorkflowVisual compact />

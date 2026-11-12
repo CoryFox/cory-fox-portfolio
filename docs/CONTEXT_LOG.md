@@ -6,6 +6,13 @@
 - branch: `main`
 - current revision: use `git log -1 --oneline` in the active checkout; historical notes below describe earlier sessions.
 
+## 2026-11-12 Natural case-study copy
+
+- Rewrote all five case studies in a conversational first-person voice, using concrete tasks and removing generic delivery language.
+- At Cory's request, removed public sample-size references, rounded-hours commentary and the long statistical caveats. Retained the qualified headline "around 50%" and confirmed ten-consultant adoption; did not invent broader savings or new project facts.
+- Removed the third metric and adjusted the grid to two columns. Simplified the workflow labels and homepage project description. Removed the redundant Project context heading now each case has its own section headings.
+- The underlying timing evidence remains recorded in the earlier internal working notes. Organisation and client identities remain absent from the anonymous project.
+
 ## 2026-11-12 Career chronology clarification
 
 - Cory clarified that he returned to Databowl from January to June 2021 to help with increased workload, and studied for his PGCE from May 2024 to May 2025.
