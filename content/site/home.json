@@ -1,34 +1,32 @@
 {
   "hero": {
     "eyebrow": "HELLO, I’M CORY",
-    "headline": "AI IMPLEMENTATION & ADOPTION",
-    "description": "I’m an Implementation Consultant at Aptem, working on AI transformation across multiple teams. I use AI to improve processes and build automations across different software platforms and business use cases.",
-    "framing": "I combine software development and UX with a teaching background. That means I can understand the technical detail, design around how people work, and explain the change clearly.",
+    "headline": "Technical Implementation Consultant",
+    "description": "I help teams turn complex processes into practical systems, connecting software, improving workflows and making technology easier to use.",
+    "framing": "AI, automation and user adoption",
     "primaryCta": {
-      "label": "View case studies",
-      "href": "#case-studies"
+      "label": "Explore my work",
+      "href": "/#case-studies"
     },
     "secondaryCta": {
       "label": "Download CV",
       "href": "/cv/cory-fox-cv.pdf"
     },
     "titles": [
-      "AI & Automation",
-      "Implementation",
-      "UX & Adoption"
+      "Technical Implementation Consultant"
     ],
     "cards": [
       {
-        "title": "AI delivery",
-        "body": "Cross-team transformation and practical automation"
+        "title": "Implementation",
+        "body": "Currently an Implementation Consultant at Aptem, working across client requirements, reporting and delivery."
       },
       {
-        "title": "Technical depth",
-        "body": "Software, APIs, data validation, and reporting"
+        "title": "Software & UX",
+        "body": "SaaS development and UX leadership, connecting technical decisions with how people work."
       },
       {
-        "title": "User adoption",
-        "body": "UX, clear guidance, and a teaching background"
+        "title": "Guidance & adoption",
+        "body": "A teaching and eLearning background, with a practical approach to explaining unfamiliar systems."
       }
     ]
   },
@@ -55,7 +53,7 @@
       }
     ]
   },
-  "workIntro": "SaaS projects showing the technical delivery, workflow design, and user research that underpin my approach to AI implementation.",
+  "workIntro": "Automation, data and SaaS projects that show how I turn requirements into working solutions.",
   "demosIntro": "A smaller set of commercial and conversion-focused builds retained to show execution range, separate from the core SaaS case studies.",
   "writingIntro": "I write occasionally about digital products, UX, delivery, and making systems easier to use.",
   "linkedin": {

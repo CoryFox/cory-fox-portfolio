@@ -1,37 +1,26 @@
-import { Reveal } from "@/components/Reveal";
-import { SectionHeading } from "@/components/SectionHeading";
-import { WorkCard } from "@/components/WorkCard";
-import { WorkCaseStudy } from "@/lib/content";
+import Image from "next/image";
+import Link from "next/link";
+import type { WorkCaseStudy } from "@/lib/content";
+import { WorkflowVisual } from "@/components/WorkflowVisual";
 
 export function WorkSection({ intro, work }: { intro: string; work: WorkCaseStudy[] }) {
-  return (
-    <section className="section-anchor overflow-hidden px-6 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-20" id="case-studies">
-      <div className="mx-auto max-w-7xl">
-        <Reveal mode="immediate">
-          <SectionHeading
-            id="work-heading"
-            label="CASE STUDIES"
-            title="SELECTED CASE STUDIES."
-            description={intro}
-          />
-        </Reveal>
-
-        <Reveal mode="immediate" className="mt-6 flex flex-wrap gap-x-3 gap-y-2 border-y border-[color:var(--border)] py-4 text-[0.68rem] uppercase tracking-[0.22em] text-[color:var(--text-muted)] sm:mt-8 sm:gap-4 sm:text-xs sm:tracking-[0.26em]">
-          <span>ONBOARDING</span>
-          <span>/</span>
-          <span>WORKFLOW DESIGN</span>
-          <span>/</span>
-          <span>OPERATIONAL UX</span>
-          <span>/</span>
-          <span>STRUCTURED DELIVERY</span>
-        </Reveal>
-
-        <div className="mt-10 grid gap-6 sm:mt-12 sm:gap-6 lg:mt-14 lg:grid-cols-3 lg:gap-7">
-          {work.map((project, index) => (
-            <WorkCard key={project.slug} project={project} priority={index === 0} />
-          ))}
+  const [featured, ...supporting] = work;
+  if (!featured) return null;
+  return <section className="portfolio-section section-anchor" id="case-studies">
+    <div className="portfolio-container">
+      <div className="section-intro"><p className="eyebrow">Selected work</p><h2>Practical solutions.<br />Evidence of delivery.</h2><p>{intro}</p></div>
+      <article className="featured-project">
+        <div className="featured-copy"><p className="eyebrow">Featured implementation · Anonymous case study</p><h3><Link href={`/work/${featured.slug}/`}>{featured.title}</Link></h3><p>{featured.summary}</p>
+          <div className="project-result"><strong>~50%</strong><span>less email preparation time<br /><small>Across 21 logged examples</small></span></div>
+          <p className="project-stack">{featured.technologies.join(" · ")}</p><Link className="text-link" href={`/work/${featured.slug}/`}>Read the implementation story <span aria-hidden="true">→</span></Link>
         </div>
-      </div>
-    </section>
-  );
+        <WorkflowVisual compact />
+      </article>
+      <div className="supporting-grid">{supporting.map(project=><article className="supporting-project" key={project.slug}>
+        <div className="supporting-media">{project.diagram ? <WorkflowVisual kind={project.diagram} compact /> : <Image src={project.cardImage} alt="FourJaw manufacturing software in use" width={800} height={450} sizes="(min-width: 800px) 50vw, 100vw" />}</div>
+        <div className="supporting-copy"><p className="eyebrow">{project.client ?? project.role}</p><h3><Link href={`/work/${project.slug}/`}>{project.title}</Link></h3><p>{project.summary}</p><Link className="text-link" href={`/work/${project.slug}/`}>Explore the project <span aria-hidden="true">→</span></Link></div>
+      </article>)}</div>
+      <div className="archive-links"><span id="additional-work" className="section-anchor" /><Link className="text-link" href="/archive/">Earlier SaaS projects and web work <span aria-hidden="true">→</span></Link></div>
+    </div>
+  </section>;
 }

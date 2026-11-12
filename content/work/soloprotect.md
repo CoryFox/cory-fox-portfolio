@@ -1,5 +1,6 @@
 ---
-title: "SOLOPROTECT"
+title: "Designing location-aware monitoring tools"
+client: "SoloProtect UK"
 slug: "soloprotect"
 summary: "Led UX and delivery work for monitoring and incident-response workflows in a safety-critical environment."
 role: "UX/UI DESIGNER & DEVELOPER"
@@ -25,11 +26,11 @@ tags:
   - "Operational UX"
 heroImage: "/images/work/soloprotect/soloprotect-location.webp"
 cardImage: "/images/work/soloprotect/soloprotect-insights.webp"
-featured: true
-order: 3
+featured: false
+order: 4
 challenge: "Supervisory users needed clearer location-aware monitoring and response tools, while the product team needed UX decisions that could hold up in a high-stakes operational environment."
 approach: "I redesigned supervisor workflows, helped shape the geolocation-led service experience, and translated approved prototypes into production-ready interfaces."
-outcome: "Monitoring decisions became faster, situational awareness improved, and delivery moved forward with stronger design-to-build consistency."
+outcome: "Delivered monitoring and geolocation interfaces, translating approved UX work into production components."
 gallery:
   - "/images/work/soloprotect/soloprotect-location.webp"
   - "/images/work/soloprotect/soloprotect-insights.webp"

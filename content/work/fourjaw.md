@@ -1,5 +1,6 @@
 ---
-title: "FOURJAW"
+title: "Simplifying manufacturing workflows"
+client: "FourJaw Manufacturing Analytics"
 slug: "fourjaw"
 summary: "Improved onboarding and operator workflows in a B2B SaaS product, making real-time manufacturing interfaces easier to use and easier to trust."
 role: "SOFTWARE DEVELOPER, PROMOTED TO UX/UI LEAD"
@@ -27,10 +28,10 @@ tags:
 heroImage: "/images/work/fourjaw/fourjaw-hydrafeed-downtime.webp"
 cardImage: "/images/work/fourjaw/fourjaw-sps-operator.webp"
 featured: true
-order: 1
+order: 2
 challenge: "Users needed to get value quickly, but onboarding and operational workflows carried unnecessary friction. In live manufacturing environments, interfaces also needed to support fast understanding and trust in real-time data."
 approach: "I focused on the highest-friction journeys, worked closely with engineering on real-world behaviour, and helped move delivery towards a more consistent product experience."
-outcome: "The product became easier to onboard into, clearer to use on the shop floor, and more consistent for teams shipping new work."
+outcome: "Delivered changes to onboarding and operator workflows, alongside frontend modernisation and design-system work."
 gallery:
   - "/images/work/fourjaw/fourjaw-hydrafeed-downtime.webp"
   - "/images/work/fourjaw/fourjaw-sps-operator.webp"
@@ -42,4 +43,4 @@ FourJaw is a manufacturing analytics platform used in live operational environme
 
 I focused on the parts of the product where trust and usability mattered most: helping users get set up with less friction, improving confidence in day-to-day workflows, and strengthening the link between UX direction and shipped behaviour.
 
-The result was a product that felt easier to adopt, more reliable to use, and more consistent to build on.
+The work connected UX decisions with shipped interfaces. This case study describes the delivered changes; a quantified adoption or usability improvement is not claimed.

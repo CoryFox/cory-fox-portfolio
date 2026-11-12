@@ -7,7 +7,7 @@ export function Reveal({
   children,
   className,
   delay = 0,
-  mode = "inView"
+  mode = "immediate"
 }: {
   children: ReactNode;
   className?: string;

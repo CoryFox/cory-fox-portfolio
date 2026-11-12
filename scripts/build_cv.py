@@ -5,6 +5,7 @@ Run from the repository root with the primary Python runtime.
 Render the resulting DOCX and inspect both pages before replacing the live PDF.
 """
 import json
+import os
 from pathlib import Path
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_TAB_ALIGNMENT
@@ -141,22 +142,21 @@ def role(company, bullets=None):
 
 
 doc.add_paragraph('CORY FOX', 'Title')
-doc.add_paragraph('AI Implementation and Transformation', 'Subtitle')
+doc.add_paragraph('Technical Implementation Consultant', 'Subtitle')
 contact_line('Sheffield, UK  |  07442 342723  |  coryowenfox@gmail.com  |  coryfox.co.uk')
 section_heading('Profile')
 doc.add_paragraph(
-    'Implementation Consultant at Aptem, delivering AI transformation across multiple teams '
-    'and building automations across software platforms. I combine client implementation, '
-    'software development and UX leadership with a teaching background. My strength is '
-    'translating business needs into practical workflows, connecting technical delivery '
-    'with clear guidance and the needs of the people using the system.'
+    'Technical implementation consultant specialising in AI, automation and user adoption. '
+    'I combine hands-on software development and UX leadership with client implementation '
+    'and a teaching background. I translate business requirements into practical workflows, '
+    'connect systems, validate data and create clear guidance for the people using the result.'
 )
 section_heading('Core expertise')
-expertise('AI and implementation', 'AI transformation, cross-platform automation, requirements gathering and workflow improvement.')
-expertise('Technical delivery', 'Python, React, TypeScript, REST APIs, Power Query, OData and data validation.')
+expertise('AI and implementation', 'Workflow automation, requirements gathering, platform configuration and process improvement.')
+expertise('Technical delivery', 'Python, REST APIs, Claude API, Microsoft Graph, Power Query, OData and data validation.')
 expertise('People and adoption', 'Stakeholder communication, UX research, usability testing, training resources and technical documentation.')
 section_heading('Selected experience')
-role('Aptem')
+role('Aptem', by_company['Aptem']['bullets'][1:])
 role('FourJaw Manufacturing Analytics', [
     'Progressed from Software Developer to UX/UI Lead, improving onboarding and operational workflows across web and tablet SaaS products.',
     'Led discovery and usability work, collaborating with product and engineering to turn user needs into practical platform improvements.',
@@ -178,7 +178,7 @@ role('SoloProtect UK', [
     'Translated UX decisions into production-ready interfaces in a C# .NET and Xamarin environment.'
 ])
 role('Databowl', [
-    'Improved onboarding, setup journeys and campaign workflows in a lead management SaaS platform.',
+    'Improved onboarding, setup journeys and campaign workflows in a lead management SaaS platform. Returned on a short-term basis from January to July 2021 to support increased workload.',
     'Built Angular interfaces for complex validation and data-led tasks, contributing to workflow design and delivery in a Postgres-backed environment.'
 ])
 role('Relish Learning', [
@@ -191,6 +191,7 @@ r = p.add_run('BA Graphic Design (User Experience)'); r.bold = True
 p.add_run('\nFirst Class Honours | Sheffield Hallam University')
 p = doc.add_paragraph()
 r = p.add_run('PGCE Secondary Design & Technology'); r.bold = True
+p.add_run('\nSheffield Hallam University | Qualified Teacher Status')
 
 # Quiet running reference keeps detached pages identifiable.
 footer = sec.footer.paragraphs[0]
@@ -210,11 +211,11 @@ field.append(r); footer._p.append(field)
 
 props = doc.core_properties
 props.title = 'Cory Fox CV'
-props.subject = 'AI implementation, transformation and automation'
+props.subject = 'Technical implementation, AI, automation and user adoption'
 props.author = 'Cory Fox'
 props.keywords = 'AI transformation, implementation, automation, Aptem, UX, software development'
 props.comments = ''
-output = ROOT / 'docs/cv/cory-fox-cv.docx'
+output = Path(os.environ.get('CORY_CV_OUTPUT', str(ROOT / 'docs/cv/cory-fox-cv.docx')))
 output.parent.mkdir(parents=True, exist_ok=True)
 doc.save(output)
 print(output)

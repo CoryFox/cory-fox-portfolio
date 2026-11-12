@@ -1,5 +1,6 @@
 ---
-title: "DATABOWL"
+title: "Making configuration-heavy workflows clearer"
+client: "Databowl"
 slug: "databowl"
 summary: "Improved a validation-heavy SaaS platform by making setup, workflows, and day-to-day configuration easier to follow."
 role: "UX/UI DESIGNER & DEVELOPER"
@@ -25,11 +26,11 @@ tags:
   - "Product Structure"
 heroImage: "/images/work/databowl/solutions-system.webp"
 cardImage: "/images/work/databowl/solutions-lead-generation.webp"
-featured: true
-order: 2
+featured: false
+order: 3
 challenge: "New users needed to configure validation logic, deduplication, and export workflows correctly, but the legacy experience made progression unclear and increased onboarding risk."
 approach: "I simplified the highest-friction journeys, delivered clearer step-by-step interfaces, and made key setup tasks easier to understand and maintain."
-outcome: "The platform became easier to adopt, easier to navigate, and more credible as a day-to-day SaaS product."
+outcome: "Delivered guided interfaces for onboarding, validation and export configuration in an Angular-based SaaS platform."
 gallery:
   - "/images/work/databowl/solutions-system.webp"
   - "/images/work/databowl/solutions-lead-generation.webp"

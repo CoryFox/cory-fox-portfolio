@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Cory Fox Portfolio",
   title: {
-    default: "Cory Fox | AI Implementation & Transformation",
+    default: "Cory Fox | Technical Implementation Consultant",
     template: "%s | Cory Fox"
   },
   description:
-    "Cory Fox is an Implementation Consultant at Aptem working on AI transformation, cross-platform automation, and process improvement, backed by software development, UX, and teaching.",
+    "Technical Implementation Consultant specialising in AI, automation and user adoption. Practical delivery backed by software development, UX leadership and teaching.",
   keywords: [
     "Cory Fox",
     "AI implementation",
@@ -38,7 +38,6 @@ export const metadata: Metadata = {
     "cross-platform automation",
     "process improvement",
     "user adoption",
-    "Aptem",
     "software development",
     "UX",
     "SaaS"
@@ -51,18 +50,18 @@ export const metadata: Metadata = {
     shortcut: "/icon.svg"
   },
   openGraph: {
-    title: "Cory Fox | AI Implementation & Transformation",
+    title: "Cory Fox | Technical Implementation Consultant",
     description:
-      "AI transformation at Aptem, cross-platform automation, technical delivery, and user adoption. A background spanning software development, UX, and teaching.",
+      "Technical Implementation Consultant. Explore practical automation, reporting and SaaS projects, with a background in software development, UX and teaching.",
     url: siteUrl,
     siteName: "Cory Fox",
     type: "website"
   },
   twitter: {
     card: "summary",
-    title: "Cory Fox | AI Implementation & Transformation",
+    title: "Cory Fox | Technical Implementation Consultant",
     description:
-      "AI transformation at Aptem, cross-platform automation, technical delivery, and user adoption. A background spanning software development, UX, and teaching."
+      "Technical Implementation Consultant. Explore practical automation, reporting and SaaS projects, with a background in software development, UX and teaching."
   },
   alternates: {
     canonical: siteUrl
@@ -76,7 +75,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
-      <body className="font-[family-name:var(--font-sans)] antialiased">{children}</body>
+      <body className="font-[family-name:var(--font-sans)] antialiased"><a className="skip-link" href="#main-content">Skip to content</a>{children}</body>
     </html>
   );
 }

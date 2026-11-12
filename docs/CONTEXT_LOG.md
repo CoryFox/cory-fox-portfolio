@@ -6,6 +6,18 @@
 - branch: `main`
 - current revision: use `git log -1 --oneline` in the active checkout; historical notes below describe earlier sessions.
 
+## 2026-11-12 Technical implementation positioning
+
+- Implemented the employer-focused proposal: Technical Implementation Consultant, specialising in AI, automation and user adoption. Actual employment title remains Implementation Consultant.
+- Added an anonymous session-email automation case study: Python, Claude API, Microsoft Graph, Outlook pre-session triggers, mapped templates and consultant review/send. Do not attribute this project to an employer or publish internal assets.
+- Cory confirmed all 21 timing rows are separate email-preparation examples. Displayed hours total 5.7 before and 2.8 afterwards. Use around 50% for this sample, not an annual/project estimate. All ten consultants adopted it as normal practice.
+- Added anonymous Power Query/OData reporting overview and retained FourJaw as supporting work. Earlier SaaS cases and existing web demos are available in /archive/; writing is at /writing/. Existing project URLs remain.
+- Rebuilt the homepage and case template with compact sections, semantic headings, static explanatory workflows and direct email/LinkedIn contact. Essential content renders immediately. Fixed navigation background and process-card contrast after browser review. Replaced unsupported diagonal arrow glyphs.
+- At the same 1363 x 936 desktop viewport, homepage height is 4367 px versus the original audit's 12839 px; Selected Work section starts around 736 px. No horizontal overflow observed.
+- CV headline/profile and technical skills now match the site. Added the confirmed short-term Databowl return in the CV. Both pages rendered and visually reviewed with the matching fonts.
+- Validation: npm run lint, npm run build, git diff --check; desktop homepage/case/contact review; generated internal link check. Main portfolio paths resolve; old archived demo HTML retains some incomplete sample footer/service links. No full accessibility or mobile audit claimed.
+- Publication: this revision is intended for the existing main-branch GitHub Pages workflow. See workflow history for deployed status.
+
 ## 2026-11-09 AI implementation positioning and design repair
 
 - Cory changed the focus from the National Grid learning technology vacancy to AI implementation, transformation, and adoption across sectors.
@@ -171,7 +183,7 @@
 ## Known Weak Spots
 
 - Medium feed access is environment-dependent; when the live feed is unavailable, the site falls back to local article cards with local images
-- contact form is UI-only and mailto-based for now
+- contact now uses direct email and LinkedIn links; no form backend is required
 - Safari/browser caching can obscure live CSS changes, so verify against the active `next dev` server with a hard refresh when styles appear stale
 
 ## Known Good Checks

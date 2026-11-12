@@ -405,3 +405,11 @@ Reason:
 - Load committed Montserrat and Inter WOFF2 files using `next/font/local` instead of downloading fonts during builds.
 - Preserve the exact reviewed font bytes and existing CSS variables and weight ranges. Include the upstream SIL Open Font License files.
 - The GitHub Pages build failed in the Google font resolver after the initial AI-focused commit. Bundling fonts fixes the build dependency without changing the design, upgrading the framework, or changing hosting.
+
+## 2026-11-12 Evidence-led technical implementation portfolio
+
+- One professional identity: Technical Implementation Consultant; AI, automation and user adoption are specialisms. Preserve official employment titles.
+- Lead with the anonymous email-automation project and qualified sample result (~50%, 21 examples, ten-person adoption). Never imply automatic sending, zero omissions or annual savings.
+- Keep employer attribution out of this case study, metadata and illustrations. Use explanatory HTML workflow visuals; no internal templates, recordings or production screenshots.
+- Keep navy/off-white and bundled Montserrat/Inter. Reduce repeated biography; put work after the hero. Archive earlier web demos without changing their existing paths.
+- Keep GitHub Pages and the existing deployment workflow. Public PDF belongs in the repository; editable DOCX is maintained separately. CORY_CV_OUTPUT supports generating it outside the checkout.

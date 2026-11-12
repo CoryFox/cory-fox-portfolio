@@ -137,3 +137,9 @@ Use the root of a checkout of `https://github.com/CoryFox/cory-fox-portfolio`. T
 ## Documentation Expectation
 
 If a future session changes project direction, introduces a workaround, fixes a regression, or leaves unresolved issues, the logs must be updated before handoff.
+
+## Current portfolio structure (12 November 2026)
+
+Homepage: Hero, WorkSection, HowIWorkSection, ExperienceSection, compact writing link, ContactSection. WorkflowVisual supports session and reporting figures. /archive/ contains older cases and demos; /writing/ contains the existing article feed/fallback. Work front matter supports client, diagram, metrics and evidenceNote. Treat supplied measurement qualifiers as part of the claim, not optional decoration. Do not add employer attribution to the anonymous session-email case.
+
+Build the editable CV with CORY_CV_OUTPUT set to a path outside this repository, render and inspect both pages, then replace only public/cv/cory-fox-cv.pdf. Existing GitHub Pages main-branch deployment remains authoritative.

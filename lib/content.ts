@@ -82,6 +82,10 @@ export type ExperienceContent = {
 };
 
 export type WorkCaseStudy = {
+  client?: string;
+  diagram?: "session" | "reporting";
+  metrics?: Array<{ value: string; label: string }>;
+  evidenceNote?: string;
   title: string;
   slug: string;
   summary: string;
